@@ -1,1 +1,1 @@
--httpp://tianhua.com
+-http://tianhua.com
