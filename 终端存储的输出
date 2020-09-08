@@ -1,0 +1,94 @@
+Last login: Tue Sep  8 15:51:17 on ttys000
+denkazuhides-MacBook-Pro:~ cinderella$ git clone https://github.com/Cinderella-Tian/wnm_202090_OL01.git
+fatal: destination path 'wnm_202090_OL01' already exists and is not an empty directory.
+denkazuhides-MacBook-Pro:~ cinderella$ mv wnm_202090_OL01 wnm608
+denkazuhides-MacBook-Pro:~ cinderella$ git clone https://github.com/Cinderella-Tian/wnm_202090_OL01.git
+Cloning into 'wnm_202090_OL01'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 13 (delta 3), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (13/13), done.
+denkazuhides-MacBook-Pro:~ cinderella$ ls wnm_202090_OL01/
+LICENSE		README.md
+denkazuhides-MacBook-Pro:~ cinderella$ cd wnm_202090_OL01
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git add .
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ cd wnm_202090_OL01/
+-bash: cd: wnm_202090_OL01/: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ cd wnm_202090_OL01
+-bash: cd: wnm_202090_OL01: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ ls TianYixiu/
+ls: TianYixiu/: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ ls TianYixiu
+ls: TianYixiu: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git add .
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git add .
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ ls TianYixiu
+ls: TianYixiu: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ ls TianYixiu/
+ls: TianYixiu/: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git add .
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ ls wnm_202090_OL01
+ls: wnm_202090_OL01: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ wnm_202090_OL01/
+-bash: wnm_202090_OL01/: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ ls tian_yixiu
+ls: tian_yixiu: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git add .
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ cd tian_yixiu
+-bash: cd: tian_yixiu: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git add .
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git add .
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ ls tian_yixiu
+ls: tian_yixiu: No such file or directory
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ git commit -m"Commit message"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+denkazuhides-MacBook-Pro:wnm_202090_OL01 cinderella$ 
