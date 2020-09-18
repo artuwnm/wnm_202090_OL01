@@ -1,0 +1,178 @@
+
+/* HEADER */
+
+h1 {
+	color: var(--color-dark);
+	font-family: var(--font-sans);
+	line-height: var(--header-height);
+}
+
+/* Sign In/Register */
+.signInLink {
+	text-align: center;
+}
+
+.header-img-container {
+	height: 250px;
+	margin-top:10px;
+	background-color: #c9ac84;
+	/*	overflow: hidden;*/
+}
+
+header form {
+	margin-top: var(--spacing);
+	vertical-align: top;
+}
+
+
+/* Shopping Cart Button class*/
+.cartButton {
+	background-color: black;
+	color: white;
+	padding: 7px 11px;
+	font-size: 12px;
+
+}
+
+.cartButton:hover{
+	background-color: var(--color-neutral-dark);
+}
+
+
+/* MAIN */
+
+h2 {
+	text-align: center;
+	margin-top:30px;
+	margin-bottom: -10px;
+}
+
+main p {
+	margin-top:0;
+	margin-bottom:0;
+	font-family: var(--font-sans);
+	font-size: 15px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.card img {
+	width: 100%;
+
+/* border: 1px solid red; */
+
+}
+
+.card h5 {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 15px;
+/*	border: 1px solid red;	*/
+}
+
+.card p {
+	text-align: center;
+	margin-top: -12px;
+	font-size: 14px;
+	/*border: 1px solid blue;*/
+}
+
+
+
+
+/* FOOTER */
+
+.footer-content-container {
+	background-color: #ededed;
+
+	padding-left: 150px;
+	padding-right: 150px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	margin-top: 20px;
+	margin-bottom: 15px;
+
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* footer left*/
+
+.footer-links-left {
+	border-right: 1px solid grey;
+	margin-right: 20px;
+
+}
+
+.footer-links-left h5 {
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+
+.footer-links-left .nav {
+	list-style-type: none;
+
+	margin-top: 0;
+	margin-bottom: 0;
+
+	padding-left: 0;
+}
+
+
+/* Footer right*/
+
+.footer-links-right {
+	text-align: center;
+}
+
+
+.email-signup_lable {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 16px;
+	font-size: 13px;
+	margin: 10px 0;
+	font-weight: 600;
+	
+}
+
+.email-signup_input {
+	width: 300px;
+	height: 40px;
+	background-color: #fff;
+	font-size: 13px;
+	font-family: var(--font-sans);
+
+}
+
+.email-signup_submit {
+	background-color: #000;
+	border: none;
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+
+
+/* footer bottom*/
+
+.footer-site-links {
+	text-align: center;
+	padding-bottom: 16px;
+	font-size: 10px;
+	font-family: Helvetica,Arial,Roboto,sans-serif;
+}
+
+.footer-site-links_divider {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+
+
+
+
+
