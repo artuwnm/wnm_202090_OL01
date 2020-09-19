@@ -1,0 +1,202 @@
+/* CSS RESET */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+
+	--color-dark-green: #1F3B2C;
+	--color-light-green: #588068;
+	--color-cream: #F5F3F5;
+	--color-seashell: #E580A4;
+
+
+	--color-black:#000;
+	--color-white:#FFF;
+
+
+--header-height:3rem;
+--spacing:1rem;
+
+
+--font-serif: Georgia, "Times New Roman", serif;
+--font-sans: Helvetica, Arial, sans-serif;
+}
+
+body {
+	margin:0;
+	font-size:100%;
+	font-family:var(--font-sans);
+}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {font-family:var(--font-serif);
+
+	}
+
+a {
+	color:inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: var(--color-seashell);
+}
+
+h3 {
+	text-align: center;
+	font-size: 2em;
+}
+
+
+
+
+/* LAYOUT CLASSES */
+
+.container {
+	max-width:1100px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+.display-flex { display:flex;}
+.display-inline-flex { display:inline-flex;}
+.display-block { display:block;}
+.display-inline-box { display:inline-block;}
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items: center; }
+.flex-justify-center {justify-content: center; }
+
+/* COMPONENT CLASSES */
+
+.nav ul {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+
+.navbar {
+	background-color: var(--color-dark-green);
+	color: var(--color-white);
+	line-height: var(--header-height);
+} 
+
+.navbar h4 {
+	font-size: 3.5em;
+	margin:0;
+	color: var(--color-white);
+
+}
+
+.navbar a{
+	padding: 0 0.5em;
+}
+
+
+/* CARD */
+
+.card {
+	background-color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	overflow: hidden;
+	position: relative;
+}
+
+.card.soft {
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	background-color: var(--color-white);
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	width: 90%;
+}
+
+
+.card.hard {
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	background-color: var(--color-seashell);
+	color: var(--color-white);
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	width: 90%;
+	text-align: center;
+
+}
+
+.card.dark {
+	background-color: var(--color-neutral-dark);
+	color:var(--color-neutral-light);
+
+}
+
+.card.medium {
+	background-color: var(--color-neutral-medium);
+	color:var(--color-neutral-light);
+}
+
+.card.flat {
+	padding: 0;
+
+}
+
+
+.view-window {
+	height: 50vh;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+/* images */
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
