@@ -1,0 +1,86 @@
+@charset "utf-8";
+/****************** clear style ********************/
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, span, em, i, img, ul, li, ol, dl, dt, dd, th, tr, td, form, table, thead, tbody, textarea, select, input, button, hr, blockquote, abbr, acronym, fieldset, legend, pre, code, main, section, header, footer, article, nav {
+    margin: 0;
+    padding: 0;
+}
+body { font: 12px/1.5 Helvetica, "Microsoft Yahei", "Hiragino Sans GB", "黑体", Arial, \5b8b\4f53; color: #333; background: #E6EEF9; -webkit-text-size-adjust: 100% !important;text-size-adjust: 100% !important;-moz-text-size-adjust: 100% !important; }
+li{ list-style: none;}
+* {box-sizing: border-box}
+  body {
+    font-family: Verdana, sans-serif; 
+    margin:0;
+      background: #bfbfbf;
+  }
+  header {
+    text-align: center;
+    font-size: 18px;
+    height: auto; 
+    width:100%;
+   
+    background:#bfbfbf;
+  
+    
+    margin-bottom: 1px;
+    box-sizing: inherit;
+  }
+  h4{
+    font-family: Bebas Neue bold;
+    text-align: center;
+    font-size:xx-large;
+    color:#F2695C;
+    padding-top: 30px;
+  }
+
+ .toplogo{
+  flex: 50%;
+    padding: 10px;
+    list-style: none;
+  }
+
+ .nav{ margin: 0 auto; max-width: 100%;
+      list-style:none;
+      padding:20px;
+      text-align:center;
+      padding-bottom: 20px;
+  }
+  .nav li{
+      float: left;
+  }
+  .nav li a{
+      display:inline-block;
+      color: black;
+      text-decoration: none;
+      font-family:Bebas Neue, ;
+      font-weight:bold;
+      font-size:x-large;
+      padding:0.2em 1em; margin-right: 20px;
+   }
+   .searchbar{
+    width:100%;
+    border-width:0;
+    background-color: var(--color-neutral-light);
+    padding: 0.5em 1em;
+    font: inherit;
+    border-radius:2em;
+    margin: 0 auto;
+    border: rgb(89, 67, 54) solid 1px;
+    margin-right: 25%;
+   }
+   
+  .slideshow-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1em;
+  }
+  .button {
+    color: rgb(97,114,120);
+    font:Bebas Neue bold;
+    font-weight: bolder;
+    font-size: 25px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+.pictures img {vertical-align: middle; display: inline-block; margin: 0;}

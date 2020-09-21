@@ -1,0 +1,53 @@
+
+/* CSS RESET */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-neutral-light: #eee;
+	--color-neutral-medium: #999;
+	--color-neutral-dark: #555;
+
+	--color-black: #000000;
+	--color-white: #ffffff;
+
+	--header-height: 3rem;
+	--spacing: 1rem;
+
+	--font-serif: Georgia, "Times New Roman", serif;
+	--font-sans: Helvetica, Arial, sans-serif;
+}
+body {
+	margin: 0;
+	font-size: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+a{
+	color:inherit;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*LAYOUT CLASSES*/
+
+.container{
+	max-width:800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin
+}
