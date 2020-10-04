@@ -11,6 +11,7 @@
 	--color-cream: #F5F3F5;
 	--color-seashell: #E580A4;
 
+	--color-dark-cream: #F4EADA;
 
 	--color-black:#000;
 	--color-white:#FFF;
@@ -21,7 +22,8 @@
 
 
 --font-serif: Georgia, "Times New Roman", serif;
---font-sans: Helvetica, Arial, sans-serif;
+--font-sans: avenir, Arial, sans-serif;
+
 }
 
 body {
@@ -50,7 +52,7 @@ a:hover {
 	color: var(--color-seashell);
 }
 
-h3 {
+.largetext {
 	text-align: center;
 	font-size: 2em;
 }
@@ -61,23 +63,32 @@ h3 {
 /* LAYOUT CLASSES */
 
 .container {
-	max-width:1100px;
+	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
 
 }
 
 
-.display-flex { display:flex;}
-.display-inline-flex { display:inline-flex;}
-.display-block { display:block;}
-.display-inline-box { display:inline-block;}
+.display-flex { display: flex;}
+.display-inline-flex { display: inline-flex;}
+.display-block { display: block;}
+.display-inline-block { display: inline-block;}
 
 .flex-stretch { flex: 1 1 auto; }
 .flex-none { flex: none; }
 
 .flex-align-center { align-items: center; }
 .flex-justify-center {justify-content: center; }
+
+
+/* Small classes */
+
+.media-image {
+	max-width:100%;
+	vertical-align: text-bottom;
+}
+
 
 /* COMPONENT CLASSES */
 
@@ -89,6 +100,92 @@ h3 {
 }
 
 
+.nav a {
+
+	display: block;
+	padding: 0.2em 0.5em;
+}
+
+.nav a:hover {
+		color: var(--color-light-green);
+		text-decoration: none;
+}
+
+.nav .active a {
+		background-color: var(--color-seashell);
+		color: var(--color-white);
+		text-decoration: none;
+}
+
+.nav-material ul,
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+		display: flex;
+}
+
+.nav-material li,
+.nav-stretch li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.nav-pills a{
+	border-radius: 2em;
+	padding: 0.5em 1em;
+}
+
+.nav-crumbs a{
+	display: inline-block;
+}
+
+.nav-crumbs .active a,
+.nav-crumbs a:hover {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: underline;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+	content:'/';
+}
+
+
+.nav-material a {
+	padding: 0.5em 1em;
+	position: relative;
+}
+
+.nav-material a:hover {
+	background-color: var(--color-cream);
+	color: inherit;
+}
+
+.nav-material a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: var(--color-light-green);
+	transition: all 0.3s;
+
+}
+
+.nav-material .active a {
+	background-color: transparent;
+	color: inherit;
+}
+
+.nav-material .active a::after {
+	height: 4px;
+}
+
+
+
 .navbar {
 	background-color: var(--color-dark-green);
 	color: var(--color-white);
@@ -96,7 +193,7 @@ h3 {
 } 
 
 .navbar h4 {
-	font-size: 3.5em;
+	font-size: .5em;
 	margin:0;
 	color: var(--color-white);
 
@@ -110,7 +207,7 @@ h3 {
 /* CARD */
 
 .card {
-	background-color: var(--color-white);
+	background-color: var(--color-cream);
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding: 1em;
@@ -139,22 +236,22 @@ h3 {
  	margin-left: auto;
  	margin-right: auto;
 	width: 90%;
-	text-align: center;
 
 }
 
 .card.dark {
-	background-color: var(--color-neutral-dark);
-	color:var(--color-neutral-light);
+	background-color: var(--color-dark-green);
+	color:var(--color-white);
 
 }
 
 .card.medium {
-	background-color: var(--color-neutral-medium);
-	color:var(--color-neutral-light);
+	background-color: var(--color-light-green);
+	color:var(--color-white);
 }
 
 .card.flat {
+	background-color: var(--color-cream);
 	padding: 0;
 
 }
@@ -170,33 +267,170 @@ h3 {
 }
 
 
-/* images */
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 250px;
+/* footer */
 
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
+footer {
+	text-align: center;
+	background-color: var(--color-light-green);
 }
 
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+/* table */
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
 }
+
+.table th,
+.table td {
+	text-align: left;
+	padding: 0.2em 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+	background-color: var(--color-cream);
+
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child)
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+	border-left: 1px solid var(--color-black);
+}
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+	border-top: 1px solid var(--color-black);
+}
+
+.table.lined.all,
+.table.lined.border {
+	border: 1px solid var(--color-black);
+}
+
+
+
+
+/* figure */
+
+.figure {
+	margin: 0;
+	background-color: var(--color-white);
+}
+
+.figure img {
+	width: 100%;
+	vertical-align: text-bottom;
+
+}
+
+.figure figcaption {
+	padding: 1em;
+}
+
+
+figure.product {
+	border-radius: 0.5em;
+	box-shadow:0 2px 5px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.product-overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.product-overlay figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	opacity: 0;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-overlay:hover figcaption {
+	opacity: 1;
+}
+
+.product-overlay caption-body {
+	background-color: var(--color-white);
+	border-radius: 0.5em;
+	padding: 1em;
+	transform: translateY(2em);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover .caption-body {
+	transform: translateY(0);
+}
+
+.product-overlay img {
+	transform: scale(1,1);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover img {
+	transform: scale(1.4,1.4);
+}
+
+@media (max-width:600px) {
+	.product-overlay figcaption {
+		position: relative;
+		display: block;
+		top: initial;
+		left: initial;
+		width: 100%;
+		height: initial;
+		opacity: 1;
+		background-color: initial;
+}}
+
+.product-overlay caption-body {
+	transform: none;
+	padding: 0;
+}
+
+
+/* colors */
+
+.color-1 {
+	background-color: #1F3B2C;
+	color: #FFF;
+}
+
+.color-2 {
+	background-color: #69967B;
+	color: var(--color-white);
+
+}
+
+.color-3 {
+	background-color: #E580A4;
+	color: #FFF;
+}
+
+.color-4 {
+	background-color: #FFBCD4;
+	color: #FFF;
+}
+
+.color-5 {
+	background-color: #F4EADA;
+	color: #000;
+}
+.color-6 {
+	background-color: #F6F3E9;
+	color: #000;
+}
+
+

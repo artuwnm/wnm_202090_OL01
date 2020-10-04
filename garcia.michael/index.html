@@ -4,7 +4,10 @@
 	<meta charset="UTF-8">
 	<title>&Plants Shop</title>
 
+	<meta name="viewport" content="width=device-width">
+
 	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h4>&Plants</h1>
+				<h1>&Plants</h1>
 			</div>
 
 
@@ -28,6 +31,86 @@
 			</nav>
 		</div></body></p>
 	</header>
+
+
+	<div class="container">
+		<div class="card soft">
+		<h2>Grid</h2>
+		<div class="grid">
+				<div class="col-6">column 6</div>
+				<div class="col-6">column 6</div>
+
+				<div class="col-4">column 4</div>
+				<div class="col-4">column 4</div>
+				<div class="col-4">column 4</div>
+
+				<div class="col-3">column 3</div>
+				<div class="col-3">column 3</div>
+				<div class="col-3">column 3</div>
+				<div class="col-3">column 3</div>
+
+				<div class="col-3">column 3</div>
+				<div class="col-6">column 4</div>
+				<div class="col-3">column 4</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt class="media-image">
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="container">
+		<div class="card soft">
+		<h2>Responsive Grid</h2>
+		<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+
+				<div class="col-xs- col-md-4 col-xl-3">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 4</div>
+				<div class="col-xs-3">column 4</div>
+
+			</div>
+		</div>
+	</div>
+
 
 
 	<div class="view-window" style="background-image:url('img/plants2.jpeg')"></div>
