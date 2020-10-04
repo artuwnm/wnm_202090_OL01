@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Bookshelf</title>
+
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+</head>
+<body>
+	
+	<!-- header>h1+p -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>My Bookshelf</h1>
+			</div>
+			<div class="flex-stretch"></div>
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li><a href="#article1">Home</a></li>
+					<li><a href="#article2">Shop</a></li>
+					<li><a href="#article3">About</a></li>
+					<li><a href="#article4">Cart</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<main>
+	<!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
+	<div class="container">
+		<article id="article1" class="article card soft">
+			<div>
+
+				<div class="carousel">
+				<div class="slides">
+					<div class="slide center" style="background:url(img/bookshelf1.jpg) center; background-size:cover;" alt="Join My Bookshelf For Used Textbooks!"> </div>
+					<div class="slide" style="background:url(img/bookshelf2.jpg) center; background-size:cover;" alt="Get 20% Off With Code 2020SEP"> </div>
+					<div class="slide" style="background:url(img/bookshelf3.jpg) center; background-size:cover;" alt="Check Out Our Lastest Used Textbooks on Web Design"> </div>
+				</div>
+				<div class="controls">
+					<div class="control-left">&lt;</div>
+					<div class="control-right">&gt;</div>
+					<div class="control-pagination">
+						<div class="control-dot">&bullet;</div>
+						<div class="control-dot">&bullet;</div>
+						<div class="control-dot">&bullet;</div>
+					</div>
+				</div>
+
+			</div>
+		</article>
+	</div>
+	</main>
+
+	<footer><a href="#">Sign up to receive our email newsletter with the latest textbooks and discounts.</a></footer>
+
+	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
+	<script type="text/javascript">
+		new Carousel({
+			element: $(".carousel").eq(0),
+			timing:6000
+		})
+	</script>
+
+</body>
+</html>
