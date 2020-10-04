@@ -1,0 +1,11 @@
+header.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+    z-index: 10;
+    
+    background-color: var(--color-neutral-dark);
+	color:var(--color-white);
+	line-height:var(--header-height);
+}
