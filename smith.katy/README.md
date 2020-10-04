@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-# Katy Smith
-
-- https://katy-smith.com
-=======
--http://katy-smith.com
->>>>>>> e8f4bbf21e959771ac82412055ae111157bf1c3b
