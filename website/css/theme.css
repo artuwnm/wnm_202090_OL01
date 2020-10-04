@@ -10,6 +10,11 @@
 	--color-neutral-dark: #555;
 	--color-light-yellow: #fff8ed;
 
+	--color-black-coffee: #433A3F;
+	--color-tan-crayola: #CD9365;
+	--color-floral-white: #FFF9ED;
+	--color-cornflower-blue: #758BFD;
+
 	--color-black: #000;
 	--color-white: #fff;
 
@@ -19,6 +24,12 @@
 	--font-serif: Georgia, "Times New Roman", serif;
 	--font-sans: futura-pt, Arial, sans-serif;
 	--font-sans-heading: utopian, sans-serif;
+}
+
+.clarendon {
+	font-family: clarendon-urw, serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
 body {
@@ -110,4 +121,40 @@ button.big {
 	font-family: var(--font-sans);
 	cursor: pointer;
 	background-color: var(--color-white);
+}
+
+nav {
+	
+}
+nav ul, .sidebar ul{
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+nav li {
+	line-height: 35px;
+}
+
+.sidebar {
+	font-size: 1.4em;
+}
+
+.view-window {
+	height: 50vh;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.adobe {
+	font-size: 4em;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	margin-top: 100px;
+	text-align: center;
+	color: var(--color-white);
 }

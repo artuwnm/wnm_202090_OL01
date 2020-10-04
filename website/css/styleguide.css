@@ -1,3 +1,7 @@
+#tableofcontents {
+    padding-top: 100px;
+}
+
 header.navbar {
 	position: fixed;
 	top: 0;
@@ -8,4 +12,49 @@ header.navbar {
     background-color: var(--color-neutral-dark);
 	color:var(--color-white);
 	line-height:var(--header-height);
+}
+
+header.navbar ul, header.navbar li {
+    list-style-type: none;
+}
+
+header.navbar li {
+    padding-top: 25px;
+}
+
+.mainbar a {
+    padding: 0 0.5em;
+}
+
+.card.color .chip {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+.nav ul {
+    padding-left: 20px;
+}
+
+.color-black-coffee {
+    background-color: var(--color-black-coffee);
+}
+.color-tan-crayola {
+    background-color: var(--color-tan-crayola);
+}
+.color-floral-white {
+    background-color: var(--color-floral-white);
+}
+.color-cornflower-blue {
+    background-color: var(--color-cornflower-blue);
+}
+
+.card.color .properties {
+    padding: 0;
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.card.color .properties li.name {
+    font-weight: bold;
 }
