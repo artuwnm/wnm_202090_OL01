@@ -5,7 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DA-IE Jewelry</title>
 
+	<meta name="viewport" content="width=device-width">
+
 	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -14,31 +17,31 @@
 	<!-- header>h1+p -->
 	<header class="navbar">
 		<div class="header-background" style="background-image: url('img/header.jpg')">
-			<div class="container display-flex">
-			<div class="flex-none">
-				<h1>DA-IE</h1>
-			</div>
-			<div class="flex-stretch"></div>
-            <nav class="flex-none nav">
-			    <ul class="container display-flex">
-			   	   <li><a href="#article1">SHOP</a></li>
-				   <li><a href="#article2">COLLECTION</a></li>
-				   <li><a href="#article3">PRESS</a></li>
-				   <li><a href="#article4">ABOUT</a></li>
-			    </ul>
-			</nav>
-		</div>
-		<div class="container">
-				<div class="header-title">
-						<h2>DA-IE Jewelry</h2>
-						<h3>New Collection Arrives</h3>
-						<button class="btn shopnow">SHOP NOW</button>
+			<div class="main-nav">
+				<div class="container display-flex">
+				<div class="flex-none">
+					<h2>DA-IE</h2>
 				</div>
-		</div>
+				<div class="flex-stretch"></div>
+				            <nav class="flex-none nav">
+				    <ul class="container display-flex">
+				   	   <li><a href="#home">HOME</a></li>
+					   <li><a href="#shop">SHOP</a></li>
+					   <li><a href="#about">ABOUT</a></li>
+				    </ul>
+				</nav>
+				</div>
+			</div>
+		    <div class="container">
+				<div class="header-title">
+					<h1>DA-IE Jewelry</h1>
+					<h3>New Collection Arrives</h3>
+					<button class="btn shopnow">SHOP NOW</button>
+				</div>
+		    </div>
 		</div>
 	</header>
 
-	
 
 	<!-- catalog-->
 	<div class="container">
@@ -63,13 +66,13 @@
 		
 	</div>
 
-	<!-- most popualr -->
+		<!-- most popualr -->
 
 	<div class="most-popular">
 		<div class="popular-background">
 			<div class="container">
 				<div class="popular-content">
-					<h3>Most Popular</h3>
+					<h3>Most Popular</h3>					
 					<div class="popular-item-row">
 						<div class="popular-item">
 							<img src="img/1.JPG" style="width:285px; height: 285px;">
@@ -92,16 +95,49 @@
 							<div class="popular-price">$120</div>
 						</div>
 					</div>
-			
-			</div>
-		</div>
-	</div>
+			    </div>
+		     </div>     
+	    </div>
+    </div>
 
+	<!-- most popualr -->
 
+	<div class="most-popular">
+		<div class="popular-background">
+			<div class="container">
+				<div class="popular-content">
+					<h3>Most Popular</h3>					
+		             <div class="container">
+				     	<div class="grid gap xs-small md-medium">
+				     		<!--.col-xs-6.col-md-3*4>.card>{card} -->
+				     		<div class="col-xs-6 col-md-3">
+				     			<div class="card soft">
+				     				<img src="img/1.JPG" alt="" class="media-image" style="width:253px; height: 253px;">
+				     			</div>
+				     		</div>
+				     		<div class="col-xs-6 col-md-3">
+				     			<div class="card soft">
+				     				<img src="img/2.JPG" style="width:253px; height: 253px;">
+				     			</div>
+				     		</div>
+				     		<div class="col-xs-6 col-md-3">
+				     			<div class="card soft">
+				     				<img src="img/3.JPG" style="width:253px; height: 253px;">
+				     			</div>
+				     		</div>
+				     		<div class="col-xs-6 col-md-3">
+				     			<div class="card soft">
+				     				<img src="img/4.JPG" style="width:253px; height: 253px;">
+				     			</div>
+				     		</div>
+				     	</div>
+				     </div>
+			    </div>
+		     </div>     
+	    </div>
+    </div>
 
-
-
-
+          
 	
 	<!-- .container>artical#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
 	<!--

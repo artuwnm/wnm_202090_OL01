@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Styleguide</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+	<header class="navbar styleguide">
+			<div class="container display-flex">
+			<div class="flex-none">
+				<h2>Styleguide</h2>
+			</div>
+			<div class="flex-stretch"></div>
+            <nav class="flex-none nav">
+			    <ul class="container display-flex">
+			   	   <li><a href="#tableofcontents">Table of Contents</a></li>
+			    </ul>
+			</nav>
+		    </div>
+		</div>
+	</header>
+
+	<div class="container" id="tableofcontents">
+			<h2>Table of Contents</h2>
+		<div class="card">
+			<nav class="nav">
+			<ul>
+				<li><a href="#typography">Typography</a></li>
+				<ul>
+				    <li><a href="#headings">Headings</a></li>
+				    <li><a href="#paragraphys">Paragraphys</a></li>
+			    </ul>
+			    <li><a href="#cards">Cards</a></li>
+			    <li><a href="#viewwindow">View Window</a></li>
+			    <li><a href="#navigations">Navigations</a></li>
+			    <li><a href="#gridsystem">Grid System</a></li>
+			    <li><a href="#flexsystem">Flex System</a></li>
+			</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container" id="typography">
+		<h2>Typography</h2>
+
+		<div class="card soft" id="headings">
+			<h3>Heading</h3>
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
+
+		<div class="card soft" id="paragraphys">
+			<h3>Paragraphs</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Massa tincidunt dui ut ornare lectus sit amet est. Viverra vitae congue eu consequat. </p>
+			<p>Sit amet consectetur adipiscing elit pellentesque. Fermentum dui faucibus in ornare quam viverra orci sagittis. Interdum velit laoreet id donec ultrices tincidunt arcu non. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. </p>
+			<p>Morbi tempus iaculis urna id volutpat lacus. Adipiscing elit ut aliquam purus. Faucibus scelerisque eleifend donec pretium vulputate sapien. Aliquet lectus proin nibh nisl condimentum. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Ultricies integer quis auctor elit. Euismod lacinia at quis risus sed vulputate odio ut. Sapien pellentesque habitant morbi tristique senectus. </p>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Cards</h2>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<div class="card">Card</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card soft">Card Soft</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card hard">Card Hard</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card flat">Card Flat</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card dark">Card Dark</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card medium">Card Medium</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<h2>View Window</h2>
+	</div>
+	
+
+	<div class="container" id="navigations">
+		<h2>Navigations</h2>
+
+		<script>
+		const makeNav = (classes='') => {
+			const links = ['home', 'shop','about'];
+			let ran = Math.floor(Math.random()*links.length);
+			document.write(`
+			<div>
+				<nav class="${classes}">
+					<ul>
+					${links.reduce((r,o,i)=>{
+						return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+					},'')}
+					</ul>
+				</nav>
+			</div>
+			`);
+		}
+		</script>
+
+		<div class="card soft">
+			<h3>Basic Nav</h3>
+
+			<script>makeNav('nav')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Flex Nav</h3>
+
+			<script>makeNav('nav nav-flex')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Stretch Nav</h3>
+
+			<script>makeNav('nav nav-stretch')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Pills Nav</h3>
+
+			<script>makeNav('nav nav-pills')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Crumbs Nav</h3>
+
+			<script>makeNav('nav nav-crumbs')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Material Nav</h3>
+
+			<script>makeNav('nav nav-material')</script>
+		</div>
+
+		<script>
+		$("#navigations a").on("click",function(e){
+			e.preventDefault();
+			$(this).closest("li").addClass("active")
+				.siblings().removeClass("active")
+		})	
+		</script>
+	</div>
+
+	<div class="container">
+		<h2>Colors</h2>
+		<div class="card soft">
+			<div class="grid gap">
+				<div class="col-xs-6 col-md-3">
+					<div class="color-1">#6A9478</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="color-2">#000000</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="color-3">#FFFFFF</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="color-4">#F4F4F4</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="container">
+		<h2>Grid System</h2>
+		<div class="card soft">
+			<h3>Grid</h3>
+			<div class="grid">
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-6">column 6</div>	
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+			
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>	
+			</div>
+		</div>
+
+		<div class="card soft">
+			<h3>Responsive Grid</h3>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+			
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+			<div class="grid ten gap">
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>	
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="container">
+		<h2>Flex System</h2>
+	</div>
+	
+
+	<div class="container">
+		<h2>Tables</h2>
+	</div>
+
+	<div class="container">
+		<h2 id="figures">Figures</h2>
+		<h3>Catalog Overlay</h3>
+		<div class="grid gap">
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure catalog-overlay">
+					<img src="https://via.placeholder.com/285X190?text=product" alt="">
+					<figcaption>Rings</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure catalog-overlay">
+					<img src="https://via.placeholder.com/285X190?text=product" alt="">
+					<figcaption>Earrings</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure catalog-overlay">
+					<img src="https://via.placeholder.com/285X190?text=product" alt="">
+					<figcaption>Necklaces</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure catalog-overlay">
+					<img src="https://via.placeholder.com/285X190?text=product" alt="">
+					<figcaption>Bracelets</figcaption>
+			    </figure>
+			</div>
+		</div>
+		
+
+
+		<h3>Most Popular Figure</h3>
+		<div class="grid gap">
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure">
+					<img src="https://via.placeholder.com/285X285?text=product" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$120</div>
+					</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure">
+					<img src="https://via.placeholder.com/285X285?text=product" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$120</div>
+					</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure">
+					<img src="https://via.placeholder.com/285X285?text=product" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$120</div>
+					</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<figure class="figure">
+					<img src="https://via.placeholder.com/285X285?text=product" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$120</div>
+					</figcaption>
+			    </figure>
+			</div>
+		</div>
+
+		<h3>Product Figure</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$120</div>
+					</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$120</div>
+					</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$120</div>
+					</figcaption>
+			    </figure>
+			</div>
+		</div>
+
+		<h3>Product Overlay</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>$120</div>
+						</div>
+					</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>$120</div>
+						</div>
+					</figcaption>
+			    </figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>$120</div>
+						</div>
+					</figcaption>
+			    </figure>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="footer">
+		<div class="container">© 2020 by Danya Xie. All rights reserved.</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
