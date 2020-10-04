@@ -1,11 +1,13 @@
-
+.card_padding_bottom_store {
+	padding-bottom: 12px;
+}
 /* HEADER */
 
 h1 {
 	color: var(--color-dark);
-	font-family: var(--font-sans);
 	line-height: var(--header-height);
 }
+
 
 /* Sign In/Register */
 .signInLink {
@@ -13,11 +15,27 @@ h1 {
 }
 
 .header-img-container {
-	height: 250px;
+	height: 350px;
 	margin-top:10px;
-	background-color: #c9ac84;
-	/*	overflow: hidden;*/
+	background-image: url("https://fashionista.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY0ODk3NzcxMTIyMzM3MDgy/hp-argent-workwear-nyc-store.jpg")
 }
+
+
+.nav_container {
+	display: inline-block;
+	margin-top:-20px;
+	margin-left: 20px;
+/*	border: 1px solid red;*/
+}
+
+.nav_container a {
+	padding-left:20px;
+	padding-right: 20px;
+	font-size: 15px;
+
+}
+
+
 
 header form {
 	margin-top: var(--spacing);
@@ -41,19 +59,39 @@ header form {
 
 /* MAIN */
 
-h2 {
-	text-align: center;
-	margin-top:30px;
-	margin-bottom: -10px;
+.big_container {
+	background-color: rgb(237,237,237);
 }
 
-main p {
-	margin-top:0;
-	margin-bottom:0;
-	font-family: var(--font-sans);
-	font-size: 15px;
+.product_info_container {
+	background-color: #fff;
+	padding: 10px 0px;
+	margin-top: -14px;
+	margin-bottom: -14px;
+}
+
+.heading_one {
 	text-align: center;
-	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	letter-spacing: 1px;
+	padding-top: 20px;
+	margin-bottom: -10px;
+	/*border: 1px solid red;*/
+}
+
+
+
+.big_container h2 {
+	/*text-align: center;*/
+/*	margin-top:0px;*/
+	margin-bottom: 0px;
+/*	margin-bottom: -10px;*/
+}
+
+
+.view-window h1,h3{
+	color: white;
 }
 
 .card img {
@@ -63,20 +101,17 @@ main p {
 
 }
 
-.card h5 {
+.card .product_brand{
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 15px;
-/*	border: 1px solid red;	*/
+	margin-bottom: 3px;
 }
 
-.card p {
-	text-align: center;
-	margin-top: -12px;
-	font-size: 14px;
-	/*border: 1px solid blue;*/
+.card span {
+	display: block;
+	text-align: center;	
+	padding: 0.1em 0;
 }
-
 
 
 
@@ -124,6 +159,9 @@ main p {
 
 /* Footer right*/
 
+footer a {
+	font-size: 12px;
+}
 .footer-links-right {
 	text-align: center;
 }
@@ -170,6 +208,7 @@ main p {
 	padding-left: 7px;
 	padding-right: 7px;
 }
+
 
 
 
