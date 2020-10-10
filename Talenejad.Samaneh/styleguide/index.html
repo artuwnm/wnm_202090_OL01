@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<style>
+
+		body {
+			padding-bottom: 4em;
+		}
+
 		.color_palette {
 			height:100px; 
 			text-align: center; 
@@ -33,6 +38,21 @@
 			vertical-align: bottom;
 			
 		}
+
+		.favorite label {
+			transition: all 0.3s;
+			position: relative;
+			color:var(--color-neutral-medium);
+			transform: scale(1,1);
+			display: inline-block;
+		}
+
+		.favorite input:checked + label {
+			color:red;
+			transform: scale(1.5, 1.5);
+		}
+
+
 	</style>
 
 	
@@ -81,6 +101,19 @@
 
 				<li><a href="#tables">Tables</a></li>
 				<li><a href="#figures">Figures</a></li>
+
+				<li><a href="#forms">Forms</a></li>
+				<ul>
+					<li><a href="#inputs">Inputs</a></li>
+					<li><a href="#labels">labels</a></li>
+					<li><a href="#controls">Controls</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#hotdog">Hotdog</a></li>
+					<li><a href="#select">Select</a></li>
+					<li><a href="#checkboxes">Checkboxes</a></li>
+				</ul>
+
+
 			</ul>
 		</div>
 	</div>
@@ -114,17 +147,12 @@
 		<h3><span class="number_list">2.</span>Color Palettes</h3>
 		<div class="card soft grid gap xs-small md-medium lg-large card_padding">
 			<div class="col-xs-4 color_palette" style="background-color:#000000; color:white">#000000</div>
-			<div class="col-xs-4 color_palette" style="background-color:#FFFFFF;">#FFFFFF</div>
-			<div class="col-xs-4 color_palette" style="background-color:#E7E7E7;">#E7E7E7</div>
-			<div class="col-xs-4 color_palette" style="background-color:#5A5D69;">#5A5D69</div>
 			<div class="col-xs-4 color_palette" style="background-color:#E5E5E2;">#E5E5E2</div>
-			<div class="col-xs-4 color_palette" style="background-color:#DFD7C0;">#DFD7C0</div>
 			<div class="col-xs-4 color_palette" style="background-color:#757575;">#757575</div>
-			<div class="col-xs-4 color_palette" style="background-color:#DFD6CE;">#DFD6CE</div>
-			<div class="col-xs-4 color_palette" style="background-color:#EBD6A9;">#EBD6A9</div>
+			<div class="col-xs-4 color_palette" style="background-color:#DFD7C0;">#DFD7C0</div>
 			<div class="col-xs-4 color_palette" style="background-color:#B0A886;">#B0A886</div>
-			<div class="col-xs-4 color_palette" style="background-color:#FBF4EE;">#FBF4EE</div>
-			<div class="col-xs-4 color_palette" style="background-color:#C9AC84;">#C9AC84</div>
+			<div class="col-xs-4 color_palette" style="background-color:#DFD6CE;">#DFD6CE</div>
+
 		</div>
 
 	</div>
@@ -288,51 +316,53 @@
 
 	</script>
 
+	<!-- Tables -->
 	<div class="container" id="tables">
 		<h3><span class="number_list">8.</span>Tables</h3>
-		<div class="card soft card_padding_left">
+		<div class="card soft card_padding_bottom card_padding_left card_padding_right">
 			<h4>Basic Table</h4>
 			<script> makeTable("table");</script>
 		</div>
 
 		<br>
-		<div class="card soft card_padding_left">
+		<div class="card soft card_padding_bottom card_padding_left card_padding_right">
 			<h4>Stripe Table</h4>
 			<script> makeTable("table striped");</script>
 		</div>
 		
 
 		<br>
-		<div class="card soft card_padding_left">
+		<div class="card soft card_padding_bottom card_padding_left card_padding_right">
 			<h4>Stripe Lined Vertical</h4>
 			<script> makeTable("table lined vertical");</script>
 		</div>
 
 		<br>
-		<div class="card soft card_padding_left">
+		<div class="card soft card_padding_bottom card_padding_left card_padding_right">
 			<h4>Stripe Lined Horizontal</h4>
 			<script> makeTable("table lined horizontal");</script>
 		</div>
 
 		<br>
-		<div class="card soft card_padding_left">
+		<div class="card soft card_padding_bottom card_padding_left card_padding_right">
 			<h4>Stripe Lined Border</h4>
 			<script> makeTable("table lined border");</script>
 		</div>
 
 		<br>
-		<div class="card soft card_padding_left">
+		<div class="card soft card_padding_bottom card_padding_left card_padding_right">
 			<h4>Stripe Lined All</h4>
 			<script> makeTable("table lined all");</script>
 		</div>
 
 		<br>
-		<div class="card soft card_padding_left">
+		<div class="card soft card_padding_bottom card_padding_left card_padding_right">
 			<h4>Combinations</h4>
 			<script> makeTable("table lined vertical border striped");</script>
 		</div>
 	</div>
 
+	<!-- Figures -->
 	<div class="container" id="figures">
 		<h3><span class="number_list">9.</span>Figures</h3>
 		<h4>Basic Figure</h4>
@@ -440,12 +470,233 @@
 		</div>
 	</div>
 
+	<div class="container" id="forms">
+		<h3><span class="number_list">10.</span>Forms</h3>
+		<h4>Inputs</h4>
+		<div class="card soft card_padding_bottom card_padding_right card_padding_left" id="inputs">
+			<h4>Default Inputs</h4>
+			<form action="">
+				<input type="text"><br>
+				<input type="number"><br>
+				<input type="password"><br>
+				<input type="url"><br>
+				<input type="email"><br>
+				<input type="datetime-local"><br>
+				<input type="date"><br>
+				<input type="search"><br>
+			</form>
+		</div>
+		<br>
+		<div class="card soft card_padding_bottom card_padding_right card_padding_left">
+			<h4>Form Inputs</h4>
+			<form action="">
+				<input type="text" placeholder="Text" class="form-input">
+				<input type="number" placeholder="Number" class="form-input">
+				<input type="password" placeholder="Password" class="form-input">
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+		</div>
+		<br>
+
+		<h4>Labels</h4>
+		<div class="card soft card_padding_bottom card_padding_right card_padding_left" id="labels">
+			<h4>Form Label</h4>
+			<form action="">
+				<label class="form-label">Example</label>
+				<input type="text" placeholder="Text" class="form-input">
+
+				<label class="form-label">Example</label>
+				<input type="number" placeholder="Number" class="form-input">
+
+				<label class="form-label">Example</label>
+				<input type="password" placeholder="Password" class="form-input">
+
+				<label class="form-label">Example</label>
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+		</div>
+		<br>
+
+		<h4>Controls</h4>
+		<div class="card soft card_padding_right card_padding_left" id="controls">
+		
+			<h4>Form Control</h4>
+
+			<form action="">
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="text" placeholder="Text" class="form-input">
+
+				</div>
+
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="number" placeholder="Number" class="form-input">
+				</div>
+
+				<div class="form-control">
+					<label class="form-label">Password</label>
+					<input type="password" placeholder="Password" class="form-input">
+				</div>
+			</form>
+		</div>
+		<br>
+		<div class="card soft card_padding_right card_padding_left">
+			<h4>Form Display Flex</h4>
+			<form action="">
+
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">First Name</label>
+					</div>
+
+					<div class="flex-stretch">
+						<input type="text" class="form-input">
+					</div>
+
+					<div class="flex-none">
+						<label class="form-label">Last Name</label>
+					</div>	
+					<div class="flex-stretch">
+						<input type="text" class="form-input">
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<h4>Buttons</h4>
+		<div class="card soft card_padding_right card_padding_left card_padding_bottom" id="buttons">
+			<h4>Default Buttons</h4>
+			<button>Button</button>
+			<button>Button</button>
+			<button>Button</button>
+		</div>
+
+		<br>
+		<div class="card soft card_padding_right card_padding_left" id="buttons">
+			<h4>Form Buttons</h4>
+
+			<div class="form-control">
+				<button class="form-button">Button</button>
+			</div>
+
+			<div class="form-control">
+				<input type="button" class="form-button" value="Input">
+			</div>	
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+
+		<h4>Hotdog</h4>
+		<div class="card soft card_padding_right card_padding_left" id="hotdog">
+			<div class="form-control">
+				<form action="">
+					<input type="search" class="hotdog" placeholder="search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form action="">
+					<input type="search" class="hotdog dark" placeholder="search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class="card dark card_padding_small" action="">
+					<input type="search" class="hotdog light" placeholder="search">
+				</form>
+			</div>
 
 
+			<div class="form-control">
+				<form action="" class="hotdog dark">
+					<span>&equiv;</span>
+					<input type="search" placeholder="search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form action="" class="hotdog dark">
+					<input type="search" placeholder="search">
+					<span>&equiv;</span>
+				</form>
+			</div>
+
+		</div>
+
+		<h4>Select</h4>
+		<div class="card soft" id="select">
+			<div class="form-select">
+				<select name="" id="">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+				</select>
+			</div>
+		</div>
+
+		<br>
+		<div class="display-flex">
+			<div class="flex-stretch"></div>
+			<div class="flex-none">
+				<div class="form-select">
+					<select name="" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<h4>Checkbox</h4>
+
+		<div class="card soft card_padding_small" id="checkboxes">
+			<h4>Basic Checkbox</h4>
+			<label>Label<input type="checkbox" id="input-1"></label>
+			<label for="input-1">Label</label>
+		</div>
+
+		<br>
+		<div class="card soft card_padding_small">
+			<h4>Heart Checkbox</h4>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+			</div>
+		</div>
+
+		<br>
+		<div class="card soft card_padding_small">
+			<h4>Toggle</h4>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1"></label>
+			</div>
+
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2" class="form-label"> Display Warning?</label>
+				</div>
+				<div class="flex-none">
+					<div class="toggle" style="font-size: 1.5em">
+						<input type="checkbox" id="toggle-2" class="hidden">
+						<label for="toggle-2"></label>
+					</div>
+					
+				</div>
+			</div>
+
+			
+		</div>
 
 
-	<br>
-	<hr>
+	</div>
+
+
 	
 </body>
 </html>

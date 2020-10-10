@@ -72,6 +72,12 @@ input[type=submit] {
 }
 
 
+/* Samll classes */
+
+.hidden {
+	display: none;
+}
+
 /* Spacing class*/
 
 .negative-margin-top {
@@ -293,12 +299,24 @@ hr {
 		padding: 25px;
 	}
 
+	.card.card_padding_small {
+		padding: 10px;
+	}
+
 	.card.card_padding_left {
 		padding-left: 25px;
 	}
 
 	.card.card_padding_right {
 		padding-right: 25px;
+	}
+
+	.card.card_padding_bottom {
+		padding-bottom: 25px;
+	}
+
+	.card.card_padding_top {
+		padding-top: 25px;
 	}
 
 
@@ -454,8 +472,183 @@ hr {
 		padding:0;
 	}
 
+}
+
+
+
+/* FORMS*/
+.form-select>select,
+.hotdog input,
+.hotdog,
+.form-button,
+.form-input, 
+.form-item {
+    display: inline-block;
+    background-color: var(--color-neutral-medium);
+    border-width: 0;
+    font: inherit;
+    -webkit-appearance: none;
+    color: inherit;
+    width: 100%;
+    outline: 0;
+}
+
+
+/* Inputs */
+.form-input {
+    border-bottom: 1px solid var(--color-main-medium);
+    padding: 0.5em 1em !important; 
+}
+
+/* to overwrite the default style */
+.form-input[type=text] {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom: 1px solid var(--color-main-medium);
+}
+
+.form-input:focus {
+	border-bottom: 1px solid red;
+}
+
+/* Labels */
+.form-label {
+	font-size: 0.8em;
+	color:var(--color-neutral-medium);
+	display: block;
+	width:100%;
+}
+
+
+/* Form control */
+.form-control {
+	margin:1.5em 0;
+}
+
+
+/* Buttons */
+.form-button {
+    display: inline-block;
+    border-radius: 0.3em;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
+.form-button:active {
+    background-color: var(--color-main-dark);
 
 }
+
+.form-button:hover {
+    text-decoration: none;
+
+}
+
+/* Hotdog */
+.hotdog {
+	background-color: var(--color-neutral-dark);
+	border-radius: 2em;
+	display: flex;
+	/* to hide the corners in the input child element */
+	overflow: hidden;
+}
+
+.hotdog span {
+	/* make the span has the same color as the parent element*/
+	background-color: var(--color-neutral-medium);
+	padding-left:1em;
+	padding-right: 0.5em;
+}
+
+
+.hotdog.dark {
+	background-color: var(--color-main-dark);
+	color: var(--color-neutral-light);
+}
+
+.hotdog.light {
+	background-color: var(--color-white);
+	color:var(--color-black);
+}
+
+/* Form select*/
+
+.form-select>select{
+	display: block;
+	padding: 0.5em 1.8em;
+	background-color: var(--color-neutral-light);
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+/*.form-select>select {
+	pointer-events: none;
+}*/
+
+.form-select{
+	position: relative;
+}
+
+.form-select::after {
+	display: inline-block;
+	content:'▾';
+	font-family: arial,sans-serif;
+	font-size: 1.2em;
+	position: absolute;
+	top:50%;
+	right:0.5em;
+	transform: translateY(-50%);
+	pointer-events: none;
+	/*color: var(--color-neutral-medium);*/
+}
+
+/* Toggle*/
+
+.toggle label {
+	font-size: 1.3em;
+	display: inline-block;
+	width: 2em;
+	height: 1em;
+	border: 0.1em solid var(--color-neutral-medium);
+	border-radius: 1em;
+	position: relative;
+
+}
+
+.toggle label::after {
+	content:' ';
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 1em;
+	position: absolute;
+	background-color: var(--color-neutral-medium);
+	transition: all 0.3s;
+
+}
+
+.toggle input:checked + label::after {
+	transform: translateX(1em);
+	background-color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
