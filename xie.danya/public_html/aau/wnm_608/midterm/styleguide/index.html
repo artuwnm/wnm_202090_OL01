@@ -34,19 +34,28 @@
 	<div class="container" id="tableofcontents">
 			<h2>Table of Contents</h2>
 		<div class="card">
-			<nav class="nav">
-			<ul>
-				<li><a href="#typography">Typography</a></li>
-				<ul>
-				    <li><a href="#headings">Headings</a></li>
-				    <li><a href="#paragraphys">Paragraphys</a></li>
-			    </ul>
-			    <li><a href="#cards">Cards</a></li>
-			    <li><a href="#viewwindow">View Window</a></li>
-			    <li><a href="#navigations">Navigations</a></li>
-			    <li><a href="#gridsystem">Grid System</a></li>
-			    <li><a href="#flexsystem">Flex System</a></li>
-			</ul>
+			<nav class="nav">	
+				 <ul>
+					<li><a href="#typography">Typography</a></li>
+					<ul>
+					    <li><a href="#headings">Headings</a></li>
+					    <li><a href="#paragraphys">Paragraphys</a></li>
+				    </ul>
+				    <li><a href="#cards">Cards</a></li>
+				    <li><a href="#viewwindow">View Window</a></li>
+				    <li><a href="#navigations">Navigations</a></li>
+				    <li><a href="#gridsystem">Grid System</a></li>
+				    <li><a href="#flexsystem">Flex System</a></li>
+				    <li><a href="#tables">Tables</a></li>
+				    <li><a href="#forms">Forms</a></li>
+				    <ul>
+				    	<li><a href="#inputs">Inputs</a></li>
+				    	<li><a href="#labels">Labels</a></li>
+				    	<li><a href="#controls">Controls</a></li>
+				    	<li><a href="#buttons">Buttons</a></li>
+				    	<li><a href="#hotdog">Hotdog</a></li>
+				    </ul>
+				 </ul>
 			</nav>
 		</div>
 	</div>
@@ -244,11 +253,77 @@
 	<div class="container">
 		<h2>Flex System</h2>
 	</div>
-	
+
+	<script>
+		const makeTable = (classes='') => {
+		const head = ['ID','Office','Name','Email','Phone'];
+		const body = [
+			['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
+			['512',"Fred McHale",'fmchale@academyart.edu','555-2424'],
+			['522',"Michael Catanzaro",'mcatanzaro@academyart.edu','555-2424'],
+			['514',"Andrea Pimentel",'apimentel@academyart.edu','555-2424'],
+			['516',"DC Scarpelli",'dscarpelli@academyart.edu','555-2424'],
+		];
+
+		// let ran = Math.floor(Math.random()*links.length);
+		document.write(`
+		<table class="${classes}">
+			<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+			<tbody>${body.reduce((r,o,i)=>r+
+				`<tr>${
+					[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+				}</tr>`,'')
+			}</tbody>
+		</table>
+		`);
+	}
+    </script>
 
 	<div class="container">
 		<h2>Tables</h2>
+		<div class="card soft">
+			<h3>Basic Table</h3>
+			<script>makeTable("table")</script>
+		</div>
+		
+		<div class="card soft">
+			<h3>Striped Table</h3>
+			<script>makeTable("table striped")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined Vertical</h3>
+			<script>makeTable("table lined vertical")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined Horizontal</h3>
+			<script>makeTable("table lined horizontal")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined Border</h3>
+			<script>makeTable("table lined border")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined All</h3>
+			<script>makeTable("table lined all")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Combinations</h3>
+			<script>makeTable("table lined vertical border striped")</script>
+		</div>
+
 	</div>
+
+
+
+
+
+
+
 
 	<div class="container">
 		<h2 id="figures">Figures</h2>
@@ -390,6 +465,214 @@
 			</div>
 		</div>
 
+	</div>
+
+	<div class="container" id="forms">
+		<h2>Forms</h2>
+
+		<h3>Inputs</h3>
+
+		<div class="card soft">
+			<h3>Default Inputs</h3>
+			<form>
+				<input type="text"><br>
+				<input type="number"><br>
+				<input type="password"><br>
+				<input type="url"><br>
+				<input type="email"><br>
+				<input type="datetime-local"><br>
+				<input type="date"><br>
+				<input type="search">
+			</form>
+
+			<h3>Form Input</h3>
+			<form>
+				<input type="text" placeholder="Text" class="form-input">
+				<input type="number" placeholder="Number" class="form-input">
+				<input type="password" placeholder="Password" class="form-input">
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+
+			<h3>Form Label</h3>
+			<form>
+				<label class="form-label">Example</label>
+				<input type="text" placeholder="Text" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="number" placeholder="Number" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="password" placeholder="Password" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+
+			<h3>Form Control</h3>
+			<form>
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">First Name</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" class="form-input flex-stretch">
+					</div>
+					<div class="flex-none">
+						<label class="form-label">Last Name</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" class="form-input flex-stretch">
+					</div>
+				</div>
+				<div class="form-control">
+					<label class="form-label">Address</label>
+					<input type="password" class="form-input">
+				</div>
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">Zip Code</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" class="form-input flex-stretch">
+					</div>
+					<div class="flex-none">
+						<label class="form-label">City/Town</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" class="form-input flex-stretch">
+					</div>
+				</div>
+				<div class="form-control">
+					<label class="form-label">Email</label>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">Password</label>
+					<input type="number" class="form-input">
+				</div>
+				
+			</form>
+		</div>
+
+		<h3>Buttons</h3>
+
+		<div class="card soft">
+			<h3>Default Buttons</h3>
+			<button>Button</button>
+
+			<h3>Form Buttons</h3>
+			<div class="form-control">
+				<button type="button" class="form-button">Button</button>
+			</div>
+			<div class="form-control">
+				<input type="button" class="form-button" value="Input">
+			</div>
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+
+		<h3>Hotdog</h3>
+		<div class="card soft">
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog dark" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="card dark">
+					<input type="search" class="hotdog light" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="hotdog">
+					<span>&equiv;</span>
+					<input type="search" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="hotdog">
+					<input type="search" placeholder="Search">
+					<span>&equiv;</span>
+				</form>
+			</div>
+		</div>
+
+		<h3 id="select">Select</h3>
+		<div class="card soft">
+			<div class="form-select">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+			</div>
+			<div class="display-inline-block">
+				<label class="form-label">Quantity</label>
+				<div class="form-select">
+					<select>
+						<option>Choose</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</div>			
+			</div>
+			<div class="form-control">
+				<label class="form-label">Payment Method</label>
+				<div class="form-select">
+					<select>
+						<option>Choose</option>
+						<option>Paypal</option>
+					</select>
+				</div>			
+			</div>
+			<div class="display-inline-block">
+				<label class="form-label">Country</label>
+				<div class="form-select">
+					<select>
+						<option>Choose</option>
+						<option>United States</option>
+					</select>
+				</div>			
+			</div>
+		</div>
+
+		<h3 id="checkboxes">Check Boxes</h3>
+		<div class="card soft">
+			<h3>Basic Checkbox</h3>
+			<label>Label<input type="checkbox" id="input-1"></label>
+			<label for="input-1">Label</label>
+
+			<h3>Heart Checkbox</h3>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+			</div>
+
+			<h3>Toggle</h3>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1"></label>
+			</div>
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2" class="form-label">Display Warning?</label>
+				</div>
+
+				<div class="flex-none">
+					<div class="toggle" style="font-size: 1.6em">
+						<input type="checkbox" id="toggle-2" class="hidden">
+						<label for="toggle-2"></label>
+					</div>
+				</div>
+			</div>
+			
+		</div>
 	</div>
 
 
