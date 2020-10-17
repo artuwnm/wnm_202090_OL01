@@ -3,11 +3,11 @@
 	--color-offwhite: #f4f4f4;
 
 	--color-main-light: #f2ae72;
-    --color-main-medium: #a5774e;
+    --color-main-medium: #b4793a;
     --color-main-dark: #735236;
 
-	--color-sub-light:#f7cdcb;
-	--color-sub-medium:#ab4640;
+	--color-sub-light:#e0cac0;
+	--color-sub-medium:#a5543d;
 	--color-sub-dark:#78302c;
 
 }
@@ -40,6 +40,16 @@ body{
 .ul-items{
 	margin-left: 1rem;
 }
+
+.hotdog.mainlight{
+	background-color: var(--color-main-light);
+	color: var(--color-neutral-dark);
+}
+.card.maindark {
+		background-color: var(--color-main-dark);
+		color: var(--color-neutral-light)
+	}
+
 
 
 

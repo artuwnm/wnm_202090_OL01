@@ -354,7 +354,7 @@ a:hover {
 }
 
 .form-select::after {
-	content: '▾';
+	content: '\2bc6';
 	font-family: arial, sans-serif;
 	font-size: 1.2em;
 	position: absolute;
