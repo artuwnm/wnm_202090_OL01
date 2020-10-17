@@ -531,12 +531,12 @@ figure.product {
 }
 
 .form-select::after {
-	content: '▾';
+	content: '\25BC';
 	font-family: sans-serif;
-	font-size: 1.2em;
+	font-size: 0.6em;
 	position: absolute;
 	top: 50%;
-	right: 0.4em;
+	right: 0.7em;
 	transform: translateY(-50%);
 	pointer-events: none;
 	color: var(--color-black);
@@ -546,11 +546,11 @@ figure.product {
 /* Toggle */
 
 .toggle label {
-	font-size: 1.3em;
+	font-size: 1em;
 	display: inline-block;
-	width: 2em;
-	height: 1em;
-	border: 0.1em solid var(--color-dark-green);
+	width: 1.7em;
+	height: 0.7em;
+	border: 1.9px solid var(--color-dark-green);
 	border-radius: 1em;
 	position: relative;
 }
@@ -558,8 +558,8 @@ figure.product {
 .toggle label::after {
 	content:'';
 	display: inline-block;
-	width: 0.8em;
-	height: 0.8em;
+	width: 0.6em;
+	height: 0.6em;
 	border-radius: 1em;
 	position: absolute;
 	background-color: var(--color-light-green);
