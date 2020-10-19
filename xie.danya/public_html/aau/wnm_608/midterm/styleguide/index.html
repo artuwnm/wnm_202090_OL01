@@ -106,12 +106,6 @@
 	</div>
 
 
-
-	<div class="container">
-		<h2>View Window</h2>
-	</div>
-	
-
 	<div class="container" id="navigations">
 		<h2>Navigations</h2>
 
@@ -465,6 +459,43 @@
 			</div>
 		</div>
 
+		<h3>Product Hover</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-1">
+					<img src="https://via.placeholder.com/400X400?text=product" onmouseover="this.src='https://via.placeholder.com/400X400?text=model'" onmouseout="this.src='https://via.placeholder.com/400X400?text=product'" alt="">
+			    </figure>
+				<figcaption>
+					<div class="caption-shoplist">
+						<div class="product-name">Product Name</div>
+						<div>$120</div>
+					</div>
+				</figcaption>			    
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-2">
+					<img src="https://via.placeholder.com/400X400?text=product" onmouseover="this.src='https://via.placeholder.com/400X400?text=model'" onmouseout="this.src='https://via.placeholder.com/400X400?text=product'" alt="">
+			    </figure>
+				<figcaption>
+					<div class="caption-shoplist">
+						<div class="product-name">Product Name</div>
+						<div>$120</div>
+					</div>
+				</figcaption>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-3">
+					<img src="https://via.placeholder.com/400X400?text=product" onmouseover="this.src='https://via.placeholder.com/400X400?text=model'" onmouseout="this.src='https://via.placeholder.com/400X400?text=product'" alt="">
+			    </figure>
+				<figcaption>
+					<div class="caption-shoplist">
+						<div class="product-name">Product Name</div>
+						<div>$120</div>
+					</div>
+				</figcaption>
+			</div>
+		</div>
+
 	</div>
 
 	<div class="container" id="forms">
@@ -484,7 +515,9 @@
 				<input type="date"><br>
 				<input type="search">
 			</form>
+		</div>
 
+		<div class="card soft">
 			<h3>Form Input</h3>
 			<form>
 				<input type="text" placeholder="Text" class="form-input">
@@ -492,7 +525,9 @@
 				<input type="password" placeholder="Password" class="form-input">
 				<input type="search" placeholder="Search" class="form-input">
 			</form>
+		</div>
 
+		<div class="card soft">
 			<h3>Form Label</h3>
 			<form>
 				<label class="form-label">Example</label>
@@ -504,7 +539,9 @@
 				<label class="form-label">Example</label>
 				<input type="search" placeholder="Search" class="form-input">
 			</form>
+        </div>
 
+        <div class="card soft">
 			<h3>Form Control</h3>
 			<form>
 				<div class="form-control display-flex flex-align-center">
@@ -523,7 +560,26 @@
 				</div>
 				<div class="form-control">
 					<label class="form-label">Address</label>
-					<input type="password" class="form-input">
+					<input type="address" class="form-input">
+				</div>
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">city</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" class="form-input flex-stretch">
+					</div>
+					<div class="flex-none">
+						<label class="form-label">State</label>
+					</div>
+					<div class="flex-stretch">
+						<div class="form-select">
+							<select>
+								<option>Choose</option>
+								<option>New York</option>
+							</select>
+						</div>
+					</div>	
 				</div>
 				<div class="form-control display-flex flex-align-center">
 					<div class="flex-none">
@@ -533,11 +589,16 @@
 						<input type="search" class="form-input flex-stretch">
 					</div>
 					<div class="flex-none">
-						<label class="form-label">City/Town</label>
+						<label class="form-label">Country</label>
 					</div>
 					<div class="flex-stretch">
-						<input type="search" class="form-input flex-stretch">
-					</div>
+						<div class="form-select">
+							<select>
+								<option>Choose</option>
+								<option>United States</option>
+							</select>
+						</div>
+					</div>		
 				</div>
 				<div class="form-control">
 					<label class="form-label">Email</label>
@@ -545,17 +606,46 @@
 				</div>
 				<div class="form-control">
 					<label class="form-label">Password</label>
-					<input type="number" class="form-input">
-				</div>
-				
+					<input type="password" class="form-input">
+				</div>			
 			</form>
+		</div>
+		<div class="card soft">
+			<h3>Form Payment</h3>
+			<form>
+			     <div class="form-control">
+				    <label class="form-label">Card Number</label>
+				    <input type="text" class="form-input">
+			    </div>
+
+			    <div class="form-control">
+				    <label class="form-label">Card Holder</label>
+				    <input type="text" class="form-input">
+			    </div>   
+			</form>
+
+			<div class="form-control display-flex flex-align-center">
+			    	<div class="flex-none">
+				    	<label class="form-label">Expiration Date</label>
+				    </div>
+				    <div class="flex-stretch">
+				    	<input type="date" placeholder="mm/dd/yyyy" class="form-input">
+					</div>
+
+					<div class="flex-none">
+				    	<label class="form-label">CVV2</label>
+				    </div>
+				    <div class="flex-stretch">
+				    	<input type="password" placeholder="Security Code" class="form-input">
+					</div>
+			    </div>
 		</div>
 
 		<h3>Buttons</h3>
 
 		<div class="card soft">
 			<h3>Default Buttons</h3>
-			<button>Button</button>
+			<button>BUTTON</button>
 
 			<h3>Form Buttons</h3>
 			<div class="form-control">
@@ -567,6 +657,10 @@
 			<div class="form-control">
 				<a href="#" class="form-button">Anchor</a>
 			</div>
+
+			<h3>Site Buttons</h3>
+			<button class="btn styleguide">SHOP NOW</button>
+			<button>Add to Bag</button>
 		</div>
 
 		<h3>Hotdog</h3>
@@ -628,15 +722,6 @@
 					<select>
 						<option>Choose</option>
 						<option>Paypal</option>
-					</select>
-				</div>			
-			</div>
-			<div class="display-inline-block">
-				<label class="form-label">Country</label>
-				<div class="form-select">
-					<select>
-						<option>Choose</option>
-						<option>United States</option>
 					</select>
 				</div>			
 			</div>

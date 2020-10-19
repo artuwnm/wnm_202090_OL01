@@ -10,8 +10,8 @@
 
 body {
 	background-color: var(--color-offwhite);
-	padding-bottom: 4em;
 }
+
 .favorite label {
 	transition: all 0.3s;
 	display:inline-block;

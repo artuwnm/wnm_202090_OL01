@@ -154,6 +154,10 @@ a {
 	content:'/';
 }
 
+.crumbs {
+	margin: 20px 0;
+}
+
 
 .nav-material a {
 	padding: 0.5em 1em;
@@ -201,6 +205,10 @@ a {
 
 .navbar {
 	color: var(--color-white);
+	line-height: var(--header-height);
+}
+.navbar.shop {
+	color: var(--color-black);
 	line-height: var(--header-height);
 }
     .navbar h2 {
@@ -287,7 +295,7 @@ a {
 	position: absolute;
 	top: 30vh;
 }
-.btn {
+.btn.shopnow {
 	border: 2px solid white;
 	background-color: transparent;
 	background-repeat: no-repeat;
@@ -297,12 +305,43 @@ a {
 	font-size: 1em;
 	font-weight: normal;
 }
-.btn:hover{
-	border-color: #6A9478;
-	color: #6A9478;
 
+.btn.styleguide {
+	border: 2px solid black;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 14px 28px;
+	color: black;
+	font-size: 1em;
+	font-weight: normal;
 }
 
+.btn:hover {
+	border-color: #6A9478;
+	color: #6A9478;
+}
+
+.btn:active {
+	border-color: inherit;
+	color: inherit;
+}
+
+button {
+	border: none;
+	background-color: #6A9478;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 14px 28px;
+	color: white;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+	margin: 20px 0;
+}
+.form-control button {
+	margin: 0;
+}
 
 .catalog {
 	display: flex;
@@ -412,6 +451,19 @@ a {
 	padding:1em;
 }
 
+figcaption {
+	padding-top: 1em;
+	padding-bottom: 3em;
+}
+
+.caption-shoplist {
+	text-align: center;
+}
+.product-name {
+	font-weight: bold;
+	padding: 10px 0;
+}
+
 /*Table*/
 .table {
 	width: 100%;
@@ -468,6 +520,15 @@ a {
 	width: 100%;
 	outline: 0;
 }
+.form-select>select {
+	color: var(--color-neutral-medium);
+}
+.form-button {
+	color: var(--color-black);
+}
+::placeholder {
+	color: var(--color-neutral-medium);
+}
 .form-input {
 	border-bottom: 1px solid var(--color-neutral-light);
 	padding: 0.5em 1em;
@@ -493,7 +554,7 @@ a {
 	text-decoration: none;
 }
 .form-button:active {
-	background-color: var(--color-main-light);
+	background-color: var(--color-main-medium);
 }
 
 
@@ -514,7 +575,7 @@ a {
 
 .form-select>select {
 	padding: 0.5em 1.3em;
-	background-color: var(--color-neutral-light);
+	border-bottom: 1px solid var(--color-neutral-light);
 	border-radius: 0.3em;
 	cursor: pointer;
 }
@@ -531,7 +592,7 @@ a {
 	right: 0.2em;
 	transform: translateY(-50%);
 	pointer-events: none;
-	color: var(--color-neutral-medium);
+	border-bottom: 1px solid var(--color-neutral-light);
 }
 option {
     font-weight: normal;
