@@ -275,7 +275,7 @@ button.big {
 	display: inline-block;
 	width: 2em;
 	height: 1em;
-	border: 0.1em solid var(--color-neutral-medium);
+	border: 1px solid var(--color-neutral-medium);
 	background-color: var(--color-neutral-light);
 	border-radius: 1em;
 	position: relative;
@@ -284,10 +284,12 @@ button.big {
 .toggle label::after {
 	content: '';
 	display: inline-block;
-	width: 0.8em;
-	height: 0.8em;
+	width: 0.83em;
+	height: 0.83em;
 	border-radius: 1em;
 	position: absolute;
+	top: 0.06em;
+	left: 0.06em;
 	background-color: var(--color-neutral-medium);
 	transition: all 0.3s;
 }
