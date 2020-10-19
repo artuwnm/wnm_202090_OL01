@@ -39,14 +39,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
 	font-family: var(--font-serif);
 }
 
-p{
+/*p{
 	font-family: var(--font-sans);
 }
-
+*/
 a {
 	color: inherit;
 	font-weight: 400;
@@ -128,7 +129,12 @@ hr {
 .display-flex-center{ justify-content: center; }
 
 .flex-align-center { align-items: center; }
+
+
+
 .flex-justify-center { justify-content: center;}
+.flex-justify-right { justify-content: right; }
+.flex-justify-left { justify-content: left; }
 
 .flex-stretch { flex: 1 1 auto; }
 .flex-non { flex: none; }

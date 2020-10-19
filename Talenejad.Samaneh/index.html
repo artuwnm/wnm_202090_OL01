@@ -6,41 +6,61 @@
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My Store</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 	<!-- Header -->
 
 	<header>
-	
-		<div class="container display-flex flex-align-center">
-
-			<div class="flex-stretch">
-				<h1>SAMTALTH</h1>
-				<div class="nav_container">
-					<ul class="nav display-flex justify-content" >
-						<li class="flex-stretch"><a href="">HOME</a></li>
-						<li class="flex-stretch"><a href="">SHOP</a></li>
-						<li class="flex-stretch"><a href="">CONTACT</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="display-inline-block">
-				<div class="display-flex flex-align-center">
-					<a class="flex-stretch signInLink" href="">Sign In / Register</a>
-					<a class="cartButton" href="">CHECKOUT</a>
-				</div>
-				<form action="">
-					<input type="text" value="">
-					<input type="submit" value="SEARCH">
-				</form>
-			</div>
+		<div class="container top-nav-container" style="direction: rtl;">
+			<a class="signInLink" href="">Sign In / Register</a>
 		</div>
 
-		<hr class="negative-margin-top">
+		<div id="header-container" class="container display-flex flex-align-center">
+
+	 		<div>
+	 			<div class="menu-icon-container flex-stretch" onclick="openNav()"></div>
+	 			<div id="sideNav" class="overlay">
+	 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	 				<div class="overlay-content">
+	 					<a href="">HOME</a>
+	 					<a href="">SHOP</a>
+	 					<a href="">CONTACT</a>
+	 					<a href="">SALE</a>
+	 				</div>
+	 				
+	 			</div>
+	 		</div>
+
+		 	<div>
+				<h1>SAMTALTH</h1>		 		
+		 	</div>
 		
+			<div class="horizontal-nav-container">
+				<ul class="nav display-flex justify-content" >
+					<li class="flex-stretch"><a href="">HOME</a></li>
+					<li class="flex-stretch"><a href="">SHOP</a></li>
+					<li class="flex-stretch"><a href="">CONTACT</a></li>
+					<li class="flex-stretch"><a href="">SALE</a></li>
+				</ul>
+			</div>
+	 	
+ 			<div class="header-checkout-container">
+				<a class="cartButton" href="">ACCOUNT</a>
+			</div>
+
+			<div class="header-search-bar-container flex-stretch">
+				<form class="header-search-bar" action="">
+					<input id="header-search-keyword" type="text" placeholder="Search" value="">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+
+		</div>
+
 	</header>
 
 
@@ -54,8 +74,8 @@
 
 
 		
-		<div class="big_container">	
-			<h4 class="heading_one">BEST SELLER</h4>
+		<div class="cards_container">	
+			<h4 class="card_heading">BEST SELLER</h4>
 			
 			<div class="grid gap xs-small md-medium lg-large padding xs-small-padding md-medium-padding lg-large-padding">
 			
@@ -99,8 +119,8 @@
 	
 		
 				
-		<div class="big_container">
-			<h4 class="heading_one">NEW FOR YOU</h4>
+		<div class="cards_container">
+			<h4 class="card_heading">NEW FOR YOU</h4>
 			<div class="grid gap xs-small md-medium lg-large padding xs-small-padding md-medium-padding lg-large-padding">
 				<div class="card soft card_padding_bottom_store flex-stretch col-lg-3 col-md-6 col-sm-12">
 					<img src="img/sale50.jpg">
@@ -150,8 +170,8 @@
 		<div class="container footer-content-container display-flex">
 
 			<!-- Footer-left -->
-			<div class="footer-links-left flex-stretch display-flex">
-				<div class="flex-stretch">
+			<div class="footer-links-left flex-stretch grid">
+				<div class="card_padding_bottom_store col-lg-4 col-md-6 col-sm-12 sm-small-padding ">
 					<h5>CUSTOMER SERVICE</h5>
 					<ul class="nav">
 						<li><a href="">Credit Card</a></li>
@@ -164,7 +184,7 @@
 					</ul>
 				</div>
 				
-				<div class="flex-stretch">
+				<div class="card_padding_bottom_store col-lg-4 col-md-6 col-sm-12 sm-small-padding ">
 					<h5>STORE & CORPORATE</h5>
 					<ul class="nav">
 						<li><a href="">Store Location & Events</a></li>
@@ -175,7 +195,7 @@
 					</ul>
 				</div>
 			
-				<div class="flex-stretch">
+				<div class="card_padding_bottom_store col-lg-4 col-md-6 col-sm-12 sm-small-padding">
 					<h5>EXPLORE</h5>
 					<ul class="nav">
 						<li><a href="">Magazine</a></li>
@@ -188,7 +208,7 @@
 			</div>
 			
 			<!-- Footer right-->
-			<div class="footer-links-right flex-stretch">
+			<div class="footer-links-right">
 
 				<form action="">
 					<div class="email-signup_lable">
@@ -196,11 +216,11 @@
 						<br> 
 						<span>15% OFF YOUR FIRST PURCHASE:</span>
 					</div>
-
-					<form>
+					<div class="display-flex footer_sign_up">
 						<input class="email-signup_input" type="text" placeholder="Enter your e-mail address">
+					
 						<input class="email-signup_submit" type="submit">
-					</form>
+					</div>
 				</form>
 				
 			</div>
@@ -219,6 +239,16 @@
 
 
 	</footer>
+
+	<script>
+		function openNav() {
+		  document.getElementById("sideNav").style.width = "32%";
+		}
+
+		function closeNav() {
+		  document.getElementById("sideNav").style.width = "0%";
+		}
+	</script>
 	
 </body>
 </html>

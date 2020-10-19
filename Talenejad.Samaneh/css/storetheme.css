@@ -1,66 +1,254 @@
+
+
+/*** WHOLE PAGE ***/
+
 .card_padding_bottom_store {
 	padding-bottom: 12px;
 }
-/* HEADER */
 
-h1 {
-	color: var(--color-dark);
-	line-height: var(--header-height);
+.container {
+	margin-bottom: -20px;
 }
 
 
-/* Sign In/Register */
+
+
+
+
+/*** TOP NAV - Sign In/Register ***/
+
+.top-nav-container {
+	padding-top:17px;
+	margin-bottom: -35px;
+	padding-right:30px;
+}
+
 .signInLink {
 	text-align: center;
+	padding:5px 10px;
+}
+
+.signInLink:hover {
+	background-color: var(--color-neutral-medium);
+}
+
+
+
+
+
+
+/*** HEADER ***/
+
+#header-container {
+	display: flex;
+}
+
+.menu-icon-container {
+	background-image: url("../img/menu-icon.png");
+	height: 20px;
+	width:20px;
+	background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left:50px;
+}
+
+header h1 {
+	color: var(--color-dark);
+	line-height: var(--header-height);
+	font-size: 35px;
+}
+
+
+/* HEADER - Horizotanl nav*/
+
+.horizontal-nav-container {
+	padding-top: 25px;
+}
+
+.horizontal-nav-container a {
+	font-size: 17px;
+	padding-left:15px;
+	padding-left:15px;
 }
 
 .header-img-container {
-	height: 350px;
-	margin-top:10px;
+	height: 200px;
 	background-image: url("https://fashionista.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY0ODk3NzcxMTIyMzM3MDgy/hp-argent-workwear-nyc-store.jpg")
 }
 
 
-.nav_container {
-	display: inline-block;
-	margin-top:-20px;
-	margin-left: 20px;
-/*	border: 1px solid red;*/
+
+/* HEADER - Search bar*/
+
+.header-search-bar-container {
+	text-align: right;
+	/*direction: rtl;*/
 }
 
-.nav_container a {
-	padding-left:20px;
-	padding-right: 20px;
-	font-size: 15px;
-
+#header-search-keyword {
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
 }
 
-
-
-header form {
+.header-search-bar {
+	position: relative;
 	margin-top: var(--spacing);
 	vertical-align: top;
 }
+	
+.fa.fa-search {
+	font-size: 18px;
+	position: absolute;
+	right:15px;
+	top:3px;
+	
+}
 
 
-/* Shopping Cart Button class*/
-.cartButton {
-	background-color: black;
-	color: white;
-	padding: 7px 11px;
+/* HEADER - Shopping Cart Button class*/
+
+.header-checkout-container {
 	font-size: 12px;
 
 }
 
+.cartButton {
+	display: inline-block;
+	padding:10px;
+	margin-top: 10px;
+}
+
 .cartButton:hover{
-	background-color: var(--color-neutral-dark);
+	background-color: var(--color-neutral-medium);
 }
 
 
-/* MAIN */
 
-.big_container {
+
+@media screen and (min-width: 1024px) {
+	.menu-icon-container {
+		display: none;
+	}
+
+	.header-checkout-container {
+		order:1;
+	}
+
+	.header-search-bar-container {
+		order:0;
+	}
+
+}
+
+@media screen and (max-width: 1024px){
+	.horizontal-nav-container {
+		display: none;
+	}
+
+	#header-container {
+		flex-wrap: wrap;
+	}
+
+	.header-search-bar-container {
+		width: 100%;
+		margin-left:-25px;
+		margin-right:-25px;
+		margin-bottom: 12px;
+		margin-top: -20px;
+	}
+
+	#header-search-keyword {
+		width: 100%;
+		padding-left:20px;
+
+	}
+
+	.header-checkout-container {
+		flex: 1 1 auto;
+		text-align: right;
+	}
+
+	header h1 {
+		line-height: 30px;
+	}
+
+	.top-nav-container {
+		display: none;
+	}
+
+}
+
+
+/* HEADER - Side nav */
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color: white;
+	opacity: 1;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+}
+
+.overlay-content {
+	position: relative;
+	top:8%;
+	width: 100%;
+	text-align: center;
+	/*margin-top: 30px;*/
+}
+
+.overlay a {
+	padding:8px;
+	text-decoration: none;
+	font-size:16px;
+	color:#818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	position:absolute;
+	top:20px;
+	right:45px;
+	font-size: 20px;
+}
+
+
+
+/*** MAIN SECTION ***/
+
+.view-window h1,h3{
+	color: white;
+}
+
+.cards_container {
 	background-color: rgb(237,237,237);
+}
+
+.card_heading {
+	text-align: center;
+	font-size: 30px;
+	line-height: 40px;
+	letter-spacing: 1px;
+	padding-top: 20px;
+	margin-bottom: -10px;
+}
+
+.card img {
+	width: 100%;
+
 }
 
 .product_info_container {
@@ -70,41 +258,11 @@ header form {
 	margin-bottom: -14px;
 }
 
-.heading_one {
-	text-align: center;
-	font-size: 30px;
-	line-height: 40px;
-	letter-spacing: 1px;
-	padding-top: 20px;
-	margin-bottom: -10px;
-	/*border: 1px solid red;*/
-}
-
-
-
-.big_container h2 {
-	/*text-align: center;*/
-/*	margin-top:0px;*/
-	margin-bottom: 0px;
-/*	margin-bottom: -10px;*/
-}
-
-
-.view-window h1,h3{
-	color: white;
-}
-
-.card img {
-	width: 100%;
-
-/* border: 1px solid red; */
-
-}
-
 .card .product_brand{
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 3px;
+	font-weight: bolder;
 }
 
 .card span {
@@ -115,7 +273,7 @@ header form {
 
 
 
-/* FOOTER */
+/*** FOOTER ****/
 
 .footer-content-container {
 	background-color: #ededed;
@@ -133,8 +291,12 @@ header form {
 	margin-right: 0;
 }
 
+footer a {
+	font-size: 13px;
+}
 
-/* footer left*/
+
+/* FOOTER - left*/
 
 .footer-links-left {
 	border-right: 1px solid grey;
@@ -149,27 +311,24 @@ header form {
 
 .footer-links-left .nav {
 	list-style-type: none;
-
 	margin-top: 0;
 	margin-bottom: 0;
-
 	padding-left: 0;
 }
 
-
-/* Footer right*/
-
-footer a {
-	font-size: 12px;
+footer h5{
+	font-size:13px;
 }
+
+
+/* FOOTER - right*/
+
 .footer-links-right {
 	text-align: center;
 }
 
 
 .email-signup_lable {
-	text-transform: uppercase;
-	text-align: center;
 	line-height: 16px;
 	font-size: 13px;
 	margin: 10px 0;
@@ -183,7 +342,7 @@ footer a {
 	background-color: #fff;
 	font-size: 13px;
 	font-family: var(--font-sans);
-
+	
 }
 
 .email-signup_submit {
@@ -192,10 +351,42 @@ footer a {
 	height: 40px;
 	width: 40px;
 	vertical-align: top;
+	
 }
 
 
-/* footer bottom*/
+@media screen and (max-width: 1024px) {
+	.footer-content-container {
+		flex-wrap: wrap;
+		/* Center the flex items */
+		justify-content: center;
+		padding-left:20px;
+		padding-right:20px;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+
+	.footer-links-left {
+		border-right: none;
+		padding:20px;
+		border-bottom: 1px solid #ccc;
+		
+	}
+
+	.footer-links-right {
+		flex-basis: 100%;
+
+	}
+
+	.footer_sign_up {
+		justify-content:center;
+	}
+
+}
+
+
+/* Footer bottom*/
 
 .footer-site-links {
 	text-align: center;
