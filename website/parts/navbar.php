@@ -12,7 +12,7 @@
 
 		<div class="mainbar container display-flex">
 			<div class="flex-none">
-				<a href="/" class="home-link"><h1 class="logo">tova</h1></a>
+				<a href="index.php" class="home-link"><h1 class="logo">tova</h1></a>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="flex-none">
