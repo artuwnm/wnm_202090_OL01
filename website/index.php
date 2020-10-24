@@ -1,46 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<?php include "parts/meta.php" ?>
 	<title>Tova</title>
-
-	<link rel="stylesheet" href="css/theme.css">
-	<link rel="stylesheet" href="css/website.css">
-	<link rel="stylesheet" href="https://use.typekit.net/rzf6qiq.css">
-
 </head>
 <body>
 
-	<!--header>h1+p -->
-	<header class="navbar">
-		<div class="infobar">
-			<div class="message container">
-				Free shipping on orders over $75
-			</div>
-		</div>
-
-		<div class="mainbar container display-flex">
-			<div class="flex-none">
-				<h1 class="logo">tova</h1>
-			</div>
-			<div class="flex-stretch"></div>
-			<nav class="flex-none">
-				<ul class="container display-flex">
-					<li><a href="#article1">Our Story</a></li>
-					<li><a href="#article2">The Blog</a></li>
-					<li><a href="#article3">USD</a></li>
-					<li><a href="#article4">Cart (0)</a></li>
-				</ul> 
-			</nav>
-		</div>
-	</header>
+	<!-- header -->
+	<?php include "parts/navbar.php" ?>
 	<div class="container content">
-		<div class="sidebar">
-			<ul>
-				<li><a href="#">Collections</a></li>
-				<li><a href="#">Shop</a></li>
-			</ul>
-		</div>
+		<?php include "parts/sidebar.php" ?>
 		<div class="main">
 			<div class="col-2">
 				<div class="text">
@@ -67,9 +36,9 @@
 			</div>
 			<div class="col-1">
 				<div style="text-align: center; padding: 2em 0 0 0;">
-					<button class="big">see full collection</button>
+					<a href="/collections.php" class="button big">see full collection </a>
 				</div>
-
+ 
 				<div class="text">
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.

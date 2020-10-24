@@ -2,6 +2,7 @@
 .navbar {
 	/*
 	*/
+
 }
 	.navbar .infobar {
 		background-color: #cd9365;
@@ -32,6 +33,13 @@
 	}
 	.navbar a {
 		padding: 0 0.5em;
+	}
+
+	.sidebar a.selected,
+	.navbar a.selected {
+		font-family: futura-pt, sans-serif;
+		font-weight: 500;
+		font-style: normal;
 	}
 
 /* COMPONENT CLASS */
@@ -99,6 +107,14 @@
 	text-align: left;
 	font-size: 1.7em;
 	font-weight: bold;
+}
+
+.home-link {
+	line-height: 0;
+	padding: 0 !important;
+}
+.home-link:hover {
+	text-decoration: none;;
 }
 
 

@@ -24,6 +24,8 @@
 	--font-serif: Georgia, "Times New Roman", serif;
 	--font-sans: futura-pt, Arial, sans-serif;
 	--font-sans-heading: utopian, sans-serif;
+
+	font-weight: 300;
 }
 
 .clarendon {
@@ -50,7 +52,6 @@ h6 {
 
 a {
 	color: inherit;
-	font-weight: bold;
 	text-decoration: none;
 }
 a:hover {
@@ -187,23 +188,18 @@ nav li {
 }
 
 
+.button.big, 
 button.big,
 .form-button {
-    background-color: var(--color-neutral-light);
-    padding: 0.5em 1.5em;
+	padding: 1em 5em;
+	background-color: var(--color-white);
     cursor: pointer;
 	text-align: center;
 	border: 1px solid var(--color-neutral-medium);
 	border-radius: 0;
 	font-size: 1em;
-	font-weight: bold;
 	font-family: var(--font-sans);
 	
-}
-
-button.big {
-	padding: 1em 5em;
-	background-color: var(--color-white);
 }
 
 .form-button:hover{
@@ -310,4 +306,9 @@ button.big {
 .favorite input:checked + label {
 	color: red;
 	transform: scale(1.5,1.5);
+}
+
+
+img.autoscale {
+	width: 100%;
 }
