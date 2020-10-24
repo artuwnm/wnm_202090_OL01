@@ -16,7 +16,7 @@
 			
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-6">
-					<a href="/product-1.php"><img class="autoscale" src="img/adobe_1.png" /></a>
+					<a href="product-1.php"><img class="autoscale" src="img/adobe_1.png" /></a>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<img class="autoscale" src="img/adobe_2.png" />
