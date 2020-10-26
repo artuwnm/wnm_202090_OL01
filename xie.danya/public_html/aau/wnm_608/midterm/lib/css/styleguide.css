@@ -46,7 +46,11 @@ h3 {
 	font-size: 1.5em;
 	font-weight: normal;
 }
-h4,
+h4 {
+	font-family:var(--font-sans);
+	font-size: 1.2em;
+	font-weight: normal;
+}
 h5,
 h6 {
 	font-family:var(--font-sans);
@@ -66,6 +70,8 @@ a {
 
 
 /* LAYOUT CLASSES */
+
+
 
 .container {
 	max-width:1200px;
@@ -225,13 +231,20 @@ a {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
-.main-nav a{
+.flex-none.logo a{
+	color: black;
+	padding: 0;
+}
+.flex-none.logo a:hover {
+	color: black;
+	padding: 0;
+}
+.flex-none.nav a{
 	color:inherit;
 	font-weight: 500;
 }
 
-.main-nav a:hover {
+.flex-none.nav a:hover {
 	color: #6a9478;
 	background-color: transparent;
 }
@@ -255,7 +268,7 @@ a {
     }
     .card.hard {
     	border-radius: 0.2em;
-    	border:2px solid var(--color-neutral-medium);
+    	border:2px solid var(--color-neutral-light);
     }
     .card.dark {
     	background-color: var(--color-neutral-dark);
@@ -305,7 +318,9 @@ a {
 	font-size: 1em;
 	font-weight: normal;
 }
-
+.header-title a {
+	padding: 0;
+}
 .btn.styleguide {
 	border: 2px solid black;
 	background-color: transparent;
@@ -322,13 +337,32 @@ a {
 	color: #6A9478;
 }
 
+
 .btn:active {
 	border-color: inherit;
 	color: inherit;
 }
 
+.btn.add-cart {
+	border: 2px solid;
+	border-radius: 0.2em;
+	border-color: var(--color-main-medium);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 14px 28px;
+	color: #6A9478;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.btn.add-cart:hover {
+	background-color: #6A9478;
+	color: white;
+}
+
 button {
-	border: none;
+	border-radius: 0.2em;
 	background-color: #6A9478;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -379,6 +413,7 @@ button {
 	flex: 100%;
 	height: 80px;
 	margin-top: 40px;
+	font-size: 0.8em;
 }
 
 .footer.container {
@@ -503,7 +538,7 @@ figcaption {
 /*Form*/
 
 .form-control {
-	margin: 1em 0;
+	margin: 2em 0;
 }
 .form-select>select,
 .hotdog input,
@@ -524,7 +559,7 @@ figcaption {
 	color: var(--color-neutral-medium);
 }
 .form-button {
-	color: var(--color-black);
+
 }
 ::placeholder {
 	color: var(--color-neutral-medium);
@@ -537,15 +572,16 @@ figcaption {
 	border-bottom-color: var(--color-main-light);
 }
 .form-label {
-	font-size: 1.2em;
+	font-size: 1em;
 	color: black;
 	display: block;
 	width: 100%;
 }
 
 .form-button {
-	background-color: var(--color-neutral-light);
-	padding: 0.5em 1em;
+	background-color: var(--color-main-medium);
+	color: white;
+	padding: 14px 28px;
 	border-radius: 0.2em;
 	cursor: pointer;
 	text-align: center;
@@ -554,7 +590,7 @@ figcaption {
 	text-decoration: none;
 }
 .form-button:active {
-	background-color: var(--color-main-medium);
+	background-color: var(--color-main-dark);
 }
 
 
@@ -634,12 +670,21 @@ option {
 
 
 
+.about {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
 
 
+.item-1 {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
 
-
-
-
+.sku {
+	color: var(--color-neutral-medium);
+	font-size: 0.9em;
+}
 
 
 
