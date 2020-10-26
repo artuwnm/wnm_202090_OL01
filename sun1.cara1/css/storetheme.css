@@ -174,7 +174,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: #896FAF;
+	background-color: var(--color-main-dark);
 
 	color: var(--color-offwhite);
 	padding: 1em;
@@ -187,6 +187,13 @@ footer{
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden;
 }
+
+/*自己写的 */
+.figure.product.left {
+	display: inline-block;
+    float: left;
+}
+
 
 .product-overlay {
 	position: relative;
