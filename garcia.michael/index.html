@@ -33,6 +33,8 @@
 	</header>
 
 
+
+
 	<div class="container">
 		<div class="card soft">
 		<h2>Grid</h2>
@@ -61,15 +63,20 @@
 
 	<div class="container">
 		<div class="grid gap xs-small md-medium">
-			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->
+
 		<div class="col-xs-6 col-md-3">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt class="media-image">
+				<img src="img/2.jpg" alt class="media-image">
+				<figcaption>
+						<div>Plant Chair</div>
+						<div><small>$1200.00</small></div>
+					</figcaption>
 			</div>
 		</div>
+
 		<div class="col-xs-6 col-md-3">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				<img src="img/5.jpg" alt="" class="media-image">
 			</div>
 		</div>
 		<div class="col-xs-6 col-md-3">
@@ -135,72 +142,68 @@
 	<div class="container">
 		<article id="article1" class="article card hard">
 			<div class="article-body">
-				<p>Use promo code <b>SEPT20</b> at checkout for 20% off your first purchase.
+				<center>Use promo code <b>SEPT20</b> at checkout for 20% off your first purchase.</center>
 			</div>
 		</article></p>
 
+<br>
 
 
-	<h3> Shop Our Monthly Favorites </h3>
-	<div class="gallery">
-  		<a target="_blank" href="img/1.jpg">
-    	<img src="img/1.jpg" alt="Plant" width="600" height="400">
-	  </a>
-  		<div class="desc">Monstera<p><button>Shop Now!</button></button></div>
-		</div>
 
-	<div class="gallery">
-		  <a target="_blank" href="img/2.jpg">
-    	<img src="img/2.jpg" alt="Plant" width="600" height="400">
- 		 </a>
-		<div class="desc">Calathea Rattlesnake<p><button>Shop Now!</button></button></div>
-		</div>
+	<section class="container">
+		<h3 id="productfigure"><center>Top Sellers</center></h3>
 
-	<div class="gallery">
- 		 <a target="_blank" href="img/3.jpg">
-   		 <img src="img/3.jpg" alt="Plant" width="600" height="400">
- 		 </a>
- 		 <div class="desc">Snake Plant<p><button>Shop Now!</button></button></div>
-		</div>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="img/1.jpg" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$3.99</div>
+					</figcaption>
+				</figure>
+			</div>
 
-	<div class="gallery">
- 		 <a target="_blank" href="img/4.jpg">
-   		 <img src="img/4.jpg" alt="Pink Plant" width="600" height="400">
- 		 </a>
-  		<div class="desc">Pink Anthurium<p><button>Shop Now!</button></button></div>
-	</div><p>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="img/2.jpg" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$3.99</div>
+					</figcaption>
+				</figure>
+			</div>
 
-
-	<h3>Shop Our Best Sellers</h3>
-	<div class="gallery">
-  		<a target="_blank" href="img/5.jpg">
-   		<img src="img/5.jpg" alt="Plant" width="600" height="400">
-  		</a>
-		<div class="desc">Fiddle Leaf Fig Bush<p><button>Shop Now!</button></button></div>
-		</div>
-
-	<div class="gallery">
-  		<a target="_blank" href="img/6.jpg">
-  	 	<img src="img/6.jpg" alt="Plant" width="600" height="400">
-  		</a>
- 		 <div class="desc">Bird of Paradise<p><button>Shop Now!</button></button></div>
-		</div>
-
-	<div class="gallery">
-  		<a target="_blank" href="img/7.jpg">
-   		<img src="img/7.jpg" alt="Plant" width="600" height="400">
-  		</a>
-  		<div class="desc">Snake Zeylanica<p><button>Shop Now!</button></button></div>
-		</div>
-
-	<div class="gallery">
- 		 <a target="_blank" href="img/8.jpg">
-   		 <img src="img/8.jpg" alt="Plant" width="600" height="400">
- 		 </a>
-  		<div class="desc">Bird's Nest Fern<p><button>Shop Now!</button></button></div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="img/3.jpg" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>$3.99</div>
+					</figcaption>
+				</figure>
+			</div>
 		</div>
 
 
+			<div class="form-control">
+				<button type="button" class="form-button">View all</button>
+			</div>
+
+	<br>
+
+
+<img src="img/1.jpg" style="width:500px; height: 530px;" align="left">
+	<div class="itemcontainer">
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-8">
+				<div class="card soft" style="width: 500px; height: 400px;">
+					<h1><center>Monstera Delicisa</center></h1>
+					<br><br>
+					<p>This is item # <?= $_GET['id'] ?></p>
+
+				</div>
+			</div>
 
 
 </body>

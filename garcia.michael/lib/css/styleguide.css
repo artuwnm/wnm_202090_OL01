@@ -70,6 +70,21 @@ a:hover {
 }
 
 
+.cartcontainer {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+.itemcontainer {
+	max-width: 1500px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
 .display-flex { display: flex;}
 .display-inline-flex { display: inline-flex;}
 .display-block { display: block;}
@@ -111,7 +126,7 @@ a:hover {
 }
 
 .nav a:hover {
-		color: var(--color-light-green);
+		color: var(--color-seashell);
 		text-decoration: none;
 }
 
@@ -275,8 +290,16 @@ a:hover {
 /* footer */
 
 footer {
+	font-family: 'san-serif';
+	color: black;
+	font-size: 0.8em;
+	margin: 0;
 	text-align: center;
-	background-color: var(--color-light-green);
+	height: 4vh;
+	padding: 4vh 10%;
+	bottom: 0;
+	width: 100%;
+	position: relative;
 }
 
 
@@ -317,8 +340,6 @@ footer {
 }
 
 
-
-
 /* figure */
 
 .figure {
@@ -334,6 +355,7 @@ footer {
 
 .figure figcaption {
 	padding: 1em;
+	font-family: var(--font-serif);
 }
 
 
@@ -571,3 +593,6 @@ figure.product {
 	transform: translateX(1em);
 
 }
+
+/* Img */
+
