@@ -3,37 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shop | DA-IE Jewelry</title>
+	<title>DA-IE Jewelry | Shop</title>
 
-	<meta name="viewport" content="width=device-width">
+	<?php include "parts/meta.php"; ?>
 
-	<link rel="stylesheet" href="../lib/css/styleguide.css">
-	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<link rel="stylesheet" href="../css/storetheme.css">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-	
-	<!-- header>h1+p -->
-	<header class="navbar shop">
-		<div>
-			<div class="main-nav">
-				<div class="container display-flex">
-				<div class="flex-none">
-					<h2>DA-IE</h2>
-				</div>
-				<div class="flex-stretch"></div>
-				    <nav class="flex-none nav">
-				    	<ul class="container display-flex">
-				   	   	<li><a href="http://danyaxie.com/aau/wnm_608/midterm/">HOME</a></li>
-					   	<li><a href="http://danyaxie.com/aau/wnm_608/midterm/shop">SHOP</a></li>
-					  	<li><a href="#about">ABOUT</a></li>
-				    	</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
+	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
 		<div class="crumbs">
@@ -56,13 +32,13 @@
 	       	</script>
 	        <script>makeNav('nav nav-crumbs')</script>
 		</div>       
-	</div>
+	</div>	
 
 	<div class="container">
     	<div class="grid gap">
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-1">
-					<img src="../img/1.JPG" onmouseover="this.src='../img/1_1.jpg'" onmouseout="this.src='../img/1.JPG'" alt="">
+					<a href="product_1.php"><img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt=""></a>
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -73,7 +49,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-2">
-    				<img src="../img/2.JPG" onmouseover="this.src='../img/2_1.jpg'" onmouseout="this.src='../img/2.JPG'" alt="">
+    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -84,7 +60,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-3">
-    				<img src="../img/3.JPG" onmouseover="this.src='../img/3_1.jpg'" onmouseout="this.src='../img/3.JPG'" alt="">
+    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -97,7 +73,7 @@
     	<div class="grid gap">
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-1">
-					<img src="../img/1.JPG" onmouseover="this.src='../img/1_1.jpg'" onmouseout="this.src='../img/1.JPG'" alt="">
+					<img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -108,7 +84,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-2">
-    				<img src="../img/2.JPG" onmouseover="this.src='../img/2_1.jpg'" onmouseout="this.src='../img/2.JPG'" alt="">
+    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -119,7 +95,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-3">
-    				<img src="../img/3.JPG" onmouseover="this.src='../img/3_1.jpg'" onmouseout="this.src='../img/3.JPG'" alt="">
+    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -132,7 +108,7 @@
     	<div class="grid gap">
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-1">
-					<img src="../img/1.JPG" onmouseover="this.src='../img/1_1.jpg'" onmouseout="this.src='../img/1.JPG'" alt="">
+					<img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -143,7 +119,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-2">
-    				<img src="../img/2.JPG" onmouseover="this.src='../img/2_1.jpg'" onmouseout="this.src='../img/2.JPG'" alt="">
+    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -154,7 +130,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-3">
-    				<img src="../img/3.JPG" onmouseover="this.src='../img/3_1.jpg'" onmouseout="this.src='../img/3.JPG'" alt="">
+    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -167,7 +143,7 @@
     	<div class="grid gap">
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-1">
-					<img src="../img/1.JPG" onmouseover="this.src='../img/1_1.jpg'" onmouseout="this.src='../img/1.JPG'" alt="">
+					<img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -178,7 +154,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-2">
-    				<img src="../img/2.JPG" onmouseover="this.src='../img/2_1.jpg'" onmouseout="this.src='../img/2.JPG'" alt="">
+    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -189,7 +165,7 @@
     		</div>
     		<div class="col-xs-12 col-md-4">
     			<figure class="figure product-3">
-    				<img src="../img/3.JPG" onmouseover="this.src='../img/3_1.jpg'" onmouseout="this.src='../img/3.JPG'" alt="">
+    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
     		    </figure>
 				<figcaption>
 					<div class="caption-shoplist">
@@ -199,16 +175,12 @@
 				</figcaption>
     		</div>
     	</div>
-	 </div>  
+	 </div> 
+
+	 <?php include "parts/footer.php"; ?> 
 
 
 
 
-
-
-	   
-	 <div class="footer">
-		<div class="container">© 2020 by Danya Xie. All rights reserved.</div>
-	 </div>
 </body>
 </html>
