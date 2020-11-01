@@ -1,0 +1,28 @@
+[
+	{
+	"name":"Ashley Yeo",
+	"type":"student",
+	"email":"ashleyyeo825@gmail.com",
+	"classes":[608,617,820]
+
+	},
+	{
+	"name":"Samuel Roberts",
+	"type":"student",
+	"email":"ashleyyeo825@gmail.com",
+	"classes":[608,617,820]
+	},
+	{
+	"name":"Katie Smith",
+	"type":"student",
+	"email":"ashleyyeo825@gmail.com",
+	"classes":[608,617,820]
+
+	},
+	{
+	"name":"John Doe",
+	"type":"student",
+	"email":"ashleyyeo825@gmail.com",
+	"classes":[608,617,820]
+	}
+]
