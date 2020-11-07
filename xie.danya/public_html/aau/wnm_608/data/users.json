@@ -3,36 +3,36 @@
 		"name":"Joey Tribbiani",
 		"type":"Actor",
 		"email":"joeytribs@aol.com",
-		"classes":[608,617,820]
+		"classes":[608, 617, 820]
 	},
 	{
 		"name":"Phoebe Buffay",
-		"type":"Masseuse ",
+		"type":"Masseuse",
 		"email":"phoebe@earthlink.net",
-		"classes":[608,617,820]
+		"classes":[608, 617, 820]
 	},
 	{
 		"name":"Rachel Green",
 		"type":"Buyer",
 		"email":"rachelg@hotmail.com",
-		"classes":[608,617,820]
+		"classes":[608, 617, 820]
 	},
 	{
 		"name":"Ross Geller",
 		"type":"Professor",
 		"email":"rossgeller@hotmail.com",
-		"classes":[608,617,820]
+		"classes":[608, 617, 820]
 	},
 	{
 		"name":"Monica Gellar",
 		"type":"Chef",
 		"email":"mgeller@yahoo.com",
-		"classes":[608,617,820]
+		"classes":[608, 617, 820]
 	},
 	{
 		"name":"Chandler Bing",
 		"type":"Manager",
 		"email":"bingtastic@yahoo.com",
-		"classes":[608,617,820]
+		"classes":[608, 617, 820]
 	}
 ]

@@ -33,7 +33,7 @@
 					<h1>DA-IE Jewelry</h1>
 					<h3>New Collection Arrives</h3>
 					<div class="form-control">
-						<a href="#" class="btn shopnow">ADD TO CART</a>
+						<a href="#" class="btn shopnow">SHOP NOW</a>
 					</div>
 				</div>
 		    </div>
