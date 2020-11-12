@@ -16,7 +16,6 @@ class Carousel {
 
 		let carousel = this;
 
-
 		this.currentSlide = 0;
 
 		this.slides = this.element.find(".slide");
