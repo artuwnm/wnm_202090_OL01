@@ -35,147 +35,29 @@
 	</div>	
 
 	<div class="container">
-    	<div class="grid gap">
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-1">
-					<a href="product_1.php"><img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt=""></a>
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>	
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-2">
-    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-3">
-    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    	</div>
-    	<div class="grid gap">
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-1">
-					<img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>	
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-2">
-    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-3">
-    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    	</div>
-    	<div class="grid gap">
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-1">
-					<img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>	
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-2">
-    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-3">
-    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    	</div>
-    	<div class="grid gap">
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-1">
-					<img src="img/1.JPG" onmouseover="this.src='img/1_1.jpg'" onmouseout="this.src='img/1.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>	
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-2">
-    				<img src="img/2.JPG" onmouseover="this.src='img/2_1.jpg'" onmouseout="this.src='img/2.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    		<div class="col-xs-12 col-md-4">
-    			<figure class="figure product-3">
-    				<img src="img/3.JPG" onmouseover="this.src='img/3_1.jpg'" onmouseout="this.src='img/3.JPG'" alt="">
-    		    </figure>
-				<figcaption>
-					<div class="caption-shoplist">
-						<div class="product-name">Product Name</div>
-						<div>$120</div>
-					</div>
-				</figcaption>
-    		</div>
-    	</div>
-	 </div> 
+
+		<?php
+
+		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
+
+		$result = makeQuery(
+			makeConn(),
+			"
+			SELECT * 
+			FROM `products`
+			ORDER BY 'date_create' DESC
+			LIMIT 12
+			"
+		);
+
+		echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
+
+		?>
+
+    </div>
+
+
 
 	 <?php include "parts/footer.php"; ?> 
 

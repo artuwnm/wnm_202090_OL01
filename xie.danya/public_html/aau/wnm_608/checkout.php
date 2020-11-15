@@ -38,7 +38,7 @@
 						</div>
 						<div class="form-control display-flex flex-align-center">
 							<div class="flex-none">
-								<label class="form-label">city</label>
+								<label class="form-label">City</label>
 							</div>
 							<div class="flex-stretch">
 								<input type="search" class="form-input flex-stretch">
@@ -117,16 +117,33 @@
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card soft">
-					<h4><b>Order Summary</b></h4>
-					<p>Subtotal</p>
-					<p><b>Order Total</b></p>
-		            <div class="form-control">
-						<a href="#" class="form-button">PLACE ORDER</a>
+					<div class="section">					
+						<h4><b>Order Summary</b></h4>
+					</div>
+					<div class="section">
+						<br>
+						<div class="display-flex">
+							<div class="flex-stretch">Subtotal</div>
+							<div class="flex-none">&dollar;486</div>
+						</div>
+						<br>
+						<div class="display-flex">
+							<div class="flex-stretch">Taxes</div>
+							<div class="flex-none">&dollar;24</div>
+						</div>
+						<br>
+						<div class="display-flex">
+							<div class="flex-stretch">Total</div>
+							<div class="flex-none">&dollar;510</div>
+						</div>
+						
+			            <div class="form-control">
+							<a href="product_confirmation.php" class="form-button">PLACE ORDER</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-			
+		</div>			
 	</div>
 
 

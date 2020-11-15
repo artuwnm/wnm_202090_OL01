@@ -73,22 +73,22 @@
 					<h3>Most Popular</h3>					
 					<div class="popular-item-row">
 						<div class="popular-item">
-							<a href="product_1.php"><img src="img/1.JPG" style="width:285px; height: 285px;"></a>
+							<a href="product_1.php"><img src="img/1_1.jpg" style="width:285px; height: 285px;"></a>
 							<div>Verna Double Hoops Earrings</div>
 							<div class="popular-price">$150</div>
 						</div>
 						<div class="popular-item">
-							<img src="img/2.JPG" style="width:285px; height: 285px;">
+							<img src="img/2_1.jpg" style="width:285px; height: 285px;">
 							<div>Marjorie Double Ring</div>
 							<div class="popular-price">$180</div>
 						</div>
 						<div class="popular-item">
-							<img src="img/3.JPG" style="width:285px; height: 285px;">
+							<img src="img/3_1.jpg" style="width:285px; height: 285px;">
 							<div>Alexa Cross Ring</div>
 							<div class="popular-price">$110</div>
 						</div>
 						<div class="popular-item">
-							<img src="img/4.JPG" style="width:285px; height: 285px;">
+							<img src="img/4_1.jpg" style="width:285px; height: 285px;">
 							<div>Riley Earrings</div>
 							<div class="popular-price">$120</div>
 						</div>
