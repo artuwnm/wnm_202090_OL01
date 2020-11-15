@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Product List - SUSHI ICHIBAN</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,84 +17,35 @@
 </head>
 <body>
 	
-	<?php include "parts/nav_bar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
 		<div class="card soft">
 			<h2>Product List</h2>
 
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-			</ul>
+			
+
+		<?php
+		
+		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
+
+		$result = makeQuery(
+			makeConn(),
+			"
+			SELECT *
+			FROM `products`
+			ORDER BY `price` DESC
+
+			"
+		);
+
+		echo "<div class='grid gap'>", array_reduce($result,'productListTemplate'),"</div>";
+		?>
+
 		</div>
 	</div>
-
-<div class="container">
-		<h2 id="figures">Menu</h2>
-		<div class="card">
-		<h3>Product Overlay</h3>
-			<div class="grid gap">
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product-overlay">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						<figcaption>
-							<div>Lunch & Dinner Special</div>
-							
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product-overlay">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						<figcaption>
-							<div>Sushi & Sashimi</div>
-							
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product-overlay">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						<figcaption>
-							<div>Donburi & Noodles</div>
-							
-						</figcaption>
-					</figure>
-				</div>
-			<div class="col-xs-12 col-md-4">
-					<figure class="figure product-overlay">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						<figcaption>
-							<div>Nigiri & Hosomaki</div>
-							
-						</figcaption>
-					</figure>
-				</div>
-			<div class="col-xs-12 col-md-4">
-					<figure class="figure product-overlay">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						<figcaption>
-							<div>Handroll & Makimoto</div>
-							
-						</figcaption>
-					</figure>
-				</div>
-			<div class="col-xs-12 col-md-4">
-					<figure class="figure product-overlay">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						<figcaption>
-							<div>Drinks & Dessert</div>
-							
-						</figcaption>
-					</figure>
-				</div>
-				
-	
-
 
 
 
