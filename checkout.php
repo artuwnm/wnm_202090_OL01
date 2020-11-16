@@ -18,7 +18,7 @@
 </head>
 <body>
 	
-	<?php include "parts/nav_bar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 		
 			
 <div class="container" id="forms">
@@ -66,7 +66,8 @@
 					</div>
 
 				<div class="form-control">
-				<button type="button" class="form-button">Complete Order</button>
+
+				<button><p><a href="confirmation.php" class="form-button">Complete Checkout</a></p></button>
 			</div>
 
 				</div>

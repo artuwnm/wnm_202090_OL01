@@ -1,3 +1,16 @@
+
+<?php
+		
+include_once "lib/php/functions.php";
+
+$product = makeQuery(makeConn(), " SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+//print_p($product);
+$images = explode(",", $product->images);
+$images_elements = array_reduce($images,function($r,$o){
+	return $r."<img src='img/$o'>";
+});
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,34 +19,66 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="./lib/css/styleguide.css">
-	<link rel="stylesheet" type="text/css" href="./lib/css/gridsystem.css">
-	<link rel="stylesheet" type="text/css" href="./css/storetheme.css">
-	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<?php include "parts/meta.php";?>
 
-	<script type="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	
+	<script type="js/product_thumbs.js"></script>
 
 </head>
 <body>
 	
-	<?php include "parts/nav_bar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
-		<div class="card soft">
-  			<img src="/sushi.jpg" alt="sushi" style="width:100%">
-  			<h1>California King Roll</h1>
-  			<p class="price">$14.99</p>
-  			<p>This is item # <?=$_GET['id'] ?></p>
-  			<p>Some text about the rolls. Super creamy and crispy lorem ipsum lorem jeansum.</p>
- 		 <p><button>Add to Cart</button></p>
-
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-7">
+				<div class="card soft">
+					<div class="images-main">
+						<img src="img/<?= $product->thumbnail ?>">
+					</div>
+					<div class="images-thumbs">
+						<?= $images_elements ?>
+					</div>
+				</div>
+			</div>
+		<div class="col-xs-12 col-md-5">
+			<div class="card soft flat">
+			<div class="card-section">
+				<h2 class="product-name"><?= $product->name ?></h2>
+				<div class="product-price">&dollar;<?=$product->price ?></div>
+			</div>
+			<div class="card-section">
+				<label for="product-amount" class="form-label">Amount</label>
+				<div class="form-select" id="product-amount">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				
+				</select>
+			</div>
+		</div>
+				<div class="card-section" >
+					<a href="AAU/WNM608/product_added_to_cart.php?id=<?=$product->id?>" class="button2">Add To Cart</a>
+				</div>
+				
+			</div>
+		</div>
 	</div>
+</div>
 
-</body>
-</html>
-
+	<div class="card hard">
+		<p><?= $product->description ?></p>
+	</div>
 			
 
 		</div>

@@ -72,6 +72,7 @@ a:hover {
 
 .flex-align-center { align-items: center; }
 .flex-justify-center { justify-content: center; }
+.flex-column {flex-direction: column;}
 
 
 /* small classes */
@@ -290,7 +291,20 @@ a:hover {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden;
+	height: 100%;
+	transition: all 0.3s;
 }
+.product.figure img{
+	height: 100%;
+	object-fit: contain;
+}
+
+.product.figure:hover {
+	box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+
+}
+
+
 
 .product-overlay{
 	position:relative;
