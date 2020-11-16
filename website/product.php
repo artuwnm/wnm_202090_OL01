@@ -32,7 +32,7 @@ $obj = $result[0];
 					</p>
 					<h3><?php echo($obj->name); ?></h3>	
 					
-					<img style="width: 100px; height: 100px;" src="img/<?php echo($obj->thumbnail) ?>.png" />
+					<img style="width: 100px; height: 100px;" src="<?php echo($base) ?>img/<?php echo($obj->thumbnail) ?>.png" />
 					<p><?php echo($obj->description); ?></p>
 					<p><?php echo($obj->category); ?></p>
 					<p>$<?php echo($obj->price); ?></p>

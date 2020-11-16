@@ -17,7 +17,7 @@
 						Lorem ipsum dolor sit amet
 					</p>
 				</div>
-				<div class="image" style="background-image: url('img/adobe_1.png"><img src="img/adobe_1.png" /></div>
+				<div class="image" style="background-image: url('img/adobe_moncada_thumbnail.png"><img src="img/adobe_moncada_thumbnail.png" /></div>
 			</div>
 			<div class="view-window" style="background-image: url('img/adobe_main.png');">
 				<div class="adobe">
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 			<div class="col-2">
-				<div class="image" style="background-image: url('img/adobe_2.png"><img src="img/adobe_2.png" /></div>
+				<div class="image" style="background-image: url('img/adobe_mccary_thumbnail.png"><img src="img/adobe_mccary_thumbnail.png" /></div>
 				<div class="text">
 					<p>
 						Lorem ipsum dolor sit amet

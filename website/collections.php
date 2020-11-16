@@ -29,11 +29,8 @@ foreach($result as $obj) {
 		echo("<h2 class='uppercase'>$obj->category</h2><div class='grid gap'>");
 	}
 
-	$output = <<<HERE
-<div class="col-xs-12 col-md-6">
-	<a href="product.php?id=$obj->id"><img class="autoscale" src="img/$obj->thumbnail.png" /></a>
-</div>
-HERE;
+	$output = "<div class='col-xs-12 col-md-6'><a href='product.php?id=" . 
+		$obj->id . "'><img class='autoscale' src='" . $base . "img/" . $obj->thumbnail . ".png' /></a></div>";
 	
 	echo($output);
 }
