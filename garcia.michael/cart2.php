@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/function.php";
+include_once "parts/templates.php";
+
+$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (4,7,10)");
+
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<title>Product Page</title>
@@ -34,32 +42,35 @@
 </div>
 
 
-	<div class="cartcontainer">
-		<h1><center>Shopping Cart</center></h1>
+	<div class="container">
+		<h2>In Your Cart</h2>
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-8">
-				<div class="card">
-					<img src="img/1.jpg" style="width:200px; height: 230px;" align="left"><br><br>
-						<p>Name of Plant</p>
-						<p>ID: 234353453</p>
-						<p><a href="#">Remove from cart</a></p>
+			<div class="col-xs-12 col-md-7">
+				<div class="card soft">
+					<?= array_reduce($cart,'cartListTemplate') ?>
 				</div>
 			</div>
-
-
-			<div class="col-xs-12 col-md-4">
-				<div class="card soft">
-					<h4><b><center>Cart Summary</center></b></h4>
-					<p><b>Order Total</b></p>
-		            <div class="form-control">
-						<a href="cart2.php" class="form-button">Check Out</a>
-					</div>
-
+		<div class="col-xs-12 col-md-5">
+			<div class="card soft flat">
+				<div class="card-section display-flex">
+					<div class="flex-stretch"><strong>Sub Total</strong></div>
+					<div class="flex-none">&dollar;3.50</div>
 				</div>
+				<div class="card-section display-flex">
+					<div class="flex-stretch"><strong>Taxes</strong></div>
+					<div class="flex-none">&dollar;3.50</div>
+				</div>
+				<div class="card-section display-flex">
+					<div class="flex-stretch"><strong>Total</strong></div>
+					<div class="flex-none">&dollar;3.50</div>
+				</div>
+				<div class="card-section">
+					<a href="product_checkout.php" class="form-button">Checkout</a>
 			</div>
 		</div>
-			
 	</div>
+</div>
+</div>
 
 
 <?php include "parts/footer.php"; ?>

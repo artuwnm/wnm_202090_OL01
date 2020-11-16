@@ -97,6 +97,11 @@ a:hover {
 .flex-justify-center {justify-content: center; }
 
 
+.flex-column {
+	flex-direction: column;
+}
+
+
 /* Small classes */
 
 .media-image {
@@ -594,5 +599,5 @@ figure.product {
 
 }
 
-/* Img */
+
 
