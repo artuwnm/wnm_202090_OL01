@@ -28,6 +28,7 @@ $image_elements = array_reduce($images,function($r,$o){
 
 	<?php include "parts/navbar.php"; ?>
 
+	<figure class="figure product">
 
 	<div class="container">
 		<div class="grid gap">
@@ -72,7 +73,7 @@ $image_elements = array_reduce($images,function($r,$o){
 				</div>
 			</div>
 	</div>
-
+</figure>
 
 	<div class="card soft dark">
 		<p><?= $product->description ?></p>

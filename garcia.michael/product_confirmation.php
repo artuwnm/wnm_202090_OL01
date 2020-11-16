@@ -13,7 +13,7 @@
 <br><div class="cartcontainer">
 	<script>
 		const makeNav = (classes='') => {
-			const links = ['<a href="home.php">home</a>','<a href="product_list.php">view items</a>','<a href="cart.php">cart</a>'];
+			const links = ['<a href="home.php">home</a>','<a href="product_list.php">view items</a>','<a href="cart2.php">cart</a>'];
 			let ran = Math.floor(Math.random()*links.length);
 			document.write(`
 			<div>

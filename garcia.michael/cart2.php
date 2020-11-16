@@ -9,7 +9,7 @@ $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (4,7,10)");
 ?><!DOCTYPE html>
 <html>
 <head>
-	<title>Product Page</title>
+	<title>My Cart</title>
 
 
 	<?php include "parts/meta.php"; ?>

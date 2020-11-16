@@ -48,7 +48,7 @@
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-4">
 				<figure class="figure product">
-					<a href="#"><img src="img/1.jpg" alt="Plant"></a>
+					<a href="product_list.php"><img src="img/1.jpg" alt="Plant"></a>
 					<figcaption>
 						<div>Monstera Deliciosa</div>
 						<div class="favorite"></div>
@@ -59,7 +59,7 @@
 
 			<div class="col-xs-12 col-md-4">
 				<figure class="figure product">
-				<a href="#"><img src="img/2.jpg" alt="Plant"></a>
+				<a href="product_list.php"><img src="img/2.jpg" alt="Plant"></a>
 					<figcaption>
 						<div>Calathea Rattlesnake</div>
 						<div>$39.99</div>
@@ -70,7 +70,7 @@
 
 			<div class="col-xs-12 col-md-4">
 				<figure class="figure product">
-				<a href="#"><img src="img/3.jpg" alt="Plant"></a>
+				<a href="product_list.php"><img src="img/3.jpg" alt="Plant"></a>
 					<figcaption>
 						<div>Snake Plant</div>
 						<div>$40.00</div>
@@ -92,7 +92,7 @@
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-4">
 				<figure class="figure product">
-				<a href="#"><img src="img/4.jpg" alt="Plant"></a>
+				<a href="product_list.php"><img src="img/4.jpg" alt="Plant"></a>
 					<figcaption>
 						<div>Pink Anthurium</div>
 						<div>$53.99</div>
@@ -102,7 +102,7 @@
 
 			<div class="col-xs-12 col-md-4">
 				<figure class="figure product">
-				<a href="#"><img src="img/5.jpg" alt="Plant"></a>
+				<a href="product_list.php"><img src="img/5.jpg" alt="Plant"></a>
 					<figcaption>
 						<div>Fiddle Leaf Fig</div>
 						<div>$60.99</div>
@@ -112,7 +112,7 @@
 
 			<div class="col-xs-12 col-md-4">
 				<figure class="figure product">
-				<a href="#"><img src="img/6.jpg" alt="Plant"></a>
+				<a href="product_list.php"><img src="img/6.jpg" alt="Plant"></a>
 					<figcaption>
 						<div>Bird of Paradise</div>
 						<div>$60.99</div>
