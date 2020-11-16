@@ -1,0 +1,5 @@
+$(()=> {
+
+    //window.alert("jquery loaded");
+
+});

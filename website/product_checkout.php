@@ -120,7 +120,9 @@
 					</div>
 				</div>
 				
-				
+                <p>
+					<a href="product_confirmation.php">Complete transaction</a>
+				</p>
 			</div>
 
 			
