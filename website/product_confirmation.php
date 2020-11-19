@@ -1,4 +1,4 @@
-
+<?php include_once "lib/php/functions.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +9,8 @@
 <?php
 
 $id = $_GET["id"];
+
+resetCart();
 
 ?>
 	<!-- header -->

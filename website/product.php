@@ -1,9 +1,8 @@
-
+<?php include "lib/php/functions.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<?php include "parts/meta.php" ?>
-	<?php include "lib/php/functions.php" ?>
 	<title>Tova</title>
 </head>
 <body>
@@ -11,12 +10,7 @@
 
 $id = $_GET["id"];
 
-$conn = makeConn();
-$result = makeQuery($conn, "SELECT * FROM `products` WHERE `id` = " . $id . ";");
-
-$obj = $result[0];
-
-
+$obj = getProductById($id);
 
 ?>
 	<!-- header -->
@@ -26,7 +20,11 @@ $obj = $result[0];
 		</div>
 		<div class="main">
 			
-		<div class="card soft" id="paragraphs">
+			<form action="cart_actions.php" method="POST">
+				<input type="hidden" name="id" value="<?php echo($id); ?>" />
+				<input type="hidden" name="action" value="add" />
+
+				<div class="card soft" id="paragraphs">
 					<p>
 						<a href="collections.php">&laquo; Back</a>
 					</p>
@@ -37,11 +35,23 @@ $obj = $result[0];
 					<p><?php echo($obj->category); ?></p>
 					<p>$<?php echo($obj->price); ?></p>
 					<p>
-						<a href="product_cart.php">Add to cart</p>
+						<label for="quantity">Quantity:</label>
+						<select class="form-select" id="quantity" name="quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</p>
+					<p>
+						<input type="submit" class="form-button" value="Add to cart" />
 					</p>
 				</div>
-			
+			</form>
+
 		</div>
+
 	</div>
 </body>
 </html>

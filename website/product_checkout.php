@@ -1,3 +1,5 @@
+<?php include_once "lib/php/functions.php" ?>
+<?php include_once "parts/templates.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,88 +43,30 @@
 				</div>
 
 				<div style="text-align: center; margin-top: 60px; margin-bottom: 60px;">
-					<a class="button big">Checkout</a>	
+					<a href="product_confirmation.php" class="button big">Checkout</a>	
 				</div>
 			</div>
 				
 			<div class="col-xs-12 col-md-6">
 
-				<div class="card hard">
-					
-					<div class="grid">
-						<div class="col-md-9">Item Name</div>
-						<div class="col-md-2">
-							<div class="form-select">
-								<select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-									<option>8</option>
-									<option>9</option>
-									<option>10</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-1"><a style="padding-left: 20px; line-height:30px; font-weight: bold;" class="button">X</a></div>
-					</div>
+
+				<?php
+
+
+				$cart = getCartItems();
+				echo(array_reduce($cart, 'cartItem'));
+
+				$subtotal = array_reduce($cart, function($r, $o) { return $r + $o->total; }, 0);
+				$tax = $subtotal * 0.085;
+				$total = $subtotal + $tax;
+				
+				?>
+				<div class="card soft">
+					<div>Subtotal <?php echo(cur($subtotal)); ?></div>
+					<div>Tax <?php echo(cur($tax)); ?></div>
+					<div style="font-weight: bold;">Total <?php echo(cur($total)); ?></div>
 				</div>
 
-				<div class="card hard">
-					
-					<div class="grid">
-						<div class="col-md-9">Item Name</div>
-						<div class="col-md-2">
-							<div class="form-select">
-								<select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-									<option>8</option>
-									<option>9</option>
-									<option>10</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-1"><a style="padding-left: 20px; line-height:30px; font-weight: bold;" class="button">X</a></div>
-					</div>
-				</div>
-				
-
-				<div class="card hard">
-					
-					<div class="grid">
-						<div class="col-md-9">Item Name</div>
-						<div class="col-md-2">
-							<div class="form-select">
-								<select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-									<option>8</option>
-									<option>9</option>
-									<option>10</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-1"><a style="padding-left: 20px; line-height:30px; font-weight: bold;" class="button">X</a></div>
-					</div>
-				</div>
-				
-                <p>
-					<a href="product_confirmation.php">Complete transaction</a>
-				</p>
 			</div>
 
 			

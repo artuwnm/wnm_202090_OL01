@@ -231,6 +231,7 @@ button.big,
 	color: var(--color-black);
 }
 
+select.form-select,
 .form-select>select {
 	padding: 0.5em 1.3em;
 	background-color: var(--color-neutral-light);

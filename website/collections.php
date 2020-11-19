@@ -1,8 +1,8 @@
+<?php include "lib/php/functions.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<?php include "parts/meta.php" ?>
-	<?php include "lib/php/functions.php" ?>
 	<?php include "parts/templates.php" ?>
 	<title>Tova</title>
 </head>
