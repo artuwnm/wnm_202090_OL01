@@ -330,6 +330,12 @@ a:hover {
     cursor: pointer;
     text-align: center;
 }
+
+/* 原来width是initial*/
+.form-button.inline {
+	width: initial;
+}
+
 .form-button:hover {
 	text-decoration: none;
 }
