@@ -1,16 +1,11 @@
-<!DOCTYPE html>
+<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DA-IE Jewelry</title>
-
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+	
+	<?php include "parts/meta.php"; ?>
 </head>
 <body>
 	
@@ -25,10 +20,13 @@
 				<div class="flex-stretch"></div>
 				 <nav class="flex-none nav">
 				    <ul class="container display-flex">
-				   	   <li><a href="http://danyaxie.com/aau/wnm_608/midterm/">HOME</a></li>
+				   	   <li><a href="index.php">HOME</a></li>
 					   <li><a href="product_list.php">SHOP</a></li>
-					   <li><a href="about.php">ABOUT</a></li>
-					   <li><a href="cart.php">CART</a></li>
+					   <li><a href="about.php">ABOUT</a></li>				   
+					   <li><a href="cart.php">
+				  		  <span>CART</span>
+				  		  <span class="badge"><?= makeCartBadge(); ?></span>
+			  		   </a></li>
 				    </ul>
 				 </nav>
 				</div>
@@ -38,7 +36,7 @@
 					<h1>DA-IE Jewelry</h1>
 					<h3>New Collection Arrives</h3>
 					<div class="form-control">
-						<a href="#" class="btn shopnow">ADD TO CART</a>
+						<a href="product_list.php" class="btn shopnow">SHOP NOW</a>
 					</div>
 				</div>
 		    </div>
@@ -78,22 +76,22 @@
 					<h3>Most Popular</h3>					
 					<div class="popular-item-row">
 						<div class="popular-item">
-							<a href="product_1.php"><img src="img/1.JPG" style="width:285px; height: 285px;"></a>
+							<a href="product_item.php?id=1"><img src="img/1_1.jpg" style="width:285px; height: 285px;"></a>
 							<div>Verna Double Hoops Earrings</div>
 							<div class="popular-price">$150</div>
 						</div>
 						<div class="popular-item">
-							<img src="img/2.JPG" style="width:285px; height: 285px;">
+							<a href="product_item.php?id=2"><img src="img/2_1.jpg" style="width:285px; height: 285px;"></a>
 							<div>Marjorie Double Ring</div>
 							<div class="popular-price">$180</div>
 						</div>
 						<div class="popular-item">
-							<img src="img/3.JPG" style="width:285px; height: 285px;">
+							<a href="product_item.php?id=3"><img src="img/3_1.jpg" style="width:285px; height: 285px;"></a>
 							<div>Alexa Cross Ring</div>
 							<div class="popular-price">$110</div>
 						</div>
 						<div class="popular-item">
-							<img src="img/4.JPG" style="width:285px; height: 285px;">
+							<a href="product_item.php?id=4"><img src="img/4_1.jpg" style="width:285px; height: 285px;"></a>
 							<div>Riley Earrings</div>
 							<div class="popular-price">$120</div>
 						</div>
@@ -103,37 +101,12 @@
 	    </div>
     </div>
           
-	
-	<!-- .container>artical#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
-	<!--
-	<div class="container">
-		<article id="article1" class="article card soft">
-			<div class="display-flex flex-align-center">
-				<div class="flex-stretch"><h2>Article 1</h2></div>
-				<div class="flex-none"><small>5:20am</small></div>
-			</div>
-			<div class="article-body">
-				<p>The article is coming soon.</p>
-			</div>
-		</article>
-		<article id="article2" class="article card soft">
-			<div class="display-flex flex-align-center">
-				<div class="flex-stretch"><h2>Article 2</h2></div>
-				<div class="flex-none"><small>5:20am</small></div>
-			</div>
-			<div class="article-body">
-				<p>The article is coming soon.</p>
-			</div>
-		</article>
-	</div>
-	-->
+
 	<div class="view-window" style="background-image: url('img/footer.jpg')"></div>
 
-	<div class="footer">
-		<div class="container">© 2020 by Danya Xie. All rights reserved.</div>
-	</div>
+	<?php include "parts/footer.php"; ?> 
 
-		
+
 
 </body>
 </html>

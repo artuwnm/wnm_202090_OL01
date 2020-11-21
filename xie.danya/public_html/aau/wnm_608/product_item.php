@@ -11,7 +11,7 @@ $image_elements = array_reduce($images,function($r,$o){
 });
 
 
-// print_p($product);
+//print_p($_SESSION);
 
 ?>
 
@@ -42,27 +42,41 @@ $image_elements = array_reduce($images,function($r,$o){
 				</div>	
 			</div>
 			<div class="col-xs-12 col-md-6">
-			    <div class="section">
-				    <h3 class="product-name"><b><?= $product->name ?></b></h3>
-				    <h3 class="product-price">&dollar;<?= $product->price ?></h3>
-			    	<p class="product-description"><b>Details:</b> <?= $product->description ?></p>
-			    	<div class="display-inline-block">
-				    	<label for="product-quantity" class="form-label">Quantity</label>
-						<div class="form-select quantity" id="product-quantity">
-							<select>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								<option>6</option>
-							</select>
+				<form method="post" action="cart_actions.php?action=add-to-cart">
+					<input type="hidden" name="product-id" value="<?= $product->id ?>">
+				    <div class="section">
+					    <h3 class="product-name"><b><?= $product->name ?></b></h3>
+					    <h3 class="product-price">&dollar;<?= $product->price ?></h3>
+				    	<p class="product-description"><b>Details:</b> <?= $product->description ?></p>
+				    	
+				    	<div class="display-inline-block">
+					    	<label for="product-quantity" class="form-label">Quantity</label>
+							<div class="form-select quantity">
+								<select id="product-quantity" name="product-quantity">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</div>
 						</div>
-					</div>
-					<div class="form-control">
-						<a href="product_added.php?id=<?= $product->id ?>" class="btn add-cart">ADD TO CART</a>
-					</div>					    	
-			    </div>				
+						<br>
+				    	<div class="display-inline-block">
+					    	<label for="product-color" class="form-label">Color</label>
+							<div class="form-select quantity">
+								<select id="product-color" name="product-color">
+									<option>Gold</option>
+									<option>Silver</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-control">
+							<input type="submit" class="btn add-cart" value="ADD TO CART">
+						</div>					    	
+				    </div>
+				</form>				
 			</div>
 		</div>	
 	</div>

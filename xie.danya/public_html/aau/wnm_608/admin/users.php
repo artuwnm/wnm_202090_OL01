@@ -30,7 +30,7 @@ if(isset($_GET['action'])) {
 			file_put_contents($filename,json_encode($users));
 			header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
 			break;
-		case "create";
+		case "create":
 			$empty_user->name = $_POST['user-name'];
 			$empty_user->type = $_POST['user-type'];
 			$empty_user->email = $_POST['user-email'];
@@ -43,11 +43,10 @@ if(isset($_GET['action'])) {
 			file_put_contents($filename,json_encode($users));
 			header("location:{$_SERVER['PHP_SELF']}?id=$id");
 			break;
-		case "delete";
+		case "delete":
 			array_splice($users, $_GET['id'],1);
 			file_put_contents($filename,json_encode($users));
 			header("location:{$_SERVER['PHP_SELF']}");
-			break;
 			break;
 	}
 }

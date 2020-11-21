@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php 
+
+include_once "lib/php/functions.php"; 
+include_once "parts/templates.php";
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -117,30 +122,10 @@
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card soft">
-					<div class="section">					
-						<h4><b>Order Summary</b></h4>
-					</div>
-					<div class="section">
-						<br>
-						<div class="display-flex">
-							<div class="flex-stretch">Subtotal</div>
-							<div class="flex-none">&dollar;486</div>
-						</div>
-						<br>
-						<div class="display-flex">
-							<div class="flex-stretch">Taxes</div>
-							<div class="flex-none">&dollar;24</div>
-						</div>
-						<br>
-						<div class="display-flex">
-							<div class="flex-stretch">Total</div>
-							<div class="flex-none">&dollar;510</div>
-						</div>
-						
-			            <div class="form-control">
-							<a href="product_confirmation.php" class="form-button">PLACE ORDER</a>
-						</div>
-					</div>
+					<?= cartTotals() ?>
+					<div class="form-control">
+						<a href="product_confirmation.php" class="form-button">PLACE ORDER</a>
+					</div>					
 				</div>
 			</div>
 		</div>			
