@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 function print_p($v) {
  	echo "<pre>",print_r($v),"</pre>";
 }
@@ -35,4 +37,88 @@ function makeQuery($conn, $qry) {
 	return $a;
 }
 
+
+
+// CART FUNCTIONS
+
+// function array_find($array, $fn) {
+// 	foreach ($array as $o) if($fn($o)) return $o;
+// 	return false;
+// }
+
+function array_find($array, $fn) {
+	foreach ($array as $o) if($fn($o)) {
+		return $o;
+	}
+	return false;
+}
+
+function getCart(){
+	return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
+}
+
+function addToCart($id, $size, $color, $quantity) {
+	$cart = getCart();
+
+	$p = array_find($cart,function($o) use($id) { return $o->id==$id; });
+
+	if($p) {
+		$p->quantity += $quantity;
+	} else {
+
+		$_SESSION['cart'][] = (object)[
+		"id" => $id,
+		"size" => $size,
+		"color" => $color,
+		"quantity" => $quantity
+		];
+	}
+}
+
+function resetCart(){ $_SESSION['cart'] =[]; }
+
+
+// function cartItemById($id) {
+// 	array_find(getCart(),function($o){ 
+// 		return $o->id == $id;
+// 	});
+// }
+
+function cartItemById($id) {
+	return array_find(getCart(),function($o) use($id) { 
+		return $o->id == $id; 
+	});
+}
+
+function makeCartBadge() {
+	$cart = getCart();
+
+	if(count($cart) == 0) {
+		return "";
+	} else {
+		return array_reduce($cart, 
+			function($r,$o) {
+				return $r+$o->quantity;
+			},0);
+	}
+}
+   
+function getCartItems() {
+	$cart = getCart();
+	
+	if(empty($cart)) return [];
+
+	$ids = implode(",", array_map(function($o){
+		return  $o->id;
+	},$cart));
+
+	$data = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN ($ids)");
+	
+	return array_map(function($o) use($cart) {
+		$p = cartItemById($o->id);
+		$o->quantity = $p->quantity;
+		$o->total = $p->quantity * $o->product_unit_price;
+		return $o;
+	},$data);
+}                    
 

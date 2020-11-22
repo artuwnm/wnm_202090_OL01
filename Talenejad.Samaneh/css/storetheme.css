@@ -12,9 +12,6 @@
 
 
 
-
-
-
 /*** TOP NAV - Sign In/Register ***/
 
 .top-nav-container {
@@ -31,9 +28,6 @@
 .signInLink:hover {
 	background-color: var(--color-neutral-medium);
 }
-
-
-
 
 
 
@@ -400,8 +394,16 @@ footer h5{
 }
 
 
+span.badge:not(:empty)::after {
+	content:')';
+}
 
-/* product_item.php */
+span.badge:not(:empty)::before {
+	content:'(';
+}
+
+
+/* START of product_item.php PAGE */
 
 .images-main img {
 	width: 100%;
@@ -414,6 +416,113 @@ footer h5{
 	height:8em;
 	object-fit: contain;
 }
+
+
+.checked {
+  color: grey;
+}
+
+.product_item_heading .product-heading_designer {
+	font-weight: 700;
+	color:#000;
+	line-height: 40px;
+	
+}
+
+.product_item_heading .product-heading_name {
+	font-size:16;
+	font-weight: 400;
+}
+
+.product_item_heading .product-heading_price {
+	line-height: 30px;
+}
+
+.product_item_heading .product-heading_shipping_label {
+	line-height: 20px;
+}
+
+
+.size-select select,
+.color-select select,
+.quantity-select select,
+.description,
+.add_to-shopping-bag button{
+	display: block;
+	width: 60%;
+	margin-top: 20px;
+	padding:10px; 
+	word-spacing: 0.1em;
+}
+
+.amount-select select {
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	padding:3px; 
+}
+/*.addto-shopping-bag button {
+	background-color: black;
+	color:white;
+	border-radius: 0.5em;
+}
+*/
+.quantity-select input {
+	padding-left: 18%;
+}
+
+
+.decrease_button,
+.increase_button {
+	background-color: transparent;
+	border: none;
+	font-size: 20px;
+	position: absolute;
+	color:black;
+	padding-right: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1024px ){
+	.product_detail_info {
+		padding-left: 20%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.size-select select,
+	.color-select select,
+	.quantity-select select,
+	.description,
+	.addto-shopping-bag button {
+		width: 80%;
+		margin-top: 20px;
+		padding:10px;
+	}
+
+}
+
+
+.images-main img {
+	width: 100%;
+	height: 50vh;
+	object-fit: contain;
+}
+
+.images-thumbs img {
+	width: 9em;
+	height:8em;
+	object-fit: contain;
+}
+
+
+/* END of product_item.php PAGE */
+
+
+
+/* checkout.php page */
 
 @media screen and (min-width: 800px) {
 	/* checkout.php */
@@ -431,12 +540,6 @@ footer h5{
 		padding-left:10%;
 	}
 
-}
-
-
-
-.form-control .form-button {
-	background-color: #757575;
 }
 
 

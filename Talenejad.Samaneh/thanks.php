@@ -1,3 +1,10 @@
+<?php include "lib/php/debug.php"; ?>
+
+<?php
+	include_once "lib/php/functions.php";
+	resetCart();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +15,13 @@
     <?php include "parts/meta.php"; ?>
 </head>
 <body>
-	<?php
-
-		ini_set('display_errors', 1);
-		ini_set('display_startup_errors', 1);
-		error_reporting(E_ALL);
-
-	?>
-
 	<?php include "parts/navbar.php"; ?>
    	
 	<div class="container display-flex display-flex-center">
 		<h2>Thank you, you order has been placed!</h2>
-
 	</div>
+
+	<!-- <br>s are content holder -->
 	<br>
 	<br>
 	<br>
@@ -47,6 +47,7 @@
 	<br>
 	<br>
 	<br>
+	
     <?php include "parts/footer.php"; ?>
 </body>
 </html>
