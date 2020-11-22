@@ -1,9 +1,15 @@
+<?php
+    
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>title</title>
+	<title>Welcome to Ichiban Sushi</title>
 
 	<link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
 	<link rel="stylesheet" type="text/css" href="css/storetheme.css">
@@ -14,7 +20,7 @@
 <body>
 	
 	</div>
-	<?php include "parts/nav_bar.php"; ?>
+	<?php include "parts/navbar 2.php"; ?>
 			
 					
 				</ul>	
@@ -30,7 +36,7 @@
 					<div class="slide center">
 						<div class="carousel-content">
         					<h1>GOT YUZU?</h1>
-        					<h3>New! Refreshing Yuzu flavored rolls</h3>
+        					<h3>This Week's Ichiban Special Roll: Yuzu rolls</h3>
         					<a href="#" class="button2">View More</a>
 						</div>
 

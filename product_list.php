@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -17,7 +22,7 @@
 </head>
 <body>
 	
-	<?php include "parts/navbar.php"; ?>
+	<?php include "parts/navbar 2.php"; ?>
 
 
 	<div class="container">
@@ -28,8 +33,7 @@
 
 		<?php
 		
-		include_once "lib/php/functions.php";
-		include_once "parts/templates.php";
+		
 
 		$result = makeQuery(
 			makeConn(),

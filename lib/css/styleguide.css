@@ -390,6 +390,11 @@ footer{
   border-radius: 0.5em;
 }
 
+.button.inline {
+	width: initial;sx
+
+}
+
 /* Figure */
 .figure {
 	margin:0;
