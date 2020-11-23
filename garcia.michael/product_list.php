@@ -1,3 +1,10 @@
+<?php
+
+	include_once "lib/php/function.php";
+	include_once "parts/templates.php";
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,9 +33,6 @@
 
 
 	<?php
-
-	include_once "lib/php/function.php";
-	include_once "parts/templates.php";
 
 	$result = makeQuery(
 		makeConn(),

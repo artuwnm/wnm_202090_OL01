@@ -1,3 +1,8 @@
+
+<?php
+
+include_once "lib/php/function.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +18,7 @@
 <br><div class="cartcontainer">
 	<script>
 		const makeNav = (classes='') => {
-			const links = ['<a href="home.php">home</a>','<a href="product_list.php">view items</a>','<a href="cart2.php">cart</a>'];
+			const links = ['<a href="home.php">home</a>','<a href="product_list.php">view items</a>','	<a href="cart2.php"><span>Cart</span><span class="badge"><?= makeCartBadge(); ?></span>'];
 			let ran = Math.floor(Math.random()*links.length);
 			document.write(`
 			<div>
@@ -84,9 +89,9 @@
 					</div>
 					<div class="flex-stretch">
 						<input type="search" placeholder="cvv number" class="form-input">
-					</div></form>
+					</div></form></div></form>
 
-						<span><a href="product_confirmation.php" class="form-button">Check Out</a></span>
+						<div class="form-control"><a href="product_confirmation.php" class="form-button">Check Out</a></div>
 					</div>
 				</div>
 

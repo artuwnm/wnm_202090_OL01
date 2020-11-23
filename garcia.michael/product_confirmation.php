@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/function.php";
+resetCart();
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<title>Product Page</title>
@@ -13,7 +18,7 @@
 <br><div class="cartcontainer">
 	<script>
 		const makeNav = (classes='') => {
-			const links = ['<a href="home.php">home</a>','<a href="product_list.php">view items</a>','<a href="cart2.php">cart</a>'];
+			const links = ['<a href="home.php">home</a>','<a href="product_list.php">view items</a>','	<a href="cart2.php"><span>Cart</span><span class="badge"><?= makeCartBadge(); ?></span>'];
 			let ran = Math.floor(Math.random()*links.length);
 			document.write(`
 			<div>
@@ -33,9 +38,9 @@
 	<script>makeNav('nav nav-crumbs')</script>
 </div>
 
-
+<div class="cartcontainer">
 			<div class="col-xs-12 col-md-4">
-				<div class="card soft">
+			<div class="card soft">
 					<h4><b><center>Thank you for purchase!</center></b></h4>
 		            <div class="form-control">
 						<a href="product_list.php" class="form-button">Continue Shopping</a>
