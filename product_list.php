@@ -7,49 +7,31 @@ include_once "parts/templates.php";
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product List - SUSHI ICHIBAN</title>
+	<title>Menu - SUSHI ICHIBAN</title>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<?php include "parts/meta.php";?>
 
-	<link rel="stylesheet" type="text/css" href="lib/css/styleguide4.css">
-	<link rel="stylesheet" type="text/css" href="/lib/css/gridsystem.css">
-	<link rel="stylesheet" type="text/css" href="css/storetheme.css">
-	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
-	<script type="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="AAU/WNM608/lib/js/functions.js"></script>
+	<script src="AAU/WNM608/js/templates.js"></script>
+	<script src="AAU/WNM608/js/product_list.js"></script>
 </head>
 <body>
 	
-	<?php include "parts/navbar 2.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
-		
-			<h2>Menu</h2>
+		<h2>Menu</h2>
+
+			<div class="form-control">
+				<form class="hotdog light" id="product-search">
+					<input type="search" placeholder="Search Products">
+				</form>
+			</div>
 
 			
 
-		<?php
-		
-		
-
-		$result = makeQuery(
-			makeConn(),
-			"
-			SELECT *
-			FROM `products`
-			ORDER BY `price` DESC
-			LIMIT 12
-
-			"
-		);
-
-		echo "<div class='productlist grid gap'>", array_reduce($result,'productListTemplate'),"</div>";
-		?>
-
-		</div>
+		<div class='productlist grid gap'></div>
 	</div>
 
 
