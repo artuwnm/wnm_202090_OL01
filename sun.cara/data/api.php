@@ -16,6 +16,14 @@ switch($data->type) {
 			ORDER BY `date_create` DESC 
 			LIMIT 12");
 		break;
+	case "product_search":
+		$output['result'] = makeQuery(makeConn(),"SELECT * 
+			FROM `products` 
+			WHERE `name` = '$data->search'
+			ORDER BY `date_create` DESC 
+			LIMIT 12");
+		break;
+
 	default: $output['error'] = "No Valid Type";
 }
 

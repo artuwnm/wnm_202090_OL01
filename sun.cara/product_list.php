@@ -10,18 +10,11 @@ include_once "parts/templates.php";
 	<title>Product List</title>
 
 	<?php include "parts/meta.php"; ?>
-
+	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
 	<script src="lib/js/functions.js"></script>
 	<script src="js/templates.js"></script>
-
-	<script>
-	query({type:'products_all'}).then(d=>{
-		$(".productlist").html(d.result[0].price)
-	});
-	</script>
+	<script src="js/product_list.js"></script>
 </head>
-
-
 <body>
 	<?php ini_set("display_errors","On"); ?>
 
