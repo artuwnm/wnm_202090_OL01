@@ -96,7 +96,7 @@ header h1 {
 	font-size: 18px;
 	position: absolute;
 	right:15px;
-	top:3px;
+	top:1px;
 	
 }
 
@@ -522,7 +522,7 @@ span.badge:not(:empty)::before {
 
 
 
-/* checkout.php page */
+/* START of checkout.php PAGE */
 
 @media screen and (min-width: 800px) {
 	/* checkout.php */
@@ -541,5 +541,45 @@ span.badge:not(:empty)::before {
 	}
 
 }
+
+/* END of checkout.php PAGE */
+
+
+
+
+/* START of product_list.php PAGE */
+
+
+
+.side-filter-container {
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.filter-link {
+	cursor: pointer;
+}
+
+.filter-link:hover {
+	font-weight: 900;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.product-container {
+		margin-top: -40px;
+	} 
+}
+
+
+
+
+
+
+
+
+
+
 
 
