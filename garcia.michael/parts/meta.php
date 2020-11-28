@@ -7,3 +7,6 @@
 	<link rel="stylesheet" href="css/storetheme.css">
 
 	<script type="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+

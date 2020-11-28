@@ -34,7 +34,7 @@
 	<div class="container">
 		<article id="article1" class="article card hard">
 			<div class="article-body">
-				<center>Use promo code <b>OCT20</b> at checkout for 20% off your first purchase.</center>
+				<center>Use promo code <b>2020</b> at checkout for 20% off your first purchase.</center>
 			</div>
 		</article></p>
 
