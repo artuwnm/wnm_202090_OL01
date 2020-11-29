@@ -1,6 +1,6 @@
 <meta name="viewport" content="width=device-width">
 
-<base href="http://danyaxie.com/aau/wnm_608/">
+<base href="http://danyaxie.com/aau/wnm_608/index.php">
 
 <link rel="stylesheet" href="lib/css/styleguide.css">
 <link rel="stylesheet" href="lib/css/gridsystem.css">

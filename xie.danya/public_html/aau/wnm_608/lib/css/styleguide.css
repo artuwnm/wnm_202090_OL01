@@ -376,6 +376,26 @@ a {
 	color: white;
 }
 
+.btn.filter {
+	border: 1px solid;
+	border-radius: 0.2em;
+	border-color: var(--color-main-medium);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 8px 10px;
+	margin-right: 0.5em;
+	color: #6A9478;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.btn.filter:hover {
+	background-color: #6A9478;
+	color: white;
+}
+
+
 .btn.continue {
 	border: #6A9478;
 	border-radius: 0.2em;
@@ -681,6 +701,35 @@ figcaption {
 	color: black;
 	position: absolute;
 	top: 50%;
+	right: 0.5em;
+	transform: translateY(-50%);
+	pointer-events: none;
+	border: none;
+}
+.form-select.sort {
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 1em;
+}
+.form-select.sort>select {
+	padding-right: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	font-size: 0.8em;
+	border: 1px solid var(--color-main-medium);
+	border-radius: 0.2em;
+	cursor: pointer;
+	color: black;
+}
+
+.form-select.sort::after {
+	content: '▾';
+	font-family: Raleway,sans-serif;
+	font-size: 1em;
+	color: black;
+	position: absolute;
+	top: 33%;
 	right: 0.5em;
 	transform: translateY(-50%);
 	pointer-events: none;
