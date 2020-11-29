@@ -16,4 +16,6 @@ $base = strpos($root, 'Desktop') > 0 ? 'http://localhost:3000/' : 'http://katy-s
 	<link rel="stylesheet" href="https://use.typekit.net/rzf6qiq.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/products_stuff.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	

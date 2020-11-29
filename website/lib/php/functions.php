@@ -1,4 +1,4 @@
-  <?php
+<?php
 session_start();
 
 include "auth.php";
@@ -54,6 +54,11 @@ function getProductById($id) {
 	$cartItem = getCartItemById($id);
 	$product->quantity = $cartItem->quantity;
 	return $product;
+}
+
+function getCollections() {
+	$collections = makeQuery(makeConn(), "SELECT DISTINCT category FROM `products` ORDER BY category ASC;");
+	return $collections;
 }
 
 // Return a currency-formatted number

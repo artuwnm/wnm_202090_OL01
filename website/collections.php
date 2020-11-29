@@ -5,6 +5,7 @@
 	<?php include "parts/meta.php" ?>
 	<?php include "parts/templates.php" ?>
 	<title>Tova</title>
+	<script src="js/product_list.js"></script>
 </head>
 <body>
 
@@ -13,29 +14,60 @@
 	<div class="container content">
 		<?php include "parts/sidebar.php" ?>
 		<div class="main">
+		<div class="form-control">
+			<form  id="searchform">
+				<input id="searchinput" type="search" class="hotdog" placeholder="Search products">
 
-<?php
+				<div class="display-flex" style="padding-top: 10px;">
+					<div class="flex-none">
+						<div class="form-select" style="width: 150px;">
+							<select id="select-collection" onchange="processSearch()">
+								<option value="all">All collections</option>
+								<?php
+										
+									$collections = getCollections();
+									
+									echo(array_reduce($collections, function($r, $o) { 
+										$r .= "<option value=\"" . $o->category . "\">" . ucfirst($o->category) . "</option>";
+										return $r;
+									}));
+									
+								?>
+							</select>
+						</div>
+					</div>
+					<div class="flex-none" style="padding-left: 10px;">
+						<div class="form-select" style="width: 150px;">
+							<select id="select-pricerange" onchange="processSearch()">
+								<option value="all">All price ranges</option>
+								<option value="0-100">0-100</option>
+								<option value="100-200">100-200</option>
+								<option value="200-300">200-300</option>
+								<option value="300+">300+</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex-stretch"></div>
+					<div class="flex-none">
+						<div class="form-select" style="width: 200px;">
+							<select id="select-sort" onchange="processSearch()">
+								<option value="none">Sort by price...</option>
+								<option value="asc">Least expensive to most</option>
+								<option value="desc">Most expensive to least</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</form>
+			
 
-$conn = makeConn();
-$result = makeQuery($conn, "SELECT * FROM `products` ORDER BY `category`;");
 
-$category = "";
-foreach($result as $obj) {
-	if(strtolower($category) != strtolower($obj->category)) {
-		if($category != "") {
-			echo("</div>");
-		}
-		$category = strtolower($obj->category);
-		echo("<h2 class='uppercase'>$obj->category</h2><div class='grid gap'>");
-	}
 
-	$output = "<div class='col-xs-12 col-md-6'><a href='product.php?id=" . 
-		$obj->id . "'><img class='autoscale' src='" . $base . "img/" . $obj->thumbnail . ".png' /></a></div>";
-	
-	echo($output);
-}
-?>
-</div>
+			<div id="product-list">
+
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

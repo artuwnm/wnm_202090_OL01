@@ -1,9 +1,4 @@
 
-.navbar {
-	/*
-	*/
-
-}
 	.navbar .infobar {
 		background-color: #cd9365;
 	}
@@ -42,6 +37,9 @@
 		font-style: normal;
 	}
 
+.productListItem a:hover {
+	text-decoration: none;
+}
 /* COMPONENT CLASS */
 
 .content { 
