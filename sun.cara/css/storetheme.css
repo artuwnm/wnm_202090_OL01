@@ -271,6 +271,10 @@ footer{
 	width: 8em;
 	height: 6em;
 	object-fit: contain;
+/*后面是自己加的*/
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: -60px;
 }
 
 
