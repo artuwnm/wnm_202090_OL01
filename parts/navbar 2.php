@@ -1,4 +1,12 @@
-<header class="navbar">
+<?php
+
+include_once "lib/php/functions.php";
+
+	$php_self = $_SERVER['PHP_SELF'];
+	$page = substr($php_self, 1, strlen($php_self) - 5);
+?>
+
+	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
 				<h1>Sushi Ichiban</h1>
@@ -6,9 +14,12 @@
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
-					<li><a href="#">Menu</a></li>
-					<li><a href="#">Catering</a></li>
-					<li><a href="#">Contact</a></li>					
+					<li><a href="landing_page.php">Home</a></li>
+					<li><a href="product_list.php">Menu</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="cart.php">
+						<span>Cart</span>
+						<span class="badge"><?= makeCartBadge(); ?></span></a></li>					
 				</ul>
 			</nav>
 		</div>

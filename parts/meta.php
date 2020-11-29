@@ -10,4 +10,4 @@
 	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-	<script type="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>

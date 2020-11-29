@@ -28,6 +28,29 @@ include_once "parts/templates.php";
 					<input type="search" placeholder="Search Products">
 				</form>
 			</div>
+			<div class="form-control">
+				<div class="card soft display-flex">
+					<div class="flex-none">
+						<button data-filter="category" data-value="appetizer" type="button" class="button 2">Appetizer</button>
+					</div>
+					<div class="flex-none">
+						<button data-filter="category" data-value="entree" type="button" class="button 2">Entree</button>
+					</div>
+					<div class="flex-none">
+						<button data-filter="category" data-value="dessert" type="button" class="button 2">Dessert</button>
+					</div>
+				</div>
+			</div>
+			<div class="flex-none">
+				<div class="form-select">
+					<select class="js-sort">
+						<option value="1">Newest</option>
+						<option value="2">Oldest</option>
+						<option value="3">Least Expensive</option>
+						<option value="4">Most Expensive</option>				
+					</select>
+				</div>
+			</div>
 
 			
 
