@@ -14,12 +14,8 @@ $empty_user = (object)[
 
 ];
 
-
 // file_put_contents json_encode explode $_POST
 // CRUD, Create Read Update Delete
-
-// print_p([$_GET, $_POST]);
-
 if(isset($_GET['action'])){
 	switch($_GET['action']){
 		case "update":
@@ -53,9 +49,6 @@ if(isset($_GET['action'])){
 			break;	
 	}
 }
-
-
-
 
 
 /*
@@ -167,9 +160,6 @@ $delete = $id == "new" ? "" : "<a href='$self?id=$id&action=delete'>Delete</a>";
 Finally, echo all the output
 */
 
-
-
-
 echo <<<HTML
 <nav class="display-flex">
 	<div class="flex-stretch"><a href="$self">Back</a></div>
@@ -185,11 +175,6 @@ HTML;
 	showUserPage END
 ====================================================
 */
-
-
-
-
-
 
 
 function showUserList($users) {

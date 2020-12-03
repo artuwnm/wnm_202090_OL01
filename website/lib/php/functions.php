@@ -52,7 +52,9 @@ function makeCartBadge() {
 function getProductById($id) {
 	$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=" . $id . ";")[0];
 	$cartItem = getCartItemById($id);
-	$product->quantity = $cartItem->quantity;
+	if($cartItem) {
+		$product->quantity = $cartItem->quantity;
+	}
 	return $product;
 }
 
