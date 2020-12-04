@@ -1,4 +1,7 @@
-<?php include_once "lib/php/functions.php";?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -45,6 +48,12 @@
 	</div>
 
 
+	<div class="container">
+		<h2>Latest Programming Textbooks</h2>
+		<?php recommendedCategory("Programming");?>
+		<h2>Latest Experience Design Textbooks</h2>
+		<?php recommendedCategory("Experience Design");?>
+	</div>
 
 
 

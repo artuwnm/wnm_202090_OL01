@@ -28,7 +28,7 @@ $cart_items = getCartItems();
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
-					<?= array_reduce($cart_items, 'cartListTemplate') ?>
+					<?= array_reduce(getCartItems(), 'cartListTemplate') ?>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">

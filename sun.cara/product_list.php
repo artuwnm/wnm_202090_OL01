@@ -26,7 +26,7 @@ include_once "parts/templates.php";
 
 
 
-	<div class="container">
+	<div class="container lowerspace">
 			<h2>Product List</h2>
 	
 			<div class="form-control">
