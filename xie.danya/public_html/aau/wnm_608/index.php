@@ -1,4 +1,7 @@
-<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php"; 
+include_once "parts/templates.php"; 
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -100,6 +103,11 @@
 		     </div>     
 	    </div>
     </div>
+
+    <!--div class="container">
+    	<h3>New Arrivals</h3>
+    	<?php recommendedCategory("rings"); ?>	
+    </div-->
           
 
 	<div class="view-window" style="background-image: url('img/footer.jpg')"></div>

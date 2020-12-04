@@ -547,7 +547,7 @@ figcaption {
 }
 .product-name {
 	font-weight: bold;
-	padding: 1em 0;
+	padding: 0.5em 0;
 }
 
 /*Table*/
@@ -804,8 +804,10 @@ option {
 }
 
 
-
-
+.product-category {
+	padding-bottom: 2em;
+    color: var(--color-neutral-dark);
+}
 
 
 

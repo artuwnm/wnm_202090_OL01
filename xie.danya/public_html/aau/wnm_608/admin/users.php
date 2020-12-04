@@ -112,6 +112,7 @@ $output = $id == "new" ? $form :
 	"<div class='grid gap'>
 		<div class='col-xs-12 col-md-7'>$display</div>
 		<div class='col-xs-12 col-md-5'>$form</div>
+	</div>
 	";
 
 $delete = $id =="new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
@@ -145,7 +146,7 @@ HTML;
 	<header class="navbar styleguide">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h2>User Admin</h2>
+				<h3>User Admin</h3>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">

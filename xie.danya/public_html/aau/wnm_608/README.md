@@ -2,7 +2,11 @@
 
 ## Relevant Links
 - http://danyaxie.com
-- http://danyaxie.com/aau/wnm_608/midterm/
-- http://danyaxie.com/aau/wnm_608/midterm/styleguide
-- http://danyaxie.com/aau/wnm_608/midterm/notes/reading_data.php
-- http://danyaxie.com/aau/wnm_608/midterm/admin/users.php
+- http://danyaxie.com/aau/wnm_608/index.php
+- http://danyaxie.com/aau/wnm_608/styleguide
+- http://danyaxie.com/aau/wnm_608/admin
+
+## Extra Links
+- http://danyaxie.com/aau/wnm_608/admin/user.php
+- http://danyaxie.com/aau/wnm_608/notes
+- http://danyaxie.com/aau/wnm_608/notes/reading_data.php
