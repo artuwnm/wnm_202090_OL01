@@ -81,9 +81,14 @@ return <<<HTML
 </div>
 HTML;
 }
+ 
 
+function recommendedProducts($a) {
+$products = array_reduct($a,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
 
-
-?>
+}
 
 

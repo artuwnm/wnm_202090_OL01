@@ -20,6 +20,15 @@ function makeConn() {
 	return $conn;
 }
 
+function makePDOCon(){
+	try{
+		$conn = new PDO(...PDOAuth());
+	}catch(PDOException $e){
+		die($e->getMessage());
+	}
+	return $conn;
+}
+
 			
 
 			
