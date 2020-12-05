@@ -3,6 +3,9 @@ session_start();
 
 include "auth.php";
 
+$root = $_SERVER["DOCUMENT_ROOT"];
+$base = strpos($root, 'Desktop') > 0 ? 'http://localhost:3000/' : 'http://katy-smith.com/Development/katy-smith/aau/wnm608/website/';
+
 function print_p($v) {
 	   	 	echo "<pre>", print_r($v),"</pre>";
 
@@ -18,6 +21,15 @@ function makeConn() {
 	$conn = new mysqli($auth[0], $auth[1], $auth[2], $auth[3]);
 	$conn->set_charset('utf8');
 	if($conn->connect_errno) die($conn->connect_error);
+	return $conn;
+}
+
+function makePDOConn() {
+	try {
+		$conn = new PDO(...getPDOAuth());
+	} catch(PDOException $e) {
+		die($o->getMessage());
+	}
 	return $conn;
 }
 

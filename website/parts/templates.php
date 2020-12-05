@@ -1,12 +1,15 @@
 <?php
 
 function productItem($r, $o) {
+    global $base;
 
     $r .= <<<HERE
 
 <div class="col-xs-12 col-md-6">
-    <p>$o->name</p>
-    <a href="product.php?id=1"><img class="autoscale" src="img/adobe_1.png" /></a>
+    <a href="product.php?id=$o->id">
+        <img style="width: 100px; height: 100px;" src="$base/img/$o->thumbnail.png" />
+        <p>$o->name</p>
+    </a>
 </div>
 
 HERE;
