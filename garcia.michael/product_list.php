@@ -29,7 +29,7 @@
 	<div class="container">
 
 		<h1 align="center">Shop Our Plants</h1>
-		<center>Shopping for plants can be stressful especially if you’re a new plant parent. How much sun does a plant need? How often should you water them? Is this plant safe for pets? Even after purchase, we still want to help. Every purchase will come with a care card, so shoppers can continue to provide the best care for their plant. </center><br>
+		<center>Shopping for plants can be stressful especially if you’re a new plant parent. How much sun does a plant need? How often should you water them? Is this plant safe for pets? Even after purchase, we still want to help. Every purchase will come with a care card, so you can continue to provide the best care for your plant. </center><br>
 
 </div>
 
