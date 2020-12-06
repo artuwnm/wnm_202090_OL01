@@ -23,13 +23,27 @@ function makeConn() {
 }
 
 
+function makePDOConn(){
+	try {
+
+		$conn = new PDO(...PDOAuth());
+
+	} catch(PDOException $e) {
+
+		die($e->getMessage());
+	}
+
+	return $conn;
+}
+
 
 function makeQuery($conn, $qry) {
 
 	$result = $conn->query($qry);
+	
 	if($conn->connect_errno) die($conn->error);
 	$a = [];
-	// push each row to the $a array
+
 	while($row = $result->fetch_object()) {
 		$a[] = $row;
 	}
@@ -39,12 +53,6 @@ function makeQuery($conn, $qry) {
 
 
 
-// CART FUNCTIONS
-
-// function array_find($array, $fn) {
-// 	foreach ($array as $o) if($fn($o)) return $o;
-// 	return false;
-// }
 
 function array_find($array, $fn) {
 	foreach ($array as $o) if($fn($o)) {
@@ -77,12 +85,6 @@ function addToCart($id, $size, $color, $quantity) {
 
 function resetCart(){ $_SESSION['cart'] =[]; }
 
-
-// function cartItemById($id) {
-// 	array_find(getCart(),function($o){ 
-// 		return $o->id == $id;
-// 	});
-// }
 
 function cartItemById($id) {
 	return array_find(getCart(),function($o) use($id) { 

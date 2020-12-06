@@ -13,6 +13,7 @@ include "lib/php/debug.php";
 </head>
 <body>
 	<?php include "parts/navbar.php"; ?>
+	<?php include "parts/templates.php"; ?>
 	
 	<div class="container">
 		<div class="view-window header-img-container display-flex flex-align-center">
@@ -20,8 +21,14 @@ include "lib/php/debug.php";
 		        <h1 class="flex-basis_third text-align-center">UP TO 75% OFF</h1>
 		        <h3 class="flex-basis_third text-align-center">SHOP NOW</h3>
 		</div>
-		<?php include "parts/section.php"; ?>
-	</div>
+		
+		<h4 class="card_heading">NEW FOR YOU</h4>
+		<?php recommendedCategory("top") ?>
+
+		<h4 class="card_heading">LATEST</h4>
+		<?php recommendedCategory("pants") ?>
+	</div
+
 
 	<?php include "parts/footer.php"; ?>
 

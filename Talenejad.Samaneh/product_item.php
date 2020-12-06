@@ -2,6 +2,8 @@
 
 <?php
 	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
+
 
 	$product = makeQuery(makeConn(),"SELECT * FROM products WHERE `id`=".$_GET['id'])[0];
 	// print_p($product);
@@ -11,6 +13,7 @@
 		return $r."<img src='img/$o'>";
 	})
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -131,7 +134,23 @@
 			</div>
 
 		</div>
+
 	</div>
+
+	
+
+	<div class="container">
+		<h2>Recommended Products</h2>
+
+		<?php 
+		recommendedSimilar($product->product_category,$product->id);
+		?>
+		
+	</div>
+	
+
+
+	
 
 	<?php include "parts/footer.php"; ?>
 </body>

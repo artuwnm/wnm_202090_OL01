@@ -260,7 +260,7 @@ header h1 {
 }
 
 .card span {
-	display: block;
+	/*display: block;*/
 	text-align: center;	
 	padding: 0.1em 0;
 }
@@ -513,7 +513,7 @@ span.badge:not(:empty)::before {
 
 .images-thumbs img {
 	width: 9em;
-	height:8em;
+	/*height:100%;*/
 	object-fit: contain;
 }
 
@@ -573,13 +573,48 @@ span.badge:not(:empty)::before {
 }
 
 
+/* Admin product list */
+.admin-product_list-container {
+	color:#000;
+}
 
 
+.admin-product_list-container table, tr, th, td {
+	border-collapse: collapse;
+	text-align: left;
+}
 
 
+.admin-product_list-container tr {
+	border-bottom: 1px solid #dddddd;
+/*	border-left: 1px solid grey;
+	border-right: 1px solid grey; */
+	align-items: center;
+}
 
 
+.admin-product_list-container th, td {
+	padding-right: 25px;
+}
 
+
+.admin-product_list-container .table-heading {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.admin-product_list-container th {
+	background-color: black;
+  	color: white;
+}
+
+.admin-product_list-container .photo-header-cell {
+	padding-left: 40px;
+}
+
+.admin-product_list-container .photo-cell{
+	padding:10px;
+}
 
 
 

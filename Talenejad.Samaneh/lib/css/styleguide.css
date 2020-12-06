@@ -1,5 +1,7 @@
 
 
+
+
 /* CSS RESET */
 
 *, *::before, *::after {
@@ -56,20 +58,28 @@ a {
 
 
 input[type=text], select {
-	padding: 5px 68px;
+	padding: 8px 68px;
+	border: 1px solid #b6b0a0;
+	margin-right:0;
+}
+
+input[type=number]
+
+ {
+	padding: 8px 68px;
 	border: 1px solid #b6b0a0;
 	margin-right:0;
 }
 
 
+
 input[type=submit] {
-	width:90px;
+	/*width:90px;*/
 	color: white;
-	padding: 5px 16px;
+	padding:9px 16px;
 	background-color: var(--color-neutral-dark);
 	font-size: 12px;
 	margin-right: 0px;
-	margin-left: -4px;
 }
 
 
@@ -120,6 +130,11 @@ hr {
 }
 	
 
+/* text align classes*/
+.text-align-center {
+	text-align: center;
+}
+
 
 .display-flex { display: flex; };
 .display-inline-flex { display: inline-flex; }
@@ -142,10 +157,6 @@ hr {
 .flex-wrap { flex-wrap: wrap; }
 .justify-content { align-content: space-between }
 
-/* text align classes*/
-.text-align-center {
-	text-align: center;
-}
 
 
 .flex-basis_third { flex-basis: 33.333333333333336%; }
@@ -259,14 +270,12 @@ hr {
 
 .card {
 	background-color: var(--color-neutral-light);
-/*	margin-top: 1em;
-	margin-bottom: 1em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	overflow: hidden;
 	position: relative;
 	/*overflow: hidden;*/
 }
-
-
 
 	.card.soft {
 		box-shadow: 0 0 10px rgba(0,0,0,0.1)
@@ -288,7 +297,6 @@ hr {
 	.card.flat {
 		padding:0;
 	}
-
 
 
 	.card.last {
@@ -326,8 +334,6 @@ hr {
 	}
 
 
-
-
 /* view-window class*/
 .view-window {
 	/*position: relative;*/
@@ -335,7 +341,6 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-
 }
 
 
@@ -353,8 +358,6 @@ hr {
 
 .table.striped tbody tr:nth-child(odd) {
 	background-color: var(--color-main-medium);
-
-
 }
 
 
@@ -375,27 +378,22 @@ hr {
 	border: 1px solid var(--color-main-medium);
 }
 
+
 /* FIGURE*/
 
 .figure {
 	margin:0;
 	background-color:inherit;
-
 }
 
 .figure img {
 	width:100%;
 	text-align: text-bottom;
-
-
 }
 
 .figure figcaption {
 	padding: 1em;
 }
-
-
-
 
 
 
@@ -446,9 +444,6 @@ hr {
 }
 
 
-
-
-
 .product-overlay img{
 	transform: scale(1,1);
 	transition: all 0.3s;
@@ -457,8 +452,6 @@ hr {
 .product-overlay:hover img{
 	transform: scale(1.4,1.4);
 }
-
-
 
 
 @media(max-width: 600px) {
@@ -481,7 +474,6 @@ hr {
 }
 
 
-
 /* FORMS*/
 .form-select>select,
 .hotdog input,
@@ -490,7 +482,7 @@ hr {
 .form-input, 
 .form-item {
     display: inline-block;
-    background-color: var(--color-neutral-medium);
+    background-color: #e1e1e3;
     border-width: 0;
     font: inherit;
     -webkit-appearance: none;
@@ -502,7 +494,7 @@ hr {
 
 /* Inputs */
 .form-input {
-    border-bottom: 1px solid var(--color-main-medium);
+    /*border-bottom: 1px solid var(--color-main-medium);*/
     padding: 0.5em 1em !important; 
 }
 
@@ -511,18 +503,18 @@ hr {
 	border-top:none;
 	border-left:none;
 	border-right:none;
-	border-bottom: 1px solid var(--color-main-medium);
+/*	border-bottom: 1px solid var(--color-main-medium);*/
 }
 
 .form-input:focus {
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid #7d7d7f;
 }
 
 /* Labels */
 .form-label {
-	font-size: 0.8em;
+	font-size: 1em;
 	color:var(--color-neutral-medium);
-	display: block;
+	display: inline;
 	width:100%;
 }
 
@@ -534,12 +526,20 @@ hr {
 
 
 /* Buttons */
+.form-button.inline {
+	width:initial;
+}
+
 .form-button {
-    display: inline-block;
+    display: block;
     border-radius: 0.3em;
     cursor: pointer;
     text-align: center;
     padding: 0.5em 1em;
+    color:white;
+    background-color:black;
+    word-spacing: 0.2em;
+    width:100%;
 }
 
 .form-button:active {
@@ -580,7 +580,6 @@ hr {
 }
 
 /* Form select*/
-
 .form-select>select{
 	display: block;
 	padding: 0.5em 1.8em;
@@ -611,7 +610,6 @@ hr {
 }
 
 /* Toggle*/
-
 .toggle label {
 	font-size: 1.3em;
 	display: inline-block;
@@ -632,7 +630,6 @@ hr {
 	position: absolute;
 	background-color: var(--color-neutral-medium);
 	transition: all 0.3s;
-
 }
 
 .toggle input:checked + label::after {
