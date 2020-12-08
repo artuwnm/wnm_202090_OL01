@@ -169,8 +169,8 @@ a:hover {
 	background-color: var(--color-neutral-dark);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
-
 
 	.navbar h1{
 		font-size: 1em;
@@ -180,6 +180,11 @@ a:hover {
 	.navbar a{
 		padding: 0 0.5em;
 	}
+	/* Not Necessary
+	.flush>.navbar {
+		margin-bottom: 0;
+	}
+	*/
 
 
 /* CARD */
@@ -213,6 +218,12 @@ a:hover {
 		padding: 0;
 	}
 
+	/* Not Necessary
+	[class*='col-']>.card {
+		height: 100%;
+		margin: 0;
+	}
+	*/
 
 	.card-section~.card-section{
 		border-top: 1px solid var(--color-neutral-light);

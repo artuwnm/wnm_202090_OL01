@@ -9,7 +9,7 @@ include_once "parts/templates.php";
 
 	<?php include "parts/meta.php"; ?>
 </head>
-<body>
+<body class="flush">
 
 	<?php ini_set("display_errors","On"); ?>
 	
