@@ -16,8 +16,6 @@
     --spacing:1rem;
 
 
-    --font-serif:Georgia, "Times New Roman", serif;
-    --font-sans:Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -623,6 +621,14 @@ a:hover{
     position: relative;
 }
 
+
+.about-article{
+    color:var(--color-neutral-dark); 
+    line-height:2em;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size:1.5em;
+    margin:30px;
+}
 
 
 
