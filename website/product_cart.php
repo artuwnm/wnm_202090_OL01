@@ -20,7 +20,19 @@
 	
 		?>
 		<h1>You have nothing in your cart.</h1>
-		<p><a href="collections.php">Go shopping</a></p>
+
+		<h3>You might like:</h3>
+
+		<div class="grid">
+
+		<?php
+		$products = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY rand() LIMIT 3;");
+		echo(array_reduce($products, 'productItemNarrow'));
+		?>
+
+		</div>
+
+		<p>Or else check out our <a href="collections.php">other collections!</a></p>
 		<?php
 
 	} else {

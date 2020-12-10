@@ -18,9 +18,9 @@
 			<form  id="searchform">
 				<input id="searchinput" type="search" class="hotdog" placeholder="Search products">
 
-				<div class="display-flex" style="padding-top: 10px;">
-					<div class="flex-none">
-						<div class="form-select" style="width: 150px;">
+				<div class="display-flex filters">
+					<div class="flex-none filter">
+						<div class="form-select">
 							<select id="select-collection" onchange="processSearch()">
 								<option value="all">All collections</option>
 								<?php
@@ -36,8 +36,8 @@
 							</select>
 						</div>
 					</div>
-					<div class="flex-none" style="padding-left: 10px;">
-						<div class="form-select" style="width: 150px;">
+					<div class="flex-none filter">
+						<div class="form-select">
 							<select id="select-pricerange" onchange="processSearch()">
 								<option value="all">All price ranges</option>
 								<option value="0-100">0-100</option>
@@ -48,12 +48,12 @@
 						</div>
 					</div>
 					<div class="flex-stretch"></div>
-					<div class="flex-none">
-						<div class="form-select" style="width: 200px;">
+					<div class="flex-none filter">
+						<div class="form-select">
 							<select id="select-sort" onchange="processSearch()">
 								<option value="none">Sort by price...</option>
-								<option value="asc">Least expensive to most</option>
-								<option value="desc">Most expensive to least</option>
+								<option value="asc">$ -> $$$</option>
+								<option value="desc">$$$ -> $</option>
 							</select>
 						</div>
 					</div>

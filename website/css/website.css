@@ -53,6 +53,7 @@
 	border-right: 1px solid var(--color-neutral-medium);
 }
 
+
 .main {
 	padding-left: 20px;
 	width: 80%;
@@ -126,6 +127,92 @@
 	text-transform: capitalize;
 }
 
+.filters {
+	padding-top: 10px;
+
+}
+.filter {
+	padding: 0 5px;
+}
+.filter .form-select {
+	width: 150px;
+}
+
+.adobe {
+	font-size: 4em;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	margin-top: 100px;
+	text-align: center;
+	color: var(--color-white);
+}
+
+@media screen and (max-width: 600px) {
+
+	.content {
+		display: block;
+		padding: 0 20px;
+	}
+
+	.sidebar {
+		padding: 0 0 20px 0;
+		width: 100%;
+		border: 0;
+	}
+
+	.main {
+		width: 100%;
+		padding: 0;
+	}
+
+	.navbar .infobar .message {
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+	.main .col-2 {
+		display: block;
+	}
+	
+	.main .col-2 > div {
+		width: 100%;
+	}
+
+	.main .col-2 .text > p {
+		width: 100%;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 1.7em;
+		font-weight: bold;
+		padding: 2em;
+		margin-bottom: 0;
+	}
+
+	.main .col-1 .text > p {
+		padding: 2em;
+		text-align: left;
+		font-size: 1.7em;
+		font-weight: bold;
+	}
+
+	.filters, .filter {
+		padding: 10px 0 0 0;
+		display: block;
+	}
+
+	.filter .form-select {
+		width: 100%;
+	}
+
+	.adobe h1 {
+		font-size: 80px;
+		margin-top: 140px;
+	}
+
+}
 
 
 

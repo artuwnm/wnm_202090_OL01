@@ -29,7 +29,7 @@ $obj = getProductById($id);
 
 				<div class="card soft">
 					<div class="grid">
-						<div class="col-md-9">
+						<div class="col-md-9 col-sm-12">
 									
 							<p>
 								<a href="collections.php">&laquo; Back</a>
@@ -54,15 +54,17 @@ $obj = getProductById($id);
 								<input type="submit" class="form-button" value="Add to cart" />
 							</p>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-sm-12">
 							<h4>You might also like:</h4>
 							
+							<div class="grid">
 							<?php
 
 								$products = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `category` = '" . $obj->category . "' AND `id` <> " . $obj->id . ";");
 								echo(array_reduce($products, 'productItem'));
 
 							?>
+							</div>
 						</div>
 					</div>
 				</div>
