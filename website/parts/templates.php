@@ -8,7 +8,7 @@ function productItemNarrow($r, $o) {
     return productItemBase($r, $o, 3);
 }
 
-function productItemBase($r, $o, $col = 6) {
+function productItemBase($r, $o, $col = 12) {
     global $base;
 
     $r .= <<<HERE
