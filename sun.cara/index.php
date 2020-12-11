@@ -43,8 +43,8 @@ include_once "parts/templates.php";
 	</div>
 
 
-	<div class="container view-window" id="view-window" style="background-image:url('img/bookshelf1.jpg')">
-		<h2>View Window</h2>
+	<div class="container view-window" id="view-window" style="background-image:url('img/bookshelf4.jpg')">
+		<!-- <h2>View Window</h2> -->
 	</div>
 
 

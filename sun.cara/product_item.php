@@ -20,6 +20,7 @@ $image_elements = array_reduce($images,function($r,$o){
 <head>
 	<meta charset="UTF-8">
 	<title>Product Item</title>
+	<script src="js/layout.js"></script>
 
 	<?php include "parts/meta.php"; ?>
 
@@ -37,7 +38,7 @@ $image_elements = array_reduce($images,function($r,$o){
 	<div class="container">
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+				<div class="card soft" id="layout1">
 					<div class="images-main">
 					<img src="/wnm608/cara.sun/img/<?= $product->thumbnail ?>">
 					</div>
@@ -47,7 +48,7 @@ $image_elements = array_reduce($images,function($r,$o){
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
+				<form class="card soft flat" id="layout2" method="post" action="cart_actions.php?action=add-to-cart">
 
 					<input type="hidden" name="product-id" value="<?= $product->id ?>">
 

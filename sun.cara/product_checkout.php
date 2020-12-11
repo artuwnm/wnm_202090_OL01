@@ -7,6 +7,7 @@ $cart = getCartItems();
 <head>
 	<meta charset="UTF-8">
 	<title>Checkout Page</title>
+	<script src="js/layout.js"></script>
 
 	<?php include "parts/meta.php"; ?>
 </head>
@@ -21,7 +22,7 @@ $cart = getCartItems();
 	<div class="container">
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft">
+				<div class="card soft" id="layout1">
 					<h2>Item Review</h2>
 					<div class="card-section">
 					<?php
@@ -38,7 +39,7 @@ $cart = getCartItems();
 			</div>
 
 			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+				<div class="card soft" id="layout2">
 					<h2>Product Checkout</h2>
 
 					<form class="form">

@@ -1,5 +1,5 @@
 
-<meta name="viewport" content="device-width">
+<meta name="viewport" content="width=device-width">
 
 <base href="http://www.zsun19.com/wnm608/cara.sun/">
 
