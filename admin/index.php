@@ -87,11 +87,13 @@ try{
 function productListItem($r,$o) {
 	return $r.<<<HTML
 <div class="card soft">
-	<div class="display-flex">
+	<div class="display-flex" style="background-color: white">
 		<div class="flex-none images-thumbs"><img src='/img/$o->thumbnail'></div>
 		<div class="flex-streth" style="padding:1em">$o->name</div>
-		<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
+		<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a>
+		</div>
 	</div>
+</div>
 HTML;
 }
 	
@@ -226,7 +228,7 @@ HTML;
 			<h2>Product List</h2>			
 				<?php
 
-				$result =  makeQuery(makeConn(),"SELECT" * FROM `products` ORDER BY `date_create` DESC);
+				$result =  makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `date_create` DESC");
 
 				echo array_reduce($result,'ProductListItem');
 				?>

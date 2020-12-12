@@ -1,7 +1,7 @@
 <?php
 function productListTemplate($r,$o) {
 	return $r.<<<HTML
-<a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
+<a class="col-xs-12 col-md-4" href="/AAU/WNM608/product_item.php?id=$o->id">
 	<figure class="figure product diplay-flex flex-column">
 		<div class="flex-stretch">
 			<img src="/img/$o->thumbnail" >
@@ -30,15 +30,15 @@ function cartListTemplate($r,$o){
 $totalfixed = number_format($o->total,2,'.','');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
-<div class="display-flex card-section">
+<div class="display-flex card-section" style="background-color: white">
 	<div class="flex-none images-thumbs">
 		<img src="/img/$o->thumbnail">
 	</div>
-	<div class="flex-stretch">
+	<div class="flex-stretch" style="background-color: white">
 		<strong>$o->name ($o->amount)</strong>
 		<form action="AAU/WNM608/cart_actions.php?action=delete-cart-item" method="post">
 		<input type="hidden" name="id" value="$o->id">
-		<input type="submit" class="button inline" value="Delete" style="font-size:0.8em">
+		<input type="submit" class="button2" value="Delete" style="font-size:0.8em" >
 		</form>
 	</div>
 	<div class="flex-none">
@@ -64,31 +64,23 @@ function cartTotals(){
 	$taxedfixed = number_format($cartprice*1.0925,2,'.','');
 return <<<HTML
 
-<div class="card-section display-flex">
+<div class="card-section display-flex" style="background-color: white">
     <div class="flex-stretch"><strong>Sub Total</strong></div>
-    <div class="flex-none">&dollar;$pricefixed</div>
+    <div class="flex-none" style="color: #163750">&dollar;$pricefixed</div>
 </div>
-<div class="card-section display-flex">
+<div class="card-section display-flex" style="background-color: white">
     <div class="flex-stretch"><strong>Taxes</strong></div>
-    <div class="flex-none">&dollar;$taxfixed</div>
+    <div class="flex-none" style="color: #163750">&dollar;$taxfixed</div>
 </div>
-<div class="card-section display-flex">
+<div class="card-section display-flex" style="background-color: white">
     <div class="flex-stretch"><strong>Total</strong></div>
-    <div class="flex-none">&dollar;$taxedfixed</div>
+    <div class="flex-none" style="color: #163750" >&dollar;$taxedfixed</div>
 </div>
-<div class="card-section">
-    <a href="AAU/WNM608/checkout.php" class="button2">Checkout</a>
-</div>
+
 HTML;
 }
  
 
-function recommendedProducts($a) {
-$products = array_reduct($a,'productListTemplate');
-echo <<<HTML
-<div class="grid gap productlist">$products</div>
-HTML;
 
-}
 
 

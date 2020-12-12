@@ -10,10 +10,12 @@ include_once "parts/templates.php";
 	<title>Menu - SUSHI ICHIBAN</title>
 
 	<?php include "parts/meta.php";?>
-
+	
+	<link rel="stylesheet" type="text/css" href="AAU/WNM608/css/storetheme.css">
 	<script src="AAU/WNM608/lib/js/functions.js"></script>
 	<script src="AAU/WNM608/js/templates.js"></script>
 	<script src="AAU/WNM608/js/product_list.js"></script>
+
 </head>
 <body>
 	
@@ -29,7 +31,7 @@ include_once "parts/templates.php";
 				</form>
 			</div>
 			<div class="form-control">
-				<div class="card soft display-flex">
+				<div class="card soft display-flex flex-wrap">
 					<div class="flex-none">
 						<button data-filter="category" data-value="appetizer" type="button" class="button 2">Appetizer</button>
 					</div>

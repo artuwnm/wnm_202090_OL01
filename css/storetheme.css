@@ -45,3 +45,36 @@ body {
 	object-fit: contain;
 
 }
+@media (max-width: 800px) {
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.navbar  h1{
+		padding-left: 1em;
+	}
+}
+.menu-button label {display: none;}
+@media(max-width: 400px) {
+	.navbar .display-flex {
+		flex-wrap:wrap;
+	}
+	.navbar .nav {
+		width:100%;
+		display:none;
+	}
+	.navbar .nav-flex ul {
+		display: block;
+	}
+	.navbar . nav li{
+		line-height: 2em;
+	}
+	.menu-button label{
+		display: block;
+		padding:0 1 em;
+	}
+	#menu:checked+.navbar .nav{
+		display: block;
+	}
+}
+

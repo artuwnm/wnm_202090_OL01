@@ -63,10 +63,13 @@ a:hover {
 .display-block { display:block; }
 .display-inline-block{ display:inline-block; }
 
-.flex-stretch { flex: 1 1 auto; }
+.flex-stretch { flex: 1 1 auto; 
+	color: white;
+}
 .flex-none { flex: none; }
 .flex-none {
 	font-family: 'Special Elite', cursive;
+	color:white;
 
 }
 
@@ -198,6 +201,7 @@ a:hover {
 	overflow:hidden;
 	position:relative;
 	font-family: 'Oswald', sans-serif;
+	color: white;
 }
 
 
@@ -214,11 +218,11 @@ a:hover {
 	
 	.card.dark {
 		background-color:var(--color-neutral-dark);
-		color:var(--color-neutral-light);
+		color:white;
 }
 
 	.card.medium {
-		background-color:var(--color-neutral-medium);
+		background-color:var(--color-neutral-light);
 }
 
 	.card.flat {
@@ -365,7 +369,7 @@ a:hover {
 }
 
 p{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Special Elite', cursive;
 }
 
 

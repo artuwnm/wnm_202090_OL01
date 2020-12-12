@@ -15,12 +15,13 @@ $images_elements = array_reduce($images,function($r,$o){
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Menu Item Page</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<?php include "parts/meta.php";?>
+	<link rel="stylesheet" type="text/css" href="AAU/WNM608/css/storetheme.css">
 
 
 	
@@ -80,6 +81,8 @@ $images_elements = array_reduce($images,function($r,$o){
 	<div class="card hard">
 		<p><?= $product->description ?></p>
 	</div>
+	
+	
 			
 
 		</div>

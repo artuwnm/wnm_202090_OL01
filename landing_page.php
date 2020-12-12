@@ -35,28 +35,29 @@ include_once "parts/templates.php";
 				<div class="slides">
 					<div class="slide center">
 						<div class="carousel-content">
-        					<h1>GOT YUZU?</h1>
-        					<h3>This Week's Ichiban Special Roll: Yuzu rolls</h3>
-        					<a href="#" class="button2">View More</a>
+        					<h1>Ichiban Donburi</h1>
+        					<h3>This Week's Ichiban Special Bowl: Unagi Donburi</h3>
+        					
 						</div>
 
-					<img src=""></div>
+					<img src="/img/donburi.jpg" width="1200" height="800" style="vertical-align:middle"></div>
 
 					<div class="slide">
 						<div class="carousel-content">
-        					<h1>SPOOKY ROLL</h1>
-        					<h3>IT'S SPOOKY TIME! GET SCARY AND SPOOKY ROLLS AT ICHIBAN!</h3>
-        					<a href="#" class="button2">View More</a>
+        					<h1>Got Yuzu?</h1>
+        					<h3>This Week's Ichiban Special Roll: Yuzu Rolls</h3>
+        					
 						</div>
-					<img src=""></div>
+					<img src="/img/sushiroll.jpg" width="1200" height="800" style="vertical-align:middle">
+				</div>
 					
 					<div class="slide">
 						<div class="carousel-content">
-        					<h1>It's A KAWAII Time!</h1>
-        					<h3>Celebrate your special moments with KAWAII ROLLS!</h3>
-        					<a href="#" class="button2">View More</a>
+        					<h1>Ichiban's Crispy Tempura!</h1>
+        					<h3>Crunch Outside, Soft Inside!</h3>
+        					
 						</div>
-					<img src=""></div>
+					<img src="/img/tempura.jpg" width="1200" height="800" style="vertical-align:middle"></div>
 				</div>
 
 			<div class="controls">
@@ -74,27 +75,12 @@ include_once "parts/templates.php";
 	</div>
 
 	<div class="container">
-		<article id="article1" class="article card soft">
-		<div class="display-flex flex-align-center">
-			<div class="flex-stretch">
-				<h2>Who We Are</h2>
-			</div>
-			<div class="flex-none">
-				<small>5:20am</small>
-			</div>
-		</div>
-		<div class="article-body">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eum autem iure, a, quisquam esse enim ipsa quia ad! Harum, voluptates fugit, hic animi veniam, velit facere quis eos exercitationem laudantium perspiciatis ducimus quibusdam architecto assumenda eaque amet cumque unde?</p>
-			<p>Eos eius recusandae ea quas consequatur odio! Molestias maxime, obcaecati deserunt vitae animi. Animi in iusto quos, repudiandae ab nam, eos cum corrupti iure aliquam omnis labore odit quis. Vitae sunt libero velit repellat omnis? Accusantium vitae eius rerum beatae.</p>
-			<p>Distinctio incidunt beatae, ipsa magnam totam labore, accusantium nobis, laboriosam illo ea voluptatum delectus quis neque, perspiciatis minima tempora non eum. Praesentium velit ipsum doloremque, saepe, ducimus itaque repudiandae eaque veritatis obcaecati delectus tempora corporis, eum numquam facilis, doloribus a.</p>
-		</div>
-	</article>
+	
 	<article class="article card hard" id="article2">
-		<h2>What We Do</h2>
+		<h2>FRESH INGREDIENTS, DELICIOUS FOOD</h2>
 		<div class="article-body">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam nostrum accusantium eligendi omnis optio reprehenderit cupiditate sed tempora aut in qui ea id deserunt voluptatibus maxime aperiam eos obcaecati facilis error, iusto, molestias placeat! Et ducimus quasi, fuga officiis?</p>
-			<p>Eaque consequatur quos dignissimos vitae non fuga officiis quidem quisquam. Nam non ab magni doloremque eum mollitia accusamus, accusantium praesentium quaerat, officiis asperiores, nemo nisi, quasi exercitationem debitis consequuntur aperiam iure sequi explicabo odio ducimus! Tempora, quia obcaecati dolorem voluptate!</p><p></p>
-			<p>Iusto, minima consequatur necessitatibus illo, deleniti quam, dignissimos cum animi excepturi cumque corrupti est sed aperiam labore eius iure. Pariatur ullam veniam temporibus quam similique cupiditate nostrum quibusdam ut? Perferendis, officia labore ipsam sint nemo repellendus laborum nulla iusto mollitia.</p>
+			<p>Sushi Ichiban in Morgan Hill is a family business with a tireless commitment to using only the freshest fish and highest quality ingredients.</p><p></p>
+			
 		</div>
 	</article>
 </div>
@@ -103,21 +89,31 @@ include_once "parts/templates.php";
 </div>
 <div class="container">
 	<article class="article card dark" id="article3">
-		<h2>Why We Do It</h2>
+		<h2>CATERING</h2>
 		<div class="article-body">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus architecto blanditiis animi non consequuntur dolorum dignissimos voluptatem, error saepe. Perferendis deleniti rerum corrupti veritatis ut omnis similique consequatur laborum ad quae incidunt nobis iusto amet numquam cupiditate esse harum, dicta!</p>
-			<p>Deleniti sapiente architecto pariatur labore neque obcaecati! Magnam, laborum at eveniet dolores reiciendis minus, quisquam, sint deserunt vel nam, optio beatae perferendis accusantium doloremque delectus eaque repudiandae dolor? Deleniti ipsa sed, fuga culpa, praesentium eaque repellat porro mollitia doloremque sint.</p>
-			<p>Porro ut consequatur sunt unde quos natus dolorum laboriosam, mollitia illo recusandae eaque asperiores numquam voluptatem autem dolore neque. Iste quibusdam est, ad accusamus odit facilis nulla dicta voluptates tempore earum fugit explicabo, hic ab corrupti dolor aliquam nihil veniam!</p>
+			<P>Do you love our Sushi? Have you ever thought about sharing what you love? Why not throw a party and have us cater it for you.</P>
+			<p>Here are some ideas...</p>
+				<H3>Birthday
+					Wedding Reception, Business Meetings, Holiday Functions, Graduation, Anniversary, Special Events, Corporate Functions</H3>
+			<p>Let us cater your next event - from birthdays to company events... Anything is possible!</p>
+			<p>Ask the manager how you can get started on planning your special event today! Contact us by calling (408) 778-7992.</p>
+
 		</div>
 	</article>
-	<article class="article card medium" id="article4">
-		<h2>How We Do It</h2>
-		<div class="article-body">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio repellendus perferendis, quas nisi omnis sequi doloremque, a doloribus nobis veritatis iste ab, tempore reprehenderit sed odio natus error voluptatibus dolor enim possimus consectetur. Vero mollitia quasi quibusdam sed quis impedit?</p>
-			<p>Velit, doloribus eveniet porro commodi a distinctio rerum id sit, natus ipsum aut aperiam itaque, labore, odit repellendus. Vel, velit repellendus. Odio, a nobis consequuntur eius ex reiciendis placeat, veritatis fugit tempora, maiores aut maxime neque ea necessitatibus culpa quidem.</p>
-			<p>Fugit dolore provident quasi aliquam nobis error voluptatem fuga recusandae quod, necessitatibus laborum reiciendis explicabo veritatis cumque. Voluptatibus ex quis libero accusamus soluta quia nesciunt cum, alias officiis tenetur facere sint expedita odio esse saepe quasi, iusto nihil debitis? Recusandae?</p>
+	<article class="article card hard" id="article4" >
+		<h2>LOCATION</h2>
+		<div class="article-body" style="color= white">
+			<p>Sushi Ichiban is located conveniently off of I-101 and Cochrane in Morgan Hill.</p>
+			<P>116 Cochrane Plaza, Morgan Hill, CA 95037</P>
+			<P>Phone:(408) 778-7992</P>
+			<P>	Lunch: 11:30am - 2:30pm (Mon-Sat)</P>
+			<P> Dinner: 5:00pm - 9:00pm (Mon-Thurs), 5:00pm - 10:00pm (Fri), 5:00pm - 9:30 (Sat)</P>
 		</div>
 	</article>
+
+
+
+	</div>
 
 	
 </div>
