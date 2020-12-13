@@ -3,13 +3,14 @@
 ## Relevent Links
 - https://samtalth.com
 - https://samtalth.com/aau/wnm608/Talenejad.Samaneh
-- https://samtalth.com/aau/wnm608/Talenejad.Samaneh/styleguide
-- http://samtalth.com/aau/wnm608/Talenejad.Samaneh/admin
 
 
-
-
-## Extra Links
+## E-Commerce Project Links
+- http://samtalth.com/aau/wnm608/Talenejad.Samaneh/index.php
+- http://samtalth.com/aau/wnm608/Talenejad.Samaneh/admin/index.php
 - http://samtalth.com/aau/wnm608/Talenejad.Samaneh/admin/users.php
-- http://samtalth.com/aau/wnm608/Talenejad.Samaneh/notes
+
+
+## StyleGuide & Reading JSON data Links
+- https://samtalth.com/aau/wnm608/Talenejad.Samaneh/styleguide
 - http://samtalth.com/aau/wnm608/Talenejad.Samaneh/notes/reading_data.php

@@ -54,13 +54,7 @@ if(isset($_GET['action'])) {
 			file_put_contents($filename, json_encode($users));	
 			header("location:{$_SERVER['PHP_SELF']}");
 			break;
-		
-		default:
-			# code...
-			break;
 	}
-
-
 }
 
 
@@ -72,22 +66,26 @@ function showUserPage($user) {
 	$createorupdate = $id == "new" ? "create" : "update";
 
 
-
 $display = <<<HTML
 <div>
-	<h2>$user->name</h2>
-	<div>
-		<strong>Type</strong>
+
+	<h2 style="text-align: center; text-transform: uppercase; word-spacing: 0.2em;">User Detail</h2>
+
+	<div class="form-control">
+		<label class="form-label">Type: </label>
 		<span>$user->type</span>
 	</div>
-	<div>
-		<strong>Email</strong>
+
+	<div class="form-control">
+		<label class="form-label">Email: </label>
 		<span>$user->email</span>
 	</div>
-	<div>
-		<strong>Classes</strong>
+
+	<div class="form-control">
+		<label class="form-label">Classes: </label>
 		<span>$classes</span>
 	</div>
+
 </div>
 
 HTML;		
@@ -95,63 +93,105 @@ HTML;
 	
 $form = <<< HTML
 <form action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate" target="" method="post">
-	<h2>$addoredit User</h2>
 
-	<div class="form-control">
-		<label class="form-lable" for="name">Name</label>
-		<input type="text" name="name" value="$user->name" placeholder="Enter the User Name">
-	</div>
+		<table style="width: 100%;">
+		
+			<h2 style="text-align: center; text-transform: uppercase; word-spacing: 0.2em;">$addoredit User</h2>
+			
+			<tr class="form-control grid" >
+				<td class="col-xs-4 col-md-3">
+					<label class="form-lable" for="name">Name</label>
+				</td>
+				<td class="col-xs-8 col-md-9">
+					<input style="width: 100%; type="text" name="name" value="$user->name" placeholder="Enter the User Name">
+				</td>
+			</tr>
+			
+			<tr class="form-control grid" >
+				<td class="col-xs-4 col-md-3">
+					<label class="form-lable" for="type">Type</label>
+				</td>
+				<td class="col-xs-8 col-md-9">
+					<input style="width: 100%; type="text" name="type" value="$user->type" placeholder="Enter the User Type">
+				</td>
+			</tr>
+			
+			<tr class="form-control grid" >
+				<td class="col-xs-4 col-md-3">
+					<label class="form-lable" for="email">Email</label>
+				</td>
+				<td class="col-xs-8 col-md-9">
+					<input style="width: 100%; type="text" name="email" value="$user->email" placeholder="Enter the User Email">
+				</td>
+			</tr>
+			
+			<tr class="form-control grid" >
+				<td class="col-xs-4 col-md-3">
+					<label class="form-lable" for="classes">Classes</label>
+				</td>
 
-	<div class="form-control">
-		<label class="form-lable" for="type">Type</label>
-		<input type="text" name="type" value="$user->type" placeholder="Enter the User Type">
-	</div>
+				<td class="col-xs-8 col-md-9">
+					<input style="width: 100%; type="text" name="classes" value="$classes" placeholder="Enter the User Classes, c
+					omma separated">
+				</td>
+			</tr>
 
-	<div class="form-control">
-		<label class="form-lable" for="email">Email</label>
-		<input type="email" name="email" value="$user->email" placeholder="Enter the User Email">
-	</div>
+		</table>
 
-	<div class="form-control">
-		<label class="form-lable" for="classes">Classes</label>
-		<input type="text" name="classes" value="$classes" placeholder="Enter the User Classes, comma separated">
-	</div>
+		<div class="form-control">
+			<input class="form-item" type="submit" value="SAVE CHANGES">
+		</div>
 
-	<div class="form-control">
-		<input class="form-button" type="submit" value="Save changes">
-	</div>
 </form>
 
 HTML;	
 
 
-$output = $id == "new" ? $form : 
-	"<div class='grid gap'>
-		<div class='col-xs-12 col-md-7'>$display</div>
-		<div class='col-xs-12 col-md-5'>$form</div>
+$output = $id == "new" ? 
+
+	"<div class='add-product-container'>
+		<div class='card card_padding'>
+			$form 
+		</div>
+	</div><br>"
+
+	: 
+
+	"<br>
+	<div class='edit-product-container'>
+
+		<div class='grid gap xs-small md-medium lg-large xxl-large'>
+			
+			<div class='col-xs-12 col-md-6 card card_padding'>$display</div>
+
+			<div class='col-xs-12 col-md-6 card card_padding'>$form</div></div>
+		
+		</div>
 	</div>
+	</br></br>
 	";
 
 
 $delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
 
-
 echo <<<HTML
-<nav class="display-flex">
-	<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
-	<div class="flex-none">$delete</div>
-</nav>
 
-$output
+<div class="container">
+	<nav class="display-flex">
+		<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
+		<div class="flex-none">$delete</div>
+	</nav>
+
+	$output
+
+</div>
+
 HTML;
 
 }
 
 ?>
 
-
-
-<!--  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -180,32 +220,25 @@ HTML;
 	<hr>
 
 	<div class="container">
-		<div class="card soft">
-			<?php
-				if(isset($_GET['id'])) {
-					showUserPage($_GET['id'] == "new" ? $empty_user : $users[$_GET['id']]);
-				} else {
-			?>
-
-			<h2>User List</h2>
-
-			<nav class="nav">
-				<ul>
-					<?php
-						for($i=0; $i<count($users); $i++) {
-							echo "<div>
-								<a href='admin/users.php?id=$i' style='display: inline-block;'>{$users[$i]->name}</a>
-							</div><br>";
-						}
-					?>
-				</ul>
-			</nav>
-			
-			<?php } ?>
-		</div>
-
+		<?php
+			if(isset($_GET['id'])) {
+				showUserPage($_GET['id'] == "new" ? $empty_user : $users[$_GET['id']]);
+			} else {
+		?>
+		<h2 style="text-align: center; text-transform: uppercase; word-spacing: 0.2em;">User List</h2>
+		<nav class="card nav">
+			<ul>
+				<?php
+					for($i=0; $i<count($users); $i++) {
+						echo "<div>
+							<a href='admin/users.php?id=$i' style='display: inline-block;'>{$users[$i]->name}</a>
+						</div><br>";
+					}
+				?>
+			</ul>
+		</nav>
+		<?php } ?>
 	</div>
-
 
 </body>
 </html>

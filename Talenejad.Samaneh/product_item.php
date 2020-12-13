@@ -1,19 +1,14 @@
-<?php include "lib/php/debug.php"; ?>
-
 <?php
+	include "lib/php/debug.php";
 	include_once "lib/php/functions.php";
 	include_once "parts/templates.php";
 
-
 	$product = makeQuery(makeConn(),"SELECT * FROM products WHERE `id`=".$_GET['id'])[0];
-	// print_p($product);
-
 	$images = explode(",", $product->product_images);
 	$image_elements = array_reduce($images, function($r, $o){
 		return $r."<img src='img/$o'>";
 	})
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,12 +34,10 @@
 			<div class="images-thumbs">
 				<?= $image_elements ?>
 			</div>
-
 		</div>
 
-
 		<!-- Right section for product details -->
-		<div class="product_detail_info col-lg-5 col-md-12 col-sm-12">
+		<div class="product_detail_info-container col-lg-5 col-md-12 col-sm-12">
 
 			<div>
 				<span class="fa fa-star"></span>
@@ -71,8 +64,7 @@
 			</div>
 			
 			
-			<div class="col-lg-8 col-md-8 col-sm-8">
-				<!-- <form action="item_added_confirmation.php?id=<?= $product->id?>" method="post"> -->
+			<div class="col-lg-8 col-md-8 col-sm-12">
 				<form action="cart_action.php?action=add-to-cart" method="post">
 					<input type="hidden" name="product_id" value="<?= $product->id ?>">
 					<label for="product-size"></label>
@@ -114,19 +106,20 @@
 					</div>
 
 					<div class="description">
+						
 						<h4>PRODUCT DETAILS</h4>
-						<hr>
+						
 						<?php 
 							$description = explode(";", $product->product_description );
 							$description_elements = array_reduce($description, function($r, $o){
 								return $r."<p>$o</p>";
 							})
 						?>
+
 						<?= $description_elements ?>
 					</div>
 
 					<div class="form-control add_to-shopping-bag">
-						<!-- <input type="submit" class="form-button" value="ADD TO CART"> -->
 						<button type="submit" class="form-button">ADD TO CART</button>
 					</div>
 
@@ -136,22 +129,17 @@
 		</div>
 
 	</div>
-
 	
+	<hr>
 
 	<div class="container">
-		<h2>Recommended Products</h2>
-
+		<h3 style="text-align: center;">RECOMMENDED FOR YOU</h3>
 		<?php 
 		recommendedSimilar($product->product_category,$product->id);
 		?>
-		
 	</div>
-	
-
-
-	
-
+	<br>
 	<?php include "parts/footer.php"; ?>
+
 </body>
 </html>

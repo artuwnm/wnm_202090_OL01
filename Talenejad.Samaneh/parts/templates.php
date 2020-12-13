@@ -34,42 +34,54 @@ $totalfixed = number_format($o->total,2,'.','');
 $selectAmount = selectAmount($o->quantity,10);
 
 return $r.<<<HTML
-<div class="display-flex">
 
-	<div class="flex-none images-thumbs">
+<div class="grid">
+
+	<div class="images-thumbs col-xs-6 col-md-1">
 		<img src="img/$o->product_thumb">
 	</div>
+	
+	<div class="col-xs-6 col-md-11">
 
-	<div class="flex-stretch">
-		<strong>$o->product_name</strong>
-		<form action="cart_action.php?action=delete-cart-item" method="post"">
-			<input type="hidden" name="id" value="$o->id">
-			<button type="submit" class="form-control form-button inline"  style="font-size: 0.7em" >Delete</button>
-		</form>
-	</div>
-
-	<div class="flex-none">
-		<div>
-			&dollar;$totalfixed
+		<div class="grid padding_lr xs-small-padding_lr">
+			<div class="col-xs-12 col-md-10">
+				<strong>$o->product_name</strong>
+			</div>
+			
+			<div class="col-xs-12 col-md-2">
+				&dollar;$totalfixed
+			</div>
 		</div>
 
-		<form action="cart_action.php?action=update-cart-item" method="post" onchange="this.submit(
-			)">
-			<input type="hidden" name="id" value="$o->id">
-			<div class="amount-select">
-				$selectAmount
+		<div class="checkout-action-container">
+
+			<div style="display:inline-block;">
+				<form action="cart_action.php?action=delete-cart-item" method="post"">
+					<input type="hidden" name="id" value="$o->id">
+					<button type="submit" class="form-control form-button inline"  style="font-size: 0.7em" >Delete</button>
+				</form>
 			</div>
-		</form>
+			<div style="display:inline-block;">
+				<form action="cart_action.php?action=update-cart-item" method="post" onchange="this.submit(
+					)">
+					<input type="hidden" name="id" value="$o->id">
+					<div class="amount-select">
+						$selectAmount
+					</div>
+				</form>
+			</div>
+			
+			
+		</div>
 
 	</div>
 
-</div>	
+</div>
 <hr>
 
 HTML;
 
 }
-
 
 
 function cartListTemplate_atcheckout($r, $o) {
@@ -78,36 +90,51 @@ $totalfixed = number_format($o->total,2,'.','');
 $selectAmount = selectAmount($o->quantity,10);
 
 return $r.<<<HTML
-<div class="display-flex">
 
-	<div class="flex-none images-thumbs">
+<div class="grid">
+
+	<div class="images-thumbs col-xs-6 col-md-1">
 		<img src="img/$o->product_thumb">
 	</div>
+	
+	<div class="col-xs-6 col-md-11">
 
-	<div class="flex-stretch">
-		<strong>$o->product_name</strong>
-		<form action="cart_action.php?action=delete-cart-item-fromcheckout" method="post"">
-			<input type="hidden" name="id" value="$o->id">
-			<button type="submit" class="form-control form-button inline"  style="font-size: 0.7em" >Delete</button>
-		</form>
-	</div>
-
-	<div class="flex-none">
-		<div>
-			&dollar;$totalfixed
+		<div class="grid padding_lr xs-small-padding_lr">
+			<div class="col-xs-12 col-md-10">
+				<strong>$o->product_name</strong>
+			</div>
+			
+			<div class="col-xs-12 col-md-2">
+				&dollar;$totalfixed
+			</div>
 		</div>
 
-		<form action="cart_action.php?action=update-cart-item-fromcheckout" method="post" onchange="this.submit(
-			)">
-			<input type="hidden" name="id" value="$o->id">
-			<div class="amount-select">
-				$selectAmount
+		<div class="checkout-action-container">
+
+			<div style="display:inline-block;">
+				<form action="cart_action.php?action=delete-cart-item" method="post"">
+					<input type="hidden" name="id" value="$o->id">
+					<button type="submit" class="form-control form-button inline"  style="font-size: 0.7em" >Delete</button>
+				</form>
 			</div>
-		</form>
+			<div style="display:inline-block;">
+				<form action="cart_action.php?action=update-cart-item-fromcheckout" method="post" onchange="this.submit(
+					)">
+					<input type="hidden" name="id" value="$o->id">
+					<div class="amount-select">
+						$selectAmount
+					</div>
+				</form>
+			</div>
+			
+			
+		</div>
 
 	</div>
-</div>	
+
+</div>
 <hr>
+
 HTML;
 
 }
@@ -152,10 +179,20 @@ function recommendedProducts($a) {
 $products = array_reduce($a, 'productListTemplate');
 
 echo <<<HTML
-	<div class="grid gap">$products</div>
+	<div class="grid gap xs-large">$products</div>
 HTML;
 
 }
+
+
+
+function recommendedAny($limit=4) {
+
+$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+recommendedProducts($result);
+
+}
+
 
 
 function recommendedCategory($cat, $limit=4) {
@@ -167,12 +204,13 @@ recommendedProducts($result);
 
 
 
-function recommendedSimilar($cat, $id=0, $limit=3) {
+function recommendedSimilar($cat, $id=0, $limit=4) {
 
 $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `product_category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
 recommendedProducts($result);
 
 }
+
 
 
 

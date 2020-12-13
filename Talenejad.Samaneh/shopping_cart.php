@@ -4,7 +4,6 @@
 	include_once "lib/php/functions.php";
 	include_once "parts/templates.php";
 
-	// $cart = makeQuery(makeConn(),"SELECT * FROM products WHERE `id` IN (4,7,10)");
 	$cart = getCartItems();
 ?>
 
@@ -24,7 +23,9 @@
 
 		if (empty($cart)) { 
 
-			echo "<div class='container display-flex display-flex-center'><h2>You shopping cart is empty!<h2></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+			echo "<br><div class='container'>
+					<div class='card soft'><h2 style='text-align:center;'>You shopping cart is empty!<h2></div>
+				  </div><br>";
 			
 		} else {
 
@@ -42,7 +43,8 @@
 					<div class='col-xs-12 col-md-7'>
 						<div class='card card_padding'>
 							<hr>
-							$array_reduce  
+							$array_reduce
+							
 						</div>
 					</div>
 
@@ -56,12 +58,19 @@
 					</div>
 					
 				</div>
-				<br><br><br><br><br><br><br><br><br><br><br>
 			</div>";
 		}
 	?>
 
-
+	<div class="container">
+		<h2 style="text-align: center; text-transform: uppercase;">Items to Explore</h2>
+		<?php 
+			recommendedAny(4);
+		?>
+	</div>
+	
 	<?php include "parts/footer.php"; ?>
+
+
 </body>
 </html>

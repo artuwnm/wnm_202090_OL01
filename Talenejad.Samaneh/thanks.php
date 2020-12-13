@@ -20,6 +20,9 @@
 	<div class="container display-flex display-flex-center">
 		<h2>Thank you, you order has been placed!</h2>
 	</div>
+	<div class="container display-flex display-flex-center">
+		<a href="index.php">Continue shopping</a>
+	</div>
 
 	<!-- <br>s are content holder -->
 	<br>

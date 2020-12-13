@@ -1,12 +1,8 @@
 
-
-
-
 /* CSS RESET */
 
 *, *::before, *::after {
 	box-sizing: border-box;
-	/*border: 1px solid red;*/
 }
 
 :root {
@@ -18,8 +14,6 @@
 	--color-main-medium: #757575;
 	--color-main-dark: #B0A886;
 
-
-
 	--color-black: #000;
 	--color-white: #fff;
 
@@ -28,7 +22,6 @@
 
 	--font-serif: Big Caslon, "Times New Roman", serif;
 	--font-sans: Futura, Arial, sans-serif;
-
 }
 
 body {
@@ -46,10 +39,6 @@ p {
 	font-family: var(--font-serif);
 }
 
-/*p{
-	font-family: var(--font-sans);
-}
-*/
 a {
 	color: inherit;
 	font-weight: 400;
@@ -71,15 +60,12 @@ input[type=number]
 	margin-right:0;
 }
 
-
-
 input[type=submit] {
-	/*width:90px;*/
 	color: white;
 	padding:9px 16px;
 	background-color: var(--color-neutral-dark);
 	font-size: 12px;
-	margin-right: 0px;
+	/*margin-right: 0px;*/
 }
 
 
@@ -126,7 +112,6 @@ hr {
 	margin-left: auto;
 	padding-left: 25px;
 	padding-right: 25px;
-/*	border:1px solid green;*/
 }
 	
 
@@ -270,8 +255,6 @@ hr {
 
 .card {
 	background-color: var(--color-neutral-light);
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
 	overflow: hidden;
 	position: relative;
 	/*overflow: hidden;*/

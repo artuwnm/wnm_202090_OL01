@@ -9,16 +9,16 @@
 include "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"product_designer" => "Example",
-	"product_name" => "Example",
+	"product_designer" => "Chacha",
+	"product_name" => "Sweatshirt",
 	"quantity" => "33",
-	"product_size"=> "Example",
-	"product_color" => "Example",
-	"product_category" => "Example",
-	"product_description" => "Example",
-	"product_unit_price" => "33.00",
+	"product_size"=> "Medium",
+	"product_color" => "Black",
+	"product_category" => "Top",
+	"product_description" => "Blue top",
+	"product_unit_price" => "330.00",
 	"product_thumb" => "product1_1.jpg",
-	"product_images" => "product1_1.jpg,product2_1.jpg"
+	"product_images" => "product1_1.jpg,product1_2.jpg"
 ];
 
 
@@ -118,11 +118,10 @@ if(isset($_GET['action'])) {
 
 function productListItem($r,$o) {
 return $r.<<<HTML
-	<tr>
-		<td class='images-thumbs col-xs-2'><img src='img/$o->product_thumb'></td>
-		<td class="col-xs-2">$o->product_designer</td>
-		<td class="col-xs-4">$o->product_name</td>
-		<td class="col-xs-2"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></td>
+	<tr class="grid">
+		<td class='images-thumbs col-xs-4 col-md-4'><img src='img/$o->product_thumb'></td>
+		<td class="col-xs-4 col-md-4">$o->product_name</td>
+		<td class="col-xs-4 col-md-4 action-edit"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></td>
 	</tr>
 HTML;		
 };
@@ -132,7 +131,7 @@ function showProductPage($o) {
 
 	$id = $_GET['id'];
 
-	$addoredit = $id  == "new" ? "Add" : "Edit";
+	$addoredit = $id  == "new" ? "ADD" : "EDIT";
 
 	$createorupdate = $id == "new" ? "create" : "update";
 
@@ -145,7 +144,7 @@ function showProductPage($o) {
 $display = <<<HTML
 
 <div>
-	<h2>$o->product_name</h2>
+	<h2 style="word-spacing: 0.3em; text-align: center; text-transform: uppercase;">Product Detail</h2>
 
 	<div class="form-control">
 		<label class="form-label">Designer: </label>
@@ -208,118 +207,109 @@ HTML;
 $form = <<< HTML
 
 <form action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate"  method="post">
-	<h2>$addoredit Product</h2>
+
+	<h2 style="text-align: center; text-transform: uppercase; word-spacing: 0.2em;">$addoredit Product</h2>
 
 	<table style="width: 100%;">
 
 		<tr class="form-control grid" >
-
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="designer">Designer</label>
 			</td>
-	
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="text" name="designer" value="$o->product_designer" placeholder="Enter the designer">
 			</td>
-			
 		</tr>
 
 		<tr class="form-control grid">
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="product-name">Name</label>
 			</td>
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="text" name="product-name" value="$o->product_name" placeholder="Enter the product Name">
 			</td>
 		</tr>
 
 		<tr class="form-control grid" >
-
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="quantity">Quantity</label>
 			</td>
-	
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="number" min="0" max="1000" step="1"  name="quantity" value="$o->quantity" placeholder="Enter Quantity">
 			</td>
-			
 		</tr>
 
 
 		<tr class="form-control grid">
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="size">Size</label>
 			</td>
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="text" name="size" value="$o->product_size" placeholder="Enter the product size">
 			</td>
 		</tr>
 
 
 		<tr class="form-control grid">
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="color">Color</label>
 			</td>
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="text" name="color" value="$o->product_color" placeholder="Enter the product color">
 			</td>
 		</tr>
 
 
 		<tr class="form-control grid">
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="category">Category</label>
 			</td>
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="text" name="category" value="$o->product_category" placeholder="Enter the product category">
 			</td>
 		</tr>
 
 
 		<tr class="form-control grid" >
-
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="description">Description</label>
 			</td>
-	
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<textarea style="width: 100%;" name="description">$o->product_description</textarea>
 			</td>
-			
 		</tr>
 
 
 		<tr class="form-control grid">
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="price">Unit Price</label>
 			</td>
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="number" min="0" max="1000" step="0.01" name="price" value="$o->product_unit_price" placeholder="Enter the Unit price">
 			</td>
 		</tr>
 
 
 		<tr class="form-control grid">
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="thumbnail">Thumbnail</label>
 			</td>
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="text" name="thumbnail" value="$o->product_thumb" placeholder="Enter the Product Thumbnail name, comma separated">
 			</td>
 		</tr>
 
 
 		<tr class="form-control grid">
-			<td class="col-xs-2">
+			<td class="col-xs-4 col-md-3">
 				<label class="form-label" for="images">Images</label>
 			</td>
-			<td class="col-xs-10">
+			<td class="col-xs-8 col-md-9">
 				<input style="width: 100%;" type="text" name="images" value="$o->product_images" placeholder="Enter the Product Image names, comma separated">
 			</td>
 		</tr>
 		
 	</table>
-
 
 	<div class="form-control">
 		<input class="form-item" type="submit" value="SAVE CHANGES">
@@ -334,16 +324,26 @@ HTML;
 
 $output = $id == "new" ? 
 
-	"<div class='container card'>
-		$form 
-	</div>"
+	"<div class='add-product-container'>
+		<div class='card card_padding'>
+			$form 
+		</div>
+	</div><br>"
 
 	: 
 
-	"<br><div class='grid gap xs-small md-medium lg-large'>
-		<div class='col-xs-12 col-md-7 card card_padding'>$display</div>
-		<div class='col-xs-12 col-md-5 card card_padding'>$form</div>
-	</div></br></br>
+	"<br>
+	<div class='edit-product-container'>
+
+		<div class='grid gap xs-small md-medium lg-large xxl-large'>
+			
+			<div class='col-xs-12 col-md-6 card card_padding'>$display</div>
+
+			<div class='col-xs-12 col-md-6 card card_padding'>$form</div></div>
+		
+		</div>
+	</div>
+	</br></br>
 	";
 
 // If $id=="new", don't show the Delete option
@@ -352,21 +352,22 @@ $delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=del
 
 
 echo <<<HTML
-<nav class="display-flex">
-	<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
-	<div class="flex-none">$delete</div>
-</nav>
+<div class="container">
+	<nav class="display-flex">
+		<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
+		<div class="flex-none">$delete</div>
+	</nav>
 
-$output
+	$output
+
+</div>
+
 
 HTML;
 			
 };
 
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -382,11 +383,12 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex flex-align-center">
 			<div class="flex-none">
-				<h1>Admin</h1>
+				<h1>Admin Dashboard</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="nav flex-none">
 				<ul class="display-flex">
+					<!-- <li><a href="admin/users.php">User List</a></li> -->
 					<li><a href="<?= $_SERVER['PHP_SELF'] ?>">Product List</a></li>
 					<li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
 				</ul>
@@ -396,45 +398,46 @@ HTML;
 	<hr>
 	<br>
 
-	<div class="container">
-		<?php
+	
+	<?php
 
-			if(isset($_GET['id'])) {
+		if(isset($_GET['id'])) {
 
-				 showProductPage(
-					$_GET['id'] == "new" ?
-					$empty_product:
-					makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0]
-				);
-			} else {
+			 showProductPage(
+				$_GET['id'] == "new" ?
+				$empty_product:
+				makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0]
+			);
 
-		?>
+		} else {
 
-		<?php
+	?>
 
-			$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY `date_create` DESC");
-		?>
-		<div class="admin-product_list-container">
-			<table style="width: 100%;">
-				<caption style="font-size:20px;margin-top:-10px; margin-bottom: 10px;">PRODUCT LIST</caption>
-				<div class="grid">
-					<tr>
-						<th class="table-heading col-xs-2 photo-header-cell">Photo</th>
-						<th class="table-heading col-xs-2">Brand</th>
-						<th class="table-heading col-xs-4">Name</th>
-						<th class="table-heading col-xs-2">Action</th>
-					</tr>
+	<?php
+		$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY `date_create` DESC");
+	?>
+
+	<div class="admin-product_list-container">
+		<table style="width: 100%;">
+			<caption style="font-size:20px; margin-bottom: 10px;">PRODUCT LIST</caption>
+			<div>
+				<tr class="grid">
+					<th class="table-heading col-xs-4 col-md-4">Photo</th>
+					<th class="table-heading col-xs-4 col-md-4">Name</th>
+					<th class="table-heading col-xs-4 col-md-4">Action</th>
+				</tr>
+				<div class="product-container">
 					<?php
 						echo array_reduce($result,'productListItem');
 						}
 					?>
 				</div>
+			</div>
 		</table>
-			
-		</div>
-		<br>
-		
 	</div>
+	<br>
+		
+	
 
 </body>
 
