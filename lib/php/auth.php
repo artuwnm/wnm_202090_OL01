@@ -14,7 +14,7 @@ function MYSQLIAuth() {
 
 function PDOAuth() {
 	return [	
-			"mysql:host=localhost;dbname=WNM608_Ashley_Yeo", // host and database name
+			"mysql:host=127.0.0.1;dbname=WNM608_Ashley_Yeo", // host and database name
 			"ashleyyeo825", // mysql user name
 			"ashleyyeo825", // mysql password
 			[PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"]
