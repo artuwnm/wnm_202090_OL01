@@ -1,1 +1,1 @@
-<footer class="footer">© 2020 Michael Garcia. All rights reserved.</footer>
+<footer class="footer">© 2020 &Plants Co. All rights reserved.</footer>

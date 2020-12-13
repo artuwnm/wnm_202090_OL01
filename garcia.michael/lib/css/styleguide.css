@@ -100,7 +100,9 @@ a:hover {
 .flex-column {
 	flex-direction: column;
 }
-
+.flex-wrap {
+	flex-wrap: wrap;
+}
 
 /* Small classes */
 
@@ -235,7 +237,6 @@ a:hover {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding: 1em;
-
 	overflow: hidden;
 	position: relative;
 }
@@ -279,6 +280,7 @@ a:hover {
 	padding: 0;
 
 }
+
 
 
 .view-window {

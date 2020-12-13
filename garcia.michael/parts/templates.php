@@ -25,6 +25,7 @@ function selectAmount($amount=1,$total=10) {
 	return $output;
 }
 
+
 function cartListTemplate($r,$o){
 $totalfixed = number_format($o->total,2,'.','');
 $selectamount = selectAmount($o->amount,10);
@@ -43,7 +44,10 @@ return $r.<<<HTML
 	<div class="flex-none">
 		<div>&dollar;$totalfixed</div>
 		<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+        <input type="hidden" name="id" value="$o->id">
+
 		<div class="form-select" style="font-size:0.8em">
+        
 			$selectamount
 			</div>
 		</form>
@@ -51,7 +55,6 @@ return $r.<<<HTML
 </div>
 HTML;
 }
-
 
 function cartTotals() {
 	$cart = getCartItems();
@@ -76,9 +79,6 @@ return <<<HTML
 	<div class="flex-stretch"><strong>Total</strong></div>
 	<div class="flex-none">&dollar;$taxedfixed</div>
 </div>
-<div class="card-section">
-		<a href="product_checkout.php" class="form-button">Checkout</a>
-</div>
 HTML;
 }
 
@@ -99,6 +99,12 @@ function recommendedCategory($cat,$limit=3) {
 
 function recommendedSimilar($cat,$id=0,$limit=3) {
 	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() DESC LIMIT 3");
+	recommendedProducts($result);
+
+}
+
+function recommendedAnything($cat,$id=0,$limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() DESC LIMIT 6");
 	recommendedProducts($result);
 
 }

@@ -1,6 +1,6 @@
 
 ## Relevant Links
--http:///michaelgarciaux.com
--http:///michaelgarciaux.com/aau/wnm608/michaaaeel1
--http:///michaelgarciaux.com/aau/wnm608/michaaaeel1/styleguide
--http://michaelgarciaux.com/garcia.michael/notes/adminswa
+-http://michaelgarciaux.com/garcia.michael/home.php
+-http://michaelgarciaux.com/garcia.michael/product_list.php
+-http://michaelgarciaux.com/garcia.michael/styleguide/index.html
+-http://michaelgarciaux.com/garcia.michael/admin/

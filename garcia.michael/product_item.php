@@ -84,7 +84,7 @@ $image_elements = array_reduce($images,function($r,$o){
 </div>
 			<div class="col-xs-12 col-md-7">
 
-	<div class="card medium">
+	<div class="card soft">
 		<p><h2><center>About this Plant</center></h2><p>
 			<?= $product->description ?>
 		</div>
@@ -98,7 +98,6 @@ $image_elements = array_reduce($images,function($r,$o){
 
 	?>
 </div>
-
 
 
 
