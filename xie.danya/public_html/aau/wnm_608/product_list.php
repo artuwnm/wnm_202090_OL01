@@ -25,7 +25,7 @@ include_once "parts/templates.php";
 				<input type="search" placeholder="Search Products">
 			</form>
 		</div> 
-		<div class="display-flex">
+		<div class="display-flex flex-wrap">
 			<div class="flex-stretch display-flex">
 				<div class="flex-none">
 					<button data-filter="category" data-value="" type="button" class="btn filter">All</button>

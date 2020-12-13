@@ -100,6 +100,10 @@ echo <<<HTML
 HTML;
 }
 
+function recommendedAnything($limit=3) {
+    $result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+	recommendedProducts($result);
+}
 
 function recommendedCategory($cat,$limit=3) {
     $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");

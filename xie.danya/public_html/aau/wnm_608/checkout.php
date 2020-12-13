@@ -23,59 +23,77 @@ include_once "parts/templates.php";
 				<div class="card soft">
 					<h4><b>Shipping Address</b></h4>
 					<form>
-						<div class="form-control display-flex flex-align-center">
-							<div class="flex-none">
-								<label class="form-label">First Name</label>
-							</div>
-							<div class="flex-stretch">
-								<input type="search" class="form-input flex-stretch">
-							</div>
-							<div class="flex-none">
-								<label class="form-label">Last Name</label>
-							</div>
-							<div class="flex-stretch">
-								<input type="search" class="form-input flex-stretch">
+						<div class="form-control">
+							<div class="grid gap">
+								<div class="col-xs-12 col-md-6">
+									<div class="flex-none">
+										<label class="form-label">First Name</label>
+									</div>
+									<div class="flex-stretch">
+										<input type="text" class="form-input">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="flex-none">
+										<label class="form-label">Last Name</label>
+									</div>
+									<div class="flex-stretch">
+										<input type="text" class="form-input">
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="form-control">
 							<label class="form-label">Address</label>
 							<input type="address" class="form-input">
 						</div>
-						<div class="form-control display-flex flex-align-center">
-							<div class="flex-none">
-								<label class="form-label">City</label>
-							</div>
-							<div class="flex-stretch">
-								<input type="search" class="form-input flex-stretch">
-							</div>
-							<div class="flex-none">
-								<label class="form-label">State</label>
-							</div>
-							<div class="flex-stretch">
-								<div class="form-select">
-									<select>
-										<option>Choose</option>
-										<option>New York</option>
-									</select>
+						<div class="form-control">
+							<div class="grid gap">
+								<div class="col-xs-12 col-md-6">
+									<div class="flex-none">
+										<label class="form-label">City</label>
+									</div>
+									<div class="flex-stretch">
+										<input type="search" class="form-input flex-stretch">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="flex-none">
+										<label class="form-label">State</label>
+									</div>
+									<div class="flex-stretch">
+										<div class="form-select">
+											<select>
+												<option>Choose</option>
+												<option>New York</option>
+											</select>
+										</div>
+									</div>
 								</div>
 							</div>	
 						</div>
-						<div class="form-control display-flex flex-align-center">
-							<div class="flex-none">
-								<label class="form-label">Zip Code</label>
-							</div>
-							<div class="flex-stretch">
-								<input type="search" class="form-input flex-stretch">
-							</div>
-							<div class="flex-none">
-								<label class="form-label">Country</label>
-							</div>
-							<div class="flex-stretch">
-								<div class="form-select">
-									<select>
-										<option>Choose</option>
-										<option>United States</option>
-									</select>
+						<div class="form-control">
+							<div class="grid gap">
+								<div class="col-xs-12 col-md-6">
+									<div class="flex-none">
+										<label class="form-label">Zip Code</label>
+									</div>
+									<div class="flex-stretch">
+										<input type="search" class="form-input flex-stretch">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="flex-none">
+										<label class="form-label">Country</label>
+									</div>
+									<div class="flex-stretch">
+										<div class="form-select">
+											<select>
+												<option>Choose</option>
+												<option>United States</option>
+											</select>
+										</div>
+									</div>
 								</div>
 							</div>		
 						</div>
@@ -103,21 +121,26 @@ include_once "parts/templates.php";
 					    </div>   
 					</form>
 
-					<div class="form-control display-flex flex-align-center">
-					    	<div class="flex-none">
-						    	<label class="form-label">Expiration Date</label>
-						    </div>
-						    <div class="flex-stretch">
-						    	<input type="date" placeholder="mm/dd/yyyy" class="form-input">
+					<div class="form-control">
+						<div class="grid gap">
+							<div class="col-xs-12 col-md-6">
+						    	<div class="flex-none">
+							    	<label class="form-label">Expiration Date</label>
+							    </div>
+							    <div class="flex-stretch">
+							    	<input type="date" placeholder="mm/dd/yyyy" class="form-input">
+								</div>
 							</div>
-
-							<div class="flex-none">
-						    	<label class="form-label">CVV2</label>
-						    </div>
-						    <div class="flex-stretch">
-						    	<input type="password" placeholder="Security Code" class="form-input">
+							<div class="col-xs-12 col-md-6">
+								<div class="flex-none">
+							    	<label class="form-label">CVV2</label>
+							    </div>
+							    <div class="flex-stretch">
+							    	<input type="password" placeholder="Security Code" class="form-input">
+								</div>
 							</div>
-					    </div>
+						</div>
+					</div>
 				</div>				
 			</div>
 			<div class="col-xs-12 col-md-4">

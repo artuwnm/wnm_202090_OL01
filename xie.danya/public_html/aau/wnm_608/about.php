@@ -15,7 +15,7 @@
 		<div class="about">
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
-					<img class="about_img" src="img/about.jpg" style="width:375px; height: 500px;"> 	
+					<img class="about_img" src="img/about.jpg"> 	
 				</div>
 				<div class="col-xs-12 col-md-8">
 				    <h4>Brand Story</h4>	
