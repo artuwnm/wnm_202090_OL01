@@ -18,12 +18,7 @@
 			<h2>What is MyBookshelf?</h2>
 
 			<p>
-				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				My Booksehlf is an online store created to sell used textbooks. Many of college and graduate students need to pay much for their textbooks, but they may not be well financed. My Bookshelf aims to solve this problems for students, providing afforable and reuseable textbooks.
 			</p>
 
 		</div>
