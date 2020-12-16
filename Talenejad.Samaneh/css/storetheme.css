@@ -41,7 +41,7 @@
     background-size: 30px 30px;
     padding-left:50px;
 }
-
+	
 header h1 {
 	color: var(--color-dark);
 	line-height: var(--header-height);
@@ -197,47 +197,41 @@ span.badge:not(:empty)::before {
 
 /* HEADER - Side nav */
 
-.overlay {
+#overlay {
 	height: 100%;
 	width: 0;
 	position:fixed;
-	z-index:1;
+	z-index:2;
 	top:0;
 	left:0;
-	background-color: white;
+	background-color: rgba(0,0,0,0.5);
 	opacity: 1;
 	overflow-x: hidden;
 	transition: 0.5s;
-
 }
 
 .overlay-content {
-	position: relative;
-	top:8%;
-	width: 100%;
+	position: absolute;
+	background-color: white;
+	top:0;
+	bottom: 0;
+	width: 80%;
 	text-align: center;
+	padding-top:30px;
 }
 
-.overlay a {
+#overlay a {
 	padding:8px;
 	text-decoration: none;
 	font-size:16px;
-	color:#818181;
+	color:black;
 	display: block;
 	transition: 0.3s;
 }
 
-.overlay a:hover .overlay a:focus {
+#overlay a:hover #overlay a:focus {
 	color: #f1f1f1;
 }
-
-.overlay .closebtn {
-	position:absolute;
-	top:20px;
-	right:45px;
-	font-size: 20px;
-}
-
 
 
 /*** MAIN SECTION ***/

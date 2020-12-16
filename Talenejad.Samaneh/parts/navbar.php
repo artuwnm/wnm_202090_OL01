@@ -13,8 +13,7 @@
 		<!-- Vertical Nav Bar -->
 			<div>
 				<div class="menu-icon-container flex-stretch" onclick="openNav()"></div>
-				<div id="sideNav" class="overlay">
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div id="overlay" onclick="closeNav()">
 					<div class="overlay-content">
 						<a href="index.php">HOME</a>
 						<a href="product_list.php">SHOP</a>
