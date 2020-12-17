@@ -217,7 +217,7 @@ $form = <<< HTML
 				<label class="form-label" for="designer">Designer</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="text" name="designer" value="$o->product_designer" placeholder="Enter the designer">
+				<input style="width: 100%; padding:8px;" type="text" name="designer" value="$o->product_designer" placeholder="Enter the designer">
 			</td>
 		</tr>
 
@@ -226,7 +226,7 @@ $form = <<< HTML
 				<label class="form-label" for="product-name">Name</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="text" name="product-name" value="$o->product_name" placeholder="Enter the product Name">
+				<input style="width: 100%; padding:8px;" type="text" name="product-name" value="$o->product_name" placeholder="Enter the product Name">
 			</td>
 		</tr>
 
@@ -235,7 +235,7 @@ $form = <<< HTML
 				<label class="form-label" for="quantity">Quantity</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="number" min="0" max="1000" step="1"  name="quantity" value="$o->quantity" placeholder="Enter Quantity">
+				<input style="width: 100%; padding:8px;" type="number" min="0" max="1000" step="1"  name="quantity" value="$o->quantity" placeholder="Enter Quantity">
 			</td>
 		</tr>
 
@@ -245,7 +245,7 @@ $form = <<< HTML
 				<label class="form-label" for="size">Size</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="text" name="size" value="$o->product_size" placeholder="Enter the product size">
+				<input style="width: 100%; padding:8px;" type="text" name="size" value="$o->product_size" placeholder="Enter the product size">
 			</td>
 		</tr>
 
@@ -255,7 +255,7 @@ $form = <<< HTML
 				<label class="form-label" for="color">Color</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="text" name="color" value="$o->product_color" placeholder="Enter the product color">
+				<input style="width: 100%; padding:8px" type="text" name="color" value="$o->product_color" placeholder="Enter the product color">
 			</td>
 		</tr>
 
@@ -265,7 +265,7 @@ $form = <<< HTML
 				<label class="form-label" for="category">Category</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="text" name="category" value="$o->product_category" placeholder="Enter the product category">
+				<input style="width: 100%; padding:8px;" type="text" name="category" value="$o->product_category" placeholder="Enter the product category">
 			</td>
 		</tr>
 
@@ -275,7 +275,7 @@ $form = <<< HTML
 				<label class="form-label" for="description">Description</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<textarea style="width: 100%;" name="description">$o->product_description</textarea>
+				<textarea style="width: 100%; padding:8px;" name="description">$o->product_description</textarea>
 			</td>
 		</tr>
 
@@ -285,7 +285,7 @@ $form = <<< HTML
 				<label class="form-label" for="price">Unit Price</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="number" min="0" max="1000" step="0.01" name="price" value="$o->product_unit_price" placeholder="Enter the Unit price">
+				<input style="width: 100%; padding:8px;" type="number" min="0" max="1000" step="0.01" name="price" value="$o->product_unit_price" placeholder="Enter the Unit price">
 			</td>
 		</tr>
 
@@ -295,7 +295,7 @@ $form = <<< HTML
 				<label class="form-label" for="thumbnail">Thumbnail</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="text" name="thumbnail" value="$o->product_thumb" placeholder="Enter the Product Thumbnail name, comma separated">
+				<input style="width: 100%; padding:8px;" type="text" name="thumbnail" value="$o->product_thumb" placeholder="Enter the Product Thumbnail name, comma separated">
 			</td>
 		</tr>
 
@@ -305,7 +305,7 @@ $form = <<< HTML
 				<label class="form-label" for="images">Images</label>
 			</td>
 			<td class="col-xs-8 col-md-9">
-				<input style="width: 100%;" type="text" name="images" value="$o->product_images" placeholder="Enter the Product Image names, comma separated">
+				<input style="width: 100%; padding:8px;" type="text" name="images" value="$o->product_images" placeholder="Enter the Product Image names, comma separated">
 			</td>
 		</tr>
 		

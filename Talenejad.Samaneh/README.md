@@ -1,8 +1,8 @@
 # Samaneh Talenejad
 
 ## Relevent Links
-- https://samtalth.com
-- https://samtalth.com/aau/wnm608/Talenejad.Samaneh
+- http://samtalth.com
+- http://samtalth.com/aau/wnm608/Talenejad.Samaneh
 
 
 ## E-Commerce Project Links
@@ -12,5 +12,5 @@
 
 
 ## StyleGuide & Reading JSON data Links
-- https://samtalth.com/aau/wnm608/Talenejad.Samaneh/styleguide
+- http://samtalth.com/aau/wnm608/Talenejad.Samaneh/styleguide
 - http://samtalth.com/aau/wnm608/Talenejad.Samaneh/notes/reading_data.php
