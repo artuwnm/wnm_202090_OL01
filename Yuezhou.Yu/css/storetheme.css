@@ -4,60 +4,48 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, span, em, i, img, ul, li, ol, dl,
     margin: 0;
     padding: 0;
 }
-body { font: 12px/1.5 Helvetica, "Microsoft Yahei", "Hiragino Sans GB", "黑体", Arial, \5b8b\4f53; color: #333; background: #E6EEF9; -webkit-text-size-adjust: 100% !important;text-size-adjust: 100% !important;-moz-text-size-adjust: 100% !important; }
+body { font: 12px/1.5 Helvetica, "Microsoft Yahei", "Hiragino Sans GB", "黑体", Arial, \5b8b\4f53; color: #333; background: #C7CFA0; -webkit-text-size-adjust: 100% !important;text-size-adjust: 100% !important;-moz-text-size-adjust: 100% !important; }
 li{ list-style: none;}
+
+.fl { float: left }
+.fr { float: right }
+
+.dib{ display: inline-block}
+.mr10{ margin-right: 10px;}
+.mr20{ margin-right: 20px;}
+
+
+.clearfix { zoom: 1 }
+.clearfix:after { content: ""; display: block; height: 0; font-size: 0; clear: both; visibility: hidden }
+
+
+.abs, .index-popup, .search-select .icon_arrow_down { position: absolute }
+.fix { position: fixed; _position: absolute; }
+.rel, .index-popup-title { position: relative }
+.f14{ font-size:14px;}
+
+.t-999{ color: #999;}
+.w100{ width: 100%;}
+.hide{ display: none;}
 * {box-sizing: border-box}
   body {
     font-family: Verdana, sans-serif; 
     margin:0;
-      background: #bfbfbf;
+      background: #C7CFA0;
   }
   header {
     text-align: center;
     font-size: 18px;
     height: auto; 
-    width:100%;
-   
-    background:#bfbfbf;
-  
-    
+    width:100%;   
     margin-bottom: 1px;
     box-sizing: inherit;
   }
-  h1{
-    font-family: Bebas Neue bold;
-    font-size:xx-large;
-    color:black;
-    padding-top: 30px;
-  }
-  h2{
-    font-family: Bebas Neue bold;
-    font-size:x-large;
-    color:black;
-    padding-top: 30px;
-  }
-  h3{
-    font-family: Bebas Neue bold;
-    font-size:large;
-    color:black;
-    padding-top: 30px;
-  }
   h4{
     font-family: Bebas Neue bold;
-    font-size:medium;
-    color:black;
-    padding-top: 30px;
-  }
-  h5{
-    font-family: Bebas Neue bold;
-    font-size:small;
-    color:black;
-    padding-top: 30px;
-  }
-  h6{
-    font-family: Bebas Neue bold;
-    font-size:x-small;
-    color:black;
+    text-align: center;
+    font-size:xx-large;
+    color:#F2695C;
     padding-top: 30px;
   }
 
@@ -83,8 +71,9 @@ li{ list-style: none;}
       font-family:Bebas Neue, ;
       font-weight:bold;
       font-size:x-large;
-      padding:0.2em 1em; margin-right: 20px;
+      padding:0.2em 1em; margin-right: 20px; border-radius: 5px;
    }
+.nav li a.nav-current,.nav a:hover{background-color: #93af08!important}
    .searchbar{
     width:100%;
     border-width:0;
@@ -113,7 +102,12 @@ li{ list-style: none;}
     text-align: center;
   }
 .pictures img {vertical-align: middle; display: inline-block; margin: 0;}
-.column {
+.button-div{ text-align: center; margin:50px auto; }
+.button-div .button1{ background-color: #93af08; text-align: center; padding:10px 20px; border-radius: 5px; color: #fff;}
+.home-info h2{    padding: 30px;
+    text-align: center;
+    font-size: 18px;}
+  .column {
     flex: 50%;
     padding: 10px;
     margin: auto;
@@ -445,12 +439,12 @@ code {
 /* VIEW WINDOW */
 
 .view-window {
-  height:100vh;
-  position:relative;
-  overflow:hidden;
-  background-size:cover;
-  background-position:center;
-  background-attachment: fixed;
+  /*height:100vh;*/
+  /*position:relative;*/
+  /*overflow:hidden;*/
+  /*background-size:cover;*/
+  /*background-position:center;*/
+  /*background-attachment: fixed;*/
 }
 
 
@@ -609,7 +603,7 @@ code {
 .toggle input:checked + label::after {
     transform: translateX(1em);
 }:root {
-    --color-neutral-dark: #96d3e0;
+    --color-neutral-dark: #272b26;
     --color-neutral-medium: #7f877d;
     --color-neutral-light: #e6eae5;
 
@@ -620,12 +614,12 @@ code {
 
 
 body {
-    background: #E6EEF9;
+    background: #C7CFA0;
   padding-bottom:10em;
 }
 section h2 {
   margin-top:6em;
-  
+  border-bottom:1px solid var(--color-neutral-medium);
   margin-bottom:1em;
 }
 
@@ -685,7 +679,7 @@ section h2 {
     transform:scale(1.4,1.4);
   }
 
-
+.p-index{ font-size:24px;}
 
 
 
