@@ -35,7 +35,7 @@ include_once "parts/templates.php";
 				</form>
 			</div>
 			<div class="form-control">
-				<div class="card soft">
+				<div class="card soft smaller-font-size">
 				<div class="display-flex flex-wrap">
 					<div class="flex-stretch display-flex">
 						<div class="flex-none">

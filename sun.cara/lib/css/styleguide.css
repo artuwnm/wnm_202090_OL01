@@ -17,7 +17,6 @@
 	--spacing:1rem;
 
 
-
 	--font-serif: mrs-eaves, serif;
 	--font-sans: mr-eaves-sans, sans-serif;
 }
@@ -384,7 +383,7 @@ a:hover {
 }
 
 .form-select::after {
-	content: '\2bc6';
+	content: '\25BC';
 	font-family: arial, sans-serif;
 	font-size: 1.2em;
 	position: absolute;
@@ -421,4 +420,9 @@ a:hover {
 }
 .toggle input:checked + label::after {
 	transform: translateX(1em);
+}
+
+/* Small Font */
+.smaller-font-size{
+	font-size: 85%;
 }
