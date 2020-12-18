@@ -16,8 +16,9 @@
 	// LOGIC
 	try {
 		$conn = makePDOConn();
+		$action = isset($_GET['action']) ? $_GET['action'] : null;
 
-		switch ($_GET['action']) {
+		switch ($action) {
 			case 'update':
 				$statement = $conn->prepare("UPDATE 
 					`products` 
@@ -35,7 +36,7 @@
 				$statement->execute([
 					$_POST['product-name'],
 					$_POST['product-price'],
-					$_POST['product-size'],
+					// $_POST['product-size'],
 					$_POST['product-category'],
 					$_POST['product-description'],
 					$_POST['product-thumbnail'],
@@ -51,7 +52,6 @@
 					(
 						`name`,
 						`price`,
-						`size`,
 						`category`,
 						`description`,
 						`thumbnail`,
@@ -59,13 +59,12 @@
 						`date_create`,
 						`date_modify`
 					)
-					VALUES (?,?,?,?,?,?,?,NOW(),NOW())
+					VALUES (?,?,?,?,?,?,NOW(),NOW())
 					");
 
 				$statement->execute([
 					$_POST['product-name'],
 					$_POST['product-price'],
-					$_POST['product-size'],
 					$_POST['product-category'],
 					$_POST['product-description'],
 					$_POST['product-thumbnail'],
@@ -107,7 +106,7 @@
 					</div>
 					<div class="flex-stretch" style="padding: 1em;">$o->name</div>
 					<div class="flex-none">
-						<a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a>
+						<a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button4">Edit</a>
 					</div>
 				</div>
 			</div>
@@ -172,10 +171,14 @@
 					<label class="form-label" for="product-thumbnail">Thumbnail</label>
 					<input type="text" placeholder="Enter the Product Thumbnail" class="form-input" name="product-thumbnail" id="product-thumbnail" value="$o->thumbnail">
 				</div>
+				<div class="form-control">
+					<label class="form-label" for="product-images">Images</label>
+					<input type="text" placeholder="Enter the Product Images" class="form-input" name="product-images" id="product-images" value="$o->images">
+				</div>
 				
 				
 				<div class="form-control">
-					<input type="submit" class="form-button" value="Save Changes">
+					<input type="submit" class="form-button4" value="Save Changes">
 				</div>
 			</form> 
 		HTML;
@@ -221,6 +224,7 @@
 			<div class="flex-none">
 				<nav class="nav nav-flex flex-none">
 					<ul>
+						<li><a href="index.php">Bling Bling & Co.</a></li>
 						<li><a href="<?=$_SERVER['PHP_SELF'] ?>?">Product List</a></li>
 						<li><a href="<?=$_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
 					</ul>
