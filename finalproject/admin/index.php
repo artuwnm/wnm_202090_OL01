@@ -16,10 +16,8 @@
 	// LOGIC
 	try {
 		$conn = makePDOConn();
-		
-		$action = isset($_GET['action']) ? $_GET['action'] : null;
 
-		switch ($action) {
+		switch ($_GET['action']) {
 			case 'update':
 				$statement = $conn->prepare("UPDATE 
 					`products` 
@@ -109,7 +107,7 @@
 					</div>
 					<div class="flex-stretch" style="padding: 1em;">$o->name</div>
 					<div class="flex-none">
-						<a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button4">Edit</a>
+						<a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a>
 					</div>
 				</div>
 			</div>
@@ -177,7 +175,7 @@
 				
 				
 				<div class="form-control">
-					<input type="submit" class="form-button4" value="Save Changes">
+					<input type="submit" class="form-button" value="Save Changes">
 				</div>
 			</form> 
 		HTML;
@@ -223,7 +221,6 @@
 			<div class="flex-none">
 				<nav class="nav nav-flex flex-none">
 					<ul>
-						<li><a href="index.php">Bling Bling & Co.</a></li>
 						<li><a href="<?=$_SERVER['PHP_SELF'] ?>?">Product List</a></li>
 						<li><a href="<?=$_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
 					</ul>
