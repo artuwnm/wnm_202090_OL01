@@ -16,8 +16,10 @@
 	// LOGIC
 	try {
 		$conn = makePDOConn();
+		
+		$action = isset($_GET['action']) ? $_GET['action'] : null;
 
-		switch ($_GET['action']) {
+		switch ($action) {
 			case 'update':
 				$statement = $conn->prepare("UPDATE 
 					`products` 
