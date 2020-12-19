@@ -35,7 +35,7 @@ $images_elements = array_reduce($images,function($r,$o){
 	<div class="container">
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
+				<div class="card soft" >
 					<div class="images-main">
 						<img src="/img/<?= $product->thumbnail ?>">
 					</div>

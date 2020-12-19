@@ -480,7 +480,7 @@ footer{
 		left: initial;
 		width: 100%;
 		height: initial;
-		background-color: initial;
+		background-color: #eee;
 	}
 	.product-overlay .caption-body {
 		transform:none;
@@ -689,8 +689,41 @@ input:focus {
 	background-color: red;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 70vw;
+    object-fit: cover;
+}
 
 
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
 
 
 

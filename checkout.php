@@ -55,7 +55,6 @@ $cart = getCartItems();
            </div>
           </div>
 
-
             <h3>Payment</h3>
 			<form>
 				<div class="form-control">
@@ -73,7 +72,7 @@ $cart = getCartItems();
 				<div class="form-control">
 					<label class="form-label">CVV</label>
 					<input type="number" placeholder="Number" class="form-input">
-					</div>
+				</div>
 
 				<div class="form-control">
 

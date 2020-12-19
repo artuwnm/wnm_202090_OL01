@@ -49,9 +49,9 @@ $cart_items = getCartItems();
     }else{
       ?>
       <div class="card soft">
-       <p> No items in cart </p>
+       <h3> No items in cart </h3>
 
-       <h3>Other Recommendations</h3>
+    
 
 
       </div>

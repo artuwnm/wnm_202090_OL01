@@ -6,7 +6,7 @@ function productListTemplate($r,$o) {
 		<div class="flex-stretch">
 			<img src="/img/$o->thumbnail" >
 		</div>
-		<figcaption class="felx-none">
+		<figcaption class="flex-none">
 			<div>&dollar;$o->price</div>
 			<div>$o->name</div>
 						
