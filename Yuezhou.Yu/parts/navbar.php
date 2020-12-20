@@ -8,7 +8,7 @@ $keywords = isset($_GET['keywords']) ? $_GET['keywords'] : '';
 ?>
 <header style="width: 95%; margin: 0 auto;">
     <div class="toplogo">
-        <p class="p-admin"><a href="./admin/admin.php">Admin</a></p>
+        
         <img src="img/LOGO1.png" style="width:300px; height:135px" >
     </div>
     <br>

@@ -1,8 +1,10 @@
 <?php
+error_reporting(E_ALL^E_NOTICE);
+
 include_once "../lib/php/functions.php";
 include_once "../parts/templates.php";
-$type = trim($_GET['type']);
-$product_id = $_GET['id'];
+$type = isset($_GET['type']) ? trim($_GET['type']) : "";
+$product_id = isset($_GET['id']) ? $_GET['id'] : "";
 if($type == 'add'){
     $params = $_POST;
     $conn = makePDOConn();
@@ -127,8 +129,8 @@ if($type == 'add'){
 <body>
 <header style="width: 95%; margin: 0 auto;">
     <div class="toplogo">
-        <p class="p-admin"><a href="../index.php">Front</a></p>
-        <img src="../img/LOGO1.png" style="width:300px; height:135px" >
+        <p class="p-admin"><a href="../Yuezhou.Yu/index.php">Front</a></p>
+        <img src="../Yuezhou.Yu/img/LOGO1.png" style="width:300px; height:135px" >
     </div>
     <br>
     <div class="form-control display-flex">

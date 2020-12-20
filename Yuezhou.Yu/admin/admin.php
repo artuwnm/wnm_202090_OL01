@@ -46,7 +46,7 @@ include_once "../parts/templates.php";
 <header style="width: 95%; margin: 0 auto;">
     <div class="toplogo">
         <p class="p-admin"><a href="../Yuezhou.Yu/index.php">Front</a></p>
-        <img src="../img/LOGO1.png" style="width:300px; height:135px" >
+        <img src="../Yuezhou.Yu/img/LOGO1.png" style="width:300px; height:135px" >
     </div>
     <br>
     <div class="form-control display-flex">
@@ -64,7 +64,7 @@ include_once "../parts/templates.php";
             <?php foreach ($list as $key=>$row){?>
             <li class="clearfix">
                 <div class="cart-img">
-                    <img src="../img/<?=$row->thumb?>"/>
+                    <img src="../Yuezhou.Yu/img/<?=$row->thumb?>"/>
                 </div>
                 <div class="cart-good-info">
                     <p class="cart-good-name"><?=$row->name?></p>

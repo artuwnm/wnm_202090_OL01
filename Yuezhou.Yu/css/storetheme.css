@@ -33,6 +33,9 @@ li{ list-style: none;}
     margin:0;
       background: #C7CFA0;
   }
+  .pictures img{ width:33%; }
+
+
   header {
     text-align: center;
     font-size: 18px;
@@ -116,6 +119,7 @@ li{ list-style: none;}
   }
   .copyright{
     text-align: center;
+    margin-top:20px;
     
   }
 .grid {
@@ -688,4 +692,80 @@ section h2 {
   .navbar .display-flex {
     display:block;
   }
+}
+
+@media (max-width: 800px){
+  .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .navbar h1 {
+    padding-left: 0.5em;
+  }
+  .pictures img{ width:31.4%; }
+  .pictures{ margin-left:7%; }
+  .nav li a {
+    padding: 3px 10px;
+    font-size: 20px;
+    margin-right: 2px;
+  }
+  
+  .shoplist li{ width: 100%;}
+    .good-detail{ width: 100%;padding: 20px 10px;}
+    .good-imgs{ width: 100%;}
+    .good-thumb {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+}
+@media (max-width: 400px) {
+  .navbar .display-flex {
+    flex-wrap: wrap;
+  }
+
+  .navbar .nav {
+    width: 100%;
+    display: none;
+
+  }
+
+  .navbar .nav-flex ul {
+    display: block;
+  }
+
+  .navbar .nav li {
+    line-height: 2em;
+  }
+
+  .menu-button label {
+    display: block;
+    padding: 0 1em;
+
+  }
+
+  #menu:checked+.navbar .nav {
+    display: block;
+  }
+  .pictures img{ width:31.4%; }
+  .pictures{ margin-left:7%; }
+  .nav li a {
+    padding: 3px 10px;
+    font-size: 18px;
+    margin-right: 2px;
+  }
+  .rel, .index-popup-title {
+    margin-right: 18%;
+    margin-top: 10px;
+  }
+
+
+    .shoplist li{ width: 100%;}
+    .good-detail{ width: 100%;padding: 20px 10px;}
+    .good-imgs{ width: 100%;}
+    .good-thumb {
+        width: 100%;
+        margin-right: 0;
+    }
+   
 }

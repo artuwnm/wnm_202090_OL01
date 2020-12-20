@@ -14,9 +14,9 @@
         <h2>Experience sports, training, shopping and everything else that's new at Nike from any country in the world.</h2>
     </div>
     <div class="pictures">
-        <img src="img/2.jpg" style="width:33.1%;">
-        <img src="img/12.jpg" style="width:33.1%;">
-        <img src="img/11.jpg" style="width:33.1%;">
+        <img src="img/2.jpg">
+        <img src="img/12.jpg">
+        <img src="img/11.jpg">
 
     </div>
     <div class="button-div">
