@@ -1,0 +1,850 @@
+/* CSS RESET */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-neutral-light: #eee;
+  --color-neutral-medium: #999;
+  --color-neutral-dark: #555;
+
+  --color-main-light: lightgreen;
+  --color-main-medium: green;
+  --color-main-dark: darkgreen;
+
+  --color-black: #000;
+  --color-white: #fff;
+
+  --header-height: 3rem;
+  --spacing: 1rem;
+
+  --font-serif: Georgia, "Time New Roman", serif;
+  --font-sans: Raleway, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 100%;
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-family: var(--font-sans);
+  font-size: 3em;
+  font-weight: normal;
+}
+h2 {
+  font-family: var(--font-sans);
+  font-size: 2em;
+  font-weight: normal;
+}
+h3 {
+  font-family: var(--font-sans);
+  font-size: 1.5em;
+  font-weight: normal;
+}
+h4 {
+  font-family: var(--font-sans);
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0.5em;
+}
+h5,
+h6 {
+  font-family: var(--font-sans);
+}
+
+a {
+  font-family: var(--font-sans);
+  text-decoration: none;
+  color: black;
+}
+
+
+/* LAYOUT CLASSES */
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.display-flex {
+  display: flex;
+}
+.display-inline-flex {
+  display: inline-flex;
+}
+.display-block {
+  display: block;
+}
+.display-inline-block {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+.flex-stretch {
+  flex: 1 1 auto;
+}
+.flex-none {
+  flex: none;
+  margin-top: 0.5em;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-left {
+  justify-content: left;
+}
+
+/* Small Classes */
+.media-image {
+  max-width: 100%;
+  vertical-align: text-bottom;
+}
+.hidden {
+  display: none;
+}
+
+/* COMPONENT CLASSES */
+
+.nav ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav a {
+  display: block;
+  padding: 0.2em 0.5em;
+  color: var(--color-black);
+}
+
+.nav a:hover {
+  background-color: var(--color-main-medium);
+  color: var(--color-white);
+}
+
+.nav .active a {
+  background-color: var(--color-main-light);
+  color: inherit;
+}
+
+.nav-material ul,
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+  display: flex;
+}
+
+.nav-material li,
+.nav-stretch li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.nav-pills a {
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+
+.nav-crumbs a {
+  display: inline-block;
+}
+.nav-crumbs .active a,
+.nav-crumbs a:hover {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.nav-crumbs li:not(:first-child)::before {
+  content: "/";
+}
+
+.crumbs {
+  margin: 20px 0;
+}
+
+.nav-material a {
+  padding: 0.5em 1em;
+  position: relative;
+}
+.nav-material .active a {
+  background-color: transparent;
+  color: inherit;
+}
+.nav-material a:hover {
+  background-color: var(--color-neutral-light);
+  color: inherit;
+}
+.nav-material a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--color-main-medium);
+  transition: all 0.3s;
+}
+.nav-material .active a::after {
+  height: 4px;
+}
+
+.navbar.styleguide {
+  color: var(--color-white);
+  line-height: var(--header-height);
+  background-color: var(--color-black);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar.styleguide a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.navbar.styleguide a:hover {
+  color: #6a9478;
+  background-color: var(--color-black);
+}
+
+.navbar {
+  color: var(--color-white);
+  line-height: var(--header-height);
+}
+.navbar.shop {
+  color: var(--color-black);
+  line-height: var(--header-height);
+}
+.navbar h2 {
+  font-family: "sansationregular", "Raleway", sans-serif;
+  font-size: 2em;
+  margin: 0;
+}
+
+.navbar a {
+  padding: 0 0.5em;
+}
+
+.main-nav {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+.flex-none.logo a {
+  color: black;
+  padding: 0;
+}
+.flex-none.logo a:hover {
+  color: black;
+  padding: 0;
+}
+.flex-none.nav a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.flex-none.nav a:hover {
+  color: #6a9478;
+  background-color: transparent;
+}
+
+/* CARD */
+
+.card {
+  background-color: var(--color-white);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+
+  overflow: hidden;
+  position: relative;
+}
+.card.soft {
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card.hard {
+  border-radius: 0.2em;
+  border: 2px solid var(--color-neutral-light);
+}
+.card.dark {
+  background-color: var(--color-neutral-dark);
+  color: var(--color-neutral-light);
+}
+.card.medium {
+  background-color: var(--color-neutral-medium);
+}
+.card.flat {
+  padding: 0;
+}
+
+.view-window {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-background {
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.container .header-title {
+  position: relative;
+  margin-left: 15px;
+}
+.header-title {
+  position: absolute;
+  top: 30vh;
+}
+.btn.shopnow {
+  border: 2px solid white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 14px 28px;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+}
+.header-title a {
+  padding: 0;
+}
+.btn.styleguide {
+  border: 2px solid black;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 14px 28px;
+  color: black;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.btn.delete {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  padding: 2em 0;
+}
+
+.btn:hover {
+  border-color: #6a9478;
+  color: #6a9478;
+}
+
+.btn:active {
+  border-color: inherit;
+  color: inherit;
+}
+
+.btn.add-cart {
+  border: 2px solid;
+  border-radius: 0.2em;
+  border-color: var(--color-main-medium);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 14px 28px;
+  color: #6a9478;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.btn.add-cart:hover {
+  background-color: #6a9478;
+  color: white;
+}
+
+.btn.filter {
+  border: 1px solid;
+  border-radius: 0.2em;
+  border-color: var(--color-main-medium);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-right: 0.5em;
+  color: #6a9478;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.btn.filter:hover {
+  background-color: #6a9478;
+  color: white;
+}
+
+.btn.continue {
+  border: #6a9478;
+  border-radius: 0.2em;
+  background-color: var(--color-main-medium);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 14px 28px;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.btn.continue:hover {
+  background-color: var(--color-main-dark);
+}
+
+button {
+  border: #6a9478;
+  border-radius: 0.2em;
+  background-color: #6a9478;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 14px 28px;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+}
+.form-control button {
+  margin: 0;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.catalog-item {
+  padding: 0 10px;
+  position: relative;
+  flex: 25%;
+  max-width: 285px;
+}
+
+.catalog-name {
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  bottom: 20%;
+  right: 65%;
+  left: 35%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .catalog-item {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 7px 7px 7px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .catalog-item {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 0 5px 0;
+  }
+}
+
+.catalog-item-image {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  flex: 100%;
+  height: 80px;
+  margin-top: 40px;
+  font-size: 0.8em;
+}
+
+.footer.container {
+  text-align: center;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.popular-background {
+  max-height: 600px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  padding-bottom: 2em;
+}
+
+.most-popular {
+  position: relative;
+  direction: flex;
+  flex: 100%;
+  text-align: center;
+}
+
+.popular-content {
+  margin-top: 60px;
+}
+
+.popular-item-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-item {
+  flex: 25%;
+  max-width: 25%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .popular-item {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .popular-background {
+    max-height: 1000px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .popular-item {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .popular-background {
+    max-height: 1200px;
+  }
+}
+
+.popular-price {
+  padding: 15px;
+}
+
+.color-1 {
+  background-color: #6a9478;
+  padding: 20px;
+}
+.color-2 {
+  background-color: #000;
+  padding: 20px;
+  color: white;
+}
+.color-3 {
+  background-color: #fff;
+  padding: 20px;
+}
+.color-4 {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/*Figure*/
+
+.figure {
+  margin: 0;
+  background-color: var(--color-white);
+}
+.figure img {
+  width: 100%;
+  vertical-align: text-bottom;
+}
+.figure figcaption {
+  padding: 1em;
+}
+
+figcaption {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.caption-shoplist {
+  text-align: center;
+}
+.product-name {
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+
+/*Table*/
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.2em 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+  background-color: var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+  border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all tbody tr,
+.table.lined.all tbody tr {
+  border-top: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.border {
+  border: 1px solid var(--color-neutral-medium);
+}
+
+/*Form*/
+
+.placeholder {
+  color: var(--color-main-light);
+}
+
+.form-control {
+  margin: 1em 0;
+}
+.form-select > select,
+.hotdog input,
+.hotdog,
+.form-button,
+.form-input,
+.form-item {
+  display: inline-block;
+  background-color: transparent;
+  border-width: 0;
+  font: inherit;
+  -webkit-appearance: none;
+  color: inherit;
+  width: 100%;
+  outline: 0;
+}
+.form-select > select {
+  color: var(--color-neutral-medium);
+}
+
+::placeholder {
+  color: var(--color-neutral-medium);
+}
+.form-input {
+  border-bottom: 1px solid var(--color-neutral-light);
+  padding: 0.5em 1em;
+}
+.form-input:focus {
+  border-bottom-color: var(--color-main-light);
+}
+.form-label {
+  font-size: 1em;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.form-button {
+  background-color: var(--color-main-medium);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 0.2em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.form-button:hover {
+  text-decoration: none;
+}
+.form-button:active {
+  background-color: var(--color-main-dark);
+}
+
+.hotdog {
+  background-color: var(--color-neutral-light);
+  border-radius: 2em;
+  padding: 0.5em 1.5em;
+  display: flex;
+}
+.hotdog.dark {
+  background-color: var(--color-neutral-dark);
+  color: var(--color-neutral-light);
+}
+.hotdog.light {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.form-select > select {
+  padding: 0.5em 1.3em;
+  border-bottom: 1px solid var(--color-neutral-light);
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.form-select {
+  position: relative;
+  padding: 0.5em 0;
+}
+.form-select::after {
+  content: "▾";
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: 0.2em;
+  transform: translateY(-50%);
+  pointer-events: none;
+  border: none;
+}
+
+.form-select.quantity > select {
+  padding: 0.5em 1.3em;
+  border: 1px solid var(--color-neutral-medium);
+  border-radius: 0.3em;
+  cursor: pointer;
+  color: black;
+}
+
+.form-select.quantity::after {
+  content: "▾";
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translateY(-50%);
+  pointer-events: none;
+  border: none;
+}
+.form-select.sort {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+.form-select.sort > select {
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  font-size: 0.8em;
+  border: 1px solid var(--color-main-medium);
+  border-radius: 0.2em;
+  cursor: pointer;
+  color: black;
+}
+
+.form-select.sort::after {
+  content: "▾";
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  color: black;
+  position: absolute;
+  top: 33%;
+  right: 0.5em;
+  transform: translateY(-50%);
+  pointer-events: none;
+  border: none;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1em;
+  padding: 0px 2px 1px;
+}
+
+/*Toggle*/
+.toggle label {
+  font-size: 1.3em;
+  display: inline-block;
+  width: 2em;
+  height: 1em;
+  border: 0.1em solid var(--color-neutral-medium);
+  background-color: var(--color-neutral-medium);
+  border-radius: 1em;
+  position: relative;
+}
+.toggle label::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 1em;
+  position: absolute;
+  background-color: var(--color-white);
+  transition: all 0.3s;
+}
+.toggle input:checked + label::after {
+  transform: translateX(1em);
+  background-color: var(--color-white);
+}
+.toggle input:checked + label {
+  background-color: var(--color-main-medium);
+  border: 0.1em solid var(--color-main-medium);
+}
+
+.about {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.about_img {
+  width: 375px; 
+  height: 500px;
+  padding-right: 1em;
+}
+
+.confirmation {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.section ~ .section {
+  border-top: 1px solid var(--color-neutral-light);
+}
+.section {
+  padding: 0.5em;
+}
+
+.section.cart {
+  padding-top: 2em;
+}
+
+.product-category {
+  padding-bottom: 2em;
+  color: var(--color-neutral-dark);
+}

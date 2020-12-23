@@ -1,0 +1,186 @@
+
+:root {
+	--color-offwhite: #f4f4f4;
+
+    --color-main-light: #8bb99a;
+    --color-main-medium: #6a9478;
+    --color-main-dark: #527d61;
+
+}
+
+body {
+	background-color: var(--color-offwhite);
+}
+
+.favorite label {
+	transition: all 0.3s;
+	display:inline-block;
+	transform:scale(1,1);
+	color:var(--color-neutral-medium)
+}
+.favorite input:checked + label {
+	color:red;
+	transform: scale(1.5,1.5);
+}
+
+
+
+.figure.product {
+	border-radius: 0.5em;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	overflow: hidden;
+	transition: all 0.3s;
+}
+
+
+.product.figure:hover {
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+
+.product-overlay {
+	position: relative;
+	overflow: hidden;
+}
+.product-overlay figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.product-overlay:hover figcaption {
+	opacity: 1;
+}
+
+.product-overlay .caption-body {
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 1em;
+	transform: translateY(2em);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover .caption-body {
+	transform: translateY(0);
+}
+
+
+.product-overlay img {
+	transform: scale(1,1);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover img {
+	transform: scale(1.4,1.4);
+}
+
+
+
+.menu-button label { display: none; }
+@media (max-width: 400px) {
+	.product-overlay figcaption {
+		position: relative;
+		display: block;
+		top: initial;
+		left: initial;
+		width: 100%;
+		height: initial;
+		opacity: 1;
+		background-color: initial;
+	}
+	.product-overlay .caption-body{
+		transform: none; 
+		padding: 0;
+	}
+
+	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+	.navbar .nav-flex ul {
+		display: block;
+	}
+	.menu-button label {
+	display: block;
+	padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display: block;
+	}
+
+	.btn.continue {
+		font-size: 0.7em;
+	}
+
+}
+
+
+.catalog-overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.catalog-overlay figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 160%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.catalog-overlay img {
+	transform: scale(1,1);
+	transition: all 0.3s;
+}
+.catalog-overlay:hover img {
+	transform: scale(1.4,1.4);	
+}
+
+.images-main img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.images-thumbs img {
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
+}
+
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
+span.badge:not(:empty)::before {
+	content: '(';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
