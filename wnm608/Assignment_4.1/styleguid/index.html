@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Styleguide</title>
+
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+</head>
+<body>
+
+
+
+
+
+    <div class="container" id="tableofcontents">
+    	
+    		<h2>Table of Contents</h2>
+    		<div class="card soft">
+    		<nav class="nav">
+    		<ul>
+    			<li><a href="#typography">Typography</a></li>
+    			<ul>
+    				<li><a href="#headings">Headings</a></li>
+    				<li><a hrep="#paragraphs">Paragraphs</a></li>
+    			</ul>
+    			
+    		        <li><a href="#navigation">Navigation</a></li>
+                    <li><a href="#cards">Figure Grids</a></li>
+    			
+    		</ul>
+    		</nav>
+    	</div>
+    </div>
+
+
+    <div class="container" id="typography">
+    	<h2>Typography</h2>
+
+    	<div class="card soft" id="headings">
+    		 
+
+            <h3>Headings</h3>
+    		<h1>Heading 1</h1>
+    		<h2>Heading 2</h2>
+    		<h3>Heading 3</h3>
+    		<h4>Heading 4</h4>
+    		<h5>Heading 5</h5>
+    		<h6>Heading 6</h6>
+    	</div>
+
+    	<div class="card soft" id="paragraphs">
+
+    		<h3>Paragraphs</h3>
+    		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel molestias minus eaque blanditiis velit rerum aperiam atque ipsa voluptatibus, repudiandae est dignissimos consequatur tenetur magni quod deserunt similique facere sapiente!</p>
+    		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel molestias minus eaque blanditiis velit rerum aperiam atque ipsa voluptatibus, repudiandae est dignissimos consequatur tenetur magni quod deserunt similique facere sapiente!</p>
+    		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel molestias minus eaque blanditiis velit rerum aperiam atque ipsa voluptatibus, repudiandae est dignissimos consequatur tenetur magni quod deserunt similique facere sapiente!</p>
+    	</div>
+    </div>
+
+
+
+
+
+
+
+
+
+        <div class="container" id="navigations">
+    	<h2>Navigations</h2>
+
+    	<script>
+    		const makeNav = (classes='') => {
+    			const links = ['Home','Makeup','Skincare','Cart','Contact'];
+                let ran = Math.floor(Math.random()*links.length);
+    			document.write(`
+    			<div>
+                    <nav class="${classes}">
+                       <ul>
+                           ${links.reduce((r,o,i)=>{
+                           	return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+                           },'')}
+                           
+                       </ul>
+                    </nav>
+    			</div>
+    			`);
+    		}
+
+    	</script>
+
+    	
+
+        <div class="card soft">
+            <h3>Material Nav</h3>
+
+            <script>makeNav('nav nav-material')</script>
+            
+        </div>
+
+        <script>
+            $("#navigations a").on("click",function(e){
+                e.preventDefault();
+                $(this).closest("li").addClass("active")
+                   .siblings().removeClass("active")
+            })
+        </script>
+    </div>
+
+
+
+
+
+
+        
+<div class="container-figure">
+    <h2>Figure Grid</h2>
+
+<div class="card soft">
+
+<div class="grid gap">
+            <div class="col-xs-12 col-md-4">
+                <figure class="figure product">
+            <img src="http://via.placeholder.com/400x400?text=product" alt="">
+            <figcaption>
+                <div>Product Name</div>
+                <div>$3.99</div>
+            </figcaption>
+        </figure>
+
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <figure class="figure product">
+            <img src="http://via.placeholder.com/400x400?text=product" alt="">
+            <figcaption>
+                <div>Product Name</div>
+                <div>$3.99</div>
+            </figcaption>
+        </figure>
+
+            </div>
+
+
+            <div class="col-xs-12 col-md-4">
+                <figure class="figure product">
+            <img src="http://via.placeholder.com/400x400?text=product" alt="">
+            <figcaption>
+                <div>Product Name</div>
+                <div>$3.99</div>
+            </figcaption>
+        </figure>
+
+            </div>
+
+
+            <div class="col-xs-12 col-md-4">
+                <figure class="figure product">
+            <img src="http://via.placeholder.com/400x400?text=product" alt="">
+            <figcaption>
+                <div>Product Name</div>
+                <div>$3.99</div>
+            </figcaption>
+        </figure>
+
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <figure class="figure product">
+            <img src="http://via.placeholder.com/400x400?text=product" alt="">
+            <figcaption>
+                <div>Product Name</div>
+                <div>$3.99</div>
+            </figcaption>
+        </figure>
+
+            </div>
+
+
+            <div class="col-xs-12 col-md-4">
+                <figure class="figure product">
+            <img src="http://via.placeholder.com/400x400?text=product" alt="">
+            <figcaption>
+                <div>Product Name</div>
+                <div>$3.99</div>
+            </figcaption>
+        </figure>
+
+            </div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
