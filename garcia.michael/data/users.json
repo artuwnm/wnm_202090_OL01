@@ -1,0 +1,29 @@
+[
+	{
+		"name":"Michael Garcia",
+		"type":"Student",
+		"email":"michael@gmail.com",
+		"classes":[608,605]
+	},
+	{
+		"name":"Dina Chinchilla",
+		"type":"Student",
+		"email":"dina@gmail.com",
+		"classes":[609,505]
+	},	{
+		"name":"Erick Arias",
+		"type":"Student",
+		"email":"erick@gmail.com",
+		"classes":[606,798]
+	},	{
+		"name":"Nancy Garcia",
+		"type":"Student",
+		"email":"Nancy@gmail.com",
+		"classes":[508,707]
+	},	{
+		"name":"Alex Karr",
+		"type":"Student",
+		"email":"alex@gmail.com",
+		"classes":[303,959]
+	}
+]

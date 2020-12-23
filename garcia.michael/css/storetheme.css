@@ -1,0 +1,116 @@
+:root {
+	--color-offwhite: #f4f4f4;
+
+}
+
+body {
+	background-color: var(--color-white);
+	padding-bottom: 4em;
+
+}
+
+.favorite label {
+	transition: all 0.3s;
+	display: inline-block;	
+	transform: scale(1,1);
+	color: var(--color-black);
+}
+
+
+.favorite input:checked + label {
+	color:red;
+	transform: scale(1.5, 1.5);
+
+}
+
+.figure.product {
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.product.figure img {
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
+}
+
+
+.productlist a {
+	text-decoration: none;
+	font-weight: initial;
+}
+
+.product.figure:hover {
+	box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.images-main img {
+	width: 100%;
+	height: 20vh;
+	object-fit: contain;
+
+}
+
+.images-thumbs img {
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
+
+}
+
+
+
+span.badge:not(:empty)::after {
+	content: ')';
+	}
+span.badge.not(:empty)::before {
+	content: '(');
+	}
+
+
+
+
+@media (max-width: 800px) {
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.navbar h1 {
+		padding-left: 0.5em;
+	}
+	
+}
+	
+	
+	.menu-button label {display: none; }
+
+@media (max-width:400px) {
+	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+
+	.navbar .nav-flex ul {
+		display:block;
+	}
+	.navbar .nav li {
+		line-height: 2em;
+}
+
+	.menu-button label {
+	display: block;
+	padding: 0 1em;
+}
+
+	#menu:checked+.navbar .nav {
+		display: block;
+	}
+}
+
+
