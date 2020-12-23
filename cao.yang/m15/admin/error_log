@@ -1,0 +1,207 @@
+[30-Oct-2020 03:18:55 UTC] PHP Notice:  Undefined variable: notes_object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:18:55 UTC] PHP Notice:  Trying to get property 'notes' of non-object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:18:55 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:18:55 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:18:55 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:21:02 UTC] PHP Notice:  Undefined variable: notes_object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:02 UTC] PHP Notice:  Trying to get property 'notes' of non-object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:02 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:02 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:21:02 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:21:02 UTC] PHP Notice:  Undefined variable: notes_object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:02 UTC] PHP Notice:  Trying to get property 'notes' of non-object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:02 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:02 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:21:02 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:21:16 UTC] PHP Notice:  Undefined variable: notes_object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:16 UTC] PHP Notice:  Trying to get property 'notes' of non-object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:16 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 26
+[30-Oct-2020 03:21:16 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:21:16 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 38
+[30-Oct-2020 03:24:20 UTC] PHP Notice:  Undefined variable: notes_object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 39
+[30-Oct-2020 03:24:20 UTC] PHP Notice:  Trying to get property 'notes' of non-object in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 39
+[30-Oct-2020 03:24:20 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 39
+[30-Oct-2020 03:24:20 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 51
+[30-Oct-2020 03:24:20 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 51
+[30-Oct-2020 03:26:14 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:26:14 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:27:37 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:27:37 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:28:12 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:28:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:13 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:13 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:15 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:15 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:17 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:17 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:18 UTC] PHP Notice:  Undefined variable: users_array in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:29:18 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 40
+[30-Oct-2020 03:30:07 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 43
+[30-Oct-2020 03:30:07 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 43
+[30-Oct-2020 03:30:07 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 43
+[30-Oct-2020 03:30:07 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 43
+[30-Oct-2020 03:30:07 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 43
+[30-Oct-2020 03:30:07 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 43
+[30-Oct-2020 03:30:07 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 43
+[30-Oct-2020 03:32:28 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 45
+[30-Oct-2020 03:32:28 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 45
+[30-Oct-2020 03:32:28 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 45
+[30-Oct-2020 03:32:28 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 45
+[30-Oct-2020 03:32:28 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 45
+[30-Oct-2020 03:32:28 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 45
+[30-Oct-2020 03:32:28 UTC] PHP Notice:  Undefined property: stdClass::$type· in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 45
+[30-Oct-2020 04:02:42 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(51): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:02:46 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(51): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:08:56 UTC] PHP Notice:  Array to string conversion in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 23
+[30-Oct-2020 04:10:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imolode() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(71): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:10:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imolode() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(71): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:10:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imolode() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(71): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:10:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imolode() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(71): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:10:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imolode() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(71): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:10:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imolode() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(71): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[30-Oct-2020 04:10:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imolode() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:10
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php(71): showUserPage(Object(stdClass))
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 10
+[01-Nov-2020 20:32:51 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:32:53 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:32:57 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:32:58 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:32:59 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:32:59 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:33:00 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:33:00 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:33:36 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:33:38 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:33:39 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:34:09 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:35:07 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:35:25 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:35:27 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:37:52 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:38:19 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:38:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:38:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:38:22 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:38:23 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:40:59 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:41:13 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:41:15 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:41:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:05 UTC] PHP Warning:  file_get_contents(main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 20:42:05 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:06 UTC] PHP Warning:  file_get_contents(main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 20:42:06 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:08 UTC] PHP Warning:  file_get_contents(main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 20:42:08 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:09 UTC] PHP Warning:  file_get_contents(main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 20:42:09 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:14 UTC] PHP Warning:  file_get_contents(../main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 20:42:14 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:15 UTC] PHP Warning:  file_get_contents(../main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 20:42:15 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:16 UTC] PHP Warning:  file_get_contents(../main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 20:42:16 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:42:46 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:43:08 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:43:10 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:43:11 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:48:58 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:00 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:01 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:02 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:08 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:11 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:11 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:13 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:13 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:13 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:49:14 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:51:34 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:51:36 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:51:38 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:54:27 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:54:28 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:08 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:10 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:11 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:11 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:13 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:55:13 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:57:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:57:45 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 20:57:46 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:45 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:46 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:46 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:46 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:47 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:47 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:48 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:48 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:48 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:49 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:49 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:50 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:10:50 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 90
+[01-Nov-2020 21:14:15 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 91
+[01-Nov-2020 21:14:16 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 91
+[01-Nov-2020 21:14:17 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 91
+[01-Nov-2020 21:16:04 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:18:25 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:18:27 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:18:28 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:18:32 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:18:34 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:18:37 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:34:38 UTC] PHP Warning:  include(../lib/php/function.php): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 4
+[01-Nov-2020 21:34:38 UTC] PHP Warning:  include(): Failed opening '../lib/php/function.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 4
+[01-Nov-2020 21:34:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_json() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 6
+[01-Nov-2020 21:35:55 UTC] PHP Warning:  file_get_contents(main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 21:35:55 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 88
+[01-Nov-2020 21:54:16 UTC] PHP Warning:  include(/parts/meta.php): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 50
+[01-Nov-2020 21:54:16 UTC] PHP Warning:  include(): Failed opening '/parts/meta.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/admin/users.php on line 50

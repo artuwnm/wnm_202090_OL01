@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
+<link rel="stylesheet" type="text/css" href="css/storetheme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/icon.png" type="test.ico">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sushi Yoshizumi Shop</title>
+</head>
+
+<body>
+	<header id="navbar" class="navbar">
+		<div class="logonav">
+			<div>
+				<a href="#"><img class="logo" src="img/logo.png"></a>
+				<button class="user"><i class='fa fa-shopping-cart'></i></button>
+				<button class="cart"><i class="fa fa-user-circle"></i></button>
+			</div>
+			<div class="search-container">
+				<form action="/action_page.php">
+				    <input type="text" placeholder="Search" name="search">
+				    <button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+
+	
+		<div>
+			<nav>
+				<ul>
+					<li><a href="#">Take Out</a></li>
+					<li><a href="#">Home Decor</a></li>
+					<li><a href="#">Tableware</a></li>
+					<li><a href="#">Gifts</a></li>
+					<li><a href="#">Sale</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="title">
+			<h2>MICHELIN STAYCATION</h2>
+			<a href="#"><p>Order Take Out</p></a>
+		</div>
+		<img class="bg" src="img/takeout.png">
+	</div>
+
+	<div class="view-window" style="background-image:url('img/ink.jpg')">		
+	</div>
+
+	<div class="container">
+		<div class="title1">
+			<a href="#"><h2>LOVE THE SPACE 7/24</h2></a>
+		</div>
+		<div class="tableware">
+			<img class="bg1" src="img/home1.jpg">
+			<img class="bg1" src="img/home2.jpg">
+			<img class="bg1" src="img/home3.jpg">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="title2">
+			<h2>FROM JAPAN <br>
+			TO SAN FRANCISCO</h2>
+			<a href="#"><p>Shop</p></a>
+		</div>
+		<img class="bg" src="img/matcha.png">
+	</div>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+
+</body>
+
+<footer>
+	<br>
+	<br>
+	<br>
+	<div class="footer">
+		<div>
+			<a href="#"><p>Help Center</p></a>
+			<a href="#"><p>Shipping</p></a>
+			<a href="#"><p>Returns</p></a>
+			<a href="#"><p>About Us</p></a>
+		</div>
+		<div>
+			<p>325 E 4th Ave, San Mateo, CA 94401</p>
+			<p>(650) 437-2282</p>
+			<p>Wednesday-Sunday 5:30pm-10:00pm</p>
+		</div>
+	</div>
+	<div class="author">
+		<p>Author: Yang Cao<br>
+	  	<a href="mailto:hege@example.com">ycao1212@gmail.com</a></p>
+  	</div>
+  	<br>
+</footer>
+</html>

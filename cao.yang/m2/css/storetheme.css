@@ -1,0 +1,190 @@
+
+:root {
+	--color-offwhite: #f4f4f4;
+}
+
+body {
+	background-color: var(--color-white)
+}
+
+.logo {
+	width: 70px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+.logonav {
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.logonav a {
+  float: left;
+  display: block;
+}
+
+.logonav .search-container {
+  float: right;
+}
+
+.logonav input[type=text] {
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 15px;
+  border-style: none none solid none;
+}
+
+.logonav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 10px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-white);
+}
+
+input {
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .logonav a, .logonav input[type=text], .logonav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .logonav input[type=text] {
+    border: transparent;
+    outline: none;
+  }
+}
+
+.user {
+	float: right;
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 50px;
+  font-size: 20px;
+  border: none;
+ 	cursor: pointer;
+  background-color: var(--color-white);
+}
+
+.cart {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-white);
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0px;
+  margin-right: 50px;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  width: 70%;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+  width: 20%;
+}
+
+.container {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .container {
+  padding-top: 102px;
+}
+
+.navbar {
+  z-index: 3;
+  background-color: white;
+}
+
+.title{
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  color: ivory;
+}
+
+.title1{
+  text-align: center;
+}
+
+.title2{
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  color: ivory;
+}
+
+.bg {
+  height: 520px;
+  width: 100%;
+}
+
+.bg1 {
+  display: inline;
+  width: 33%;
+  height: 280px;
+  cursor: pointer;
+}
+
+.bg1:hover {
+  opacity: 70%;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+footer {
+  background: url(../img/ink.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  display: flex;
+  margin-left: 250px;
+  margin-right: 100px;
+  width: 80%;
+}
+
+.footer div {
+  width: 50%;
+}
+
+.author {
+  text-align: center;
+}

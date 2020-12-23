@@ -1,0 +1,33 @@
+[
+	{
+		"name":"Yang Cao",
+		"type":"Student",
+		"email":"yang@academyart.com",
+		"classes":[608,606]
+	},
+	{
+		"name":"Antonio",
+		"type":"Student",
+		"email":"antonio@academyart.edu",
+		"classes":[608,606]
+	},
+	{
+		"name":"Amy",
+		"type":"Student",
+		"email":"amye@academyart.edu",
+		"classes":[608,606]
+	},
+	{
+		"name":"Christopher",
+		"type":"Student",
+		"email":"christopher@academyart.edu",
+		"classes":[608,606]
+	},
+	{
+		"name":"Marni",
+		"type":"Student",
+		"email":"marni@academyart.edu",
+		"classes":[608,606]
+	}
+
+]

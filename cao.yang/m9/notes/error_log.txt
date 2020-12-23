@@ -1,0 +1,15 @@
+[23-Oct-2020 19:20:35 UTC] PHP Notice:  Undefined index: name in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 70
+[23-Oct-2020 19:24:44 UTC] PHP Notice:  Undefined index: name in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 70
+[23-Oct-2020 20:06:21 UTC] PHP Notice:  Array to string conversion in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 123
+[23-Oct-2020 20:06:32 UTC] PHP Notice:  Array to string conversion in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 123
+[23-Oct-2020 20:06:33 UTC] PHP Notice:  Array to string conversion in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 123
+[23-Oct-2020 20:06:42 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php:123
+Stack trace:
+#0 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 123
+[23-Oct-2020 20:22:11 UTC] PHP Notice:  Undefined variable: colorsObject in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 152
+[23-Oct-2020 20:23:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function print_p(), 0 passed in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 155 and exactly 1 expected in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php:151
+Stack trace:
+#0 /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php(155): print_p()
+#1 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 151

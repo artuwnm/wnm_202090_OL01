@@ -1,0 +1,84 @@
+[22-Oct-2020 20:10:57 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:10:58 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:11:02 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:11:03 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:11:15 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:11:16 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:11:16 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:11:17 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[22-Oct-2020 20:11:18 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 8
+[23-Oct-2020 19:23:46 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 70
+[23-Oct-2020 19:23:48 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 70
+[23-Oct-2020 19:27:49 UTC] PHP Parse error:  syntax error, unexpected 'My' (T_STRING), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 72
+[23-Oct-2020 19:27:51 UTC] PHP Parse error:  syntax error, unexpected 'My' (T_STRING), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 72
+[23-Oct-2020 19:28:01 UTC] PHP Parse error:  syntax error, unexpected 'My' (T_STRING), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 72
+[23-Oct-2020 19:28:12 UTC] PHP Parse error:  syntax error, unexpected 'My' (T_STRING), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 72
+[23-Oct-2020 19:53:49 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/index.php on line 97
+[30-Oct-2020 01:40:46 UTC] PHP Warning:  include(parts/meta.php): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 12
+[30-Oct-2020 01:40:46 UTC] PHP Warning:  include(): Failed opening 'parts/meta.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 12
+[30-Oct-2020 01:40:46 UTC] PHP Warning:  include(parts/navbar.php): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 16
+[30-Oct-2020 01:40:46 UTC] PHP Warning:  include(): Failed opening 'parts/navbar.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 16
+[30-Oct-2020 01:40:46 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:41:11 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:41:29 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:42:48 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:42:50 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:42:53 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:44:28 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:44:54 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:44:59 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:45:08 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:45:16 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:45:19 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:45:23 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 21
+[30-Oct-2020 01:47:16 UTC] PHP Warning:  Use of undefined constant filename - assumed 'filename' (this will throw an Error in a future version of PHP) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:16 UTC] PHP Warning:  file_get_contents(filename): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:16 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 24
+[30-Oct-2020 01:47:17 UTC] PHP Warning:  Use of undefined constant filename - assumed 'filename' (this will throw an Error in a future version of PHP) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:17 UTC] PHP Warning:  file_get_contents(filename): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:17 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 24
+[30-Oct-2020 01:47:24 UTC] PHP Warning:  Use of undefined constant filename - assumed 'filename' (this will throw an Error in a future version of PHP) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:24 UTC] PHP Warning:  file_get_contents(filename): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:24 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 24
+[30-Oct-2020 01:47:42 UTC] PHP Warning:  Use of undefined constant filename - assumed 'filename' (this will throw an Error in a future version of PHP) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:42 UTC] PHP Warning:  file_get_contents(filename): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 4
+[30-Oct-2020 01:47:42 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 24
+[30-Oct-2020 01:48:17 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 24
+[30-Oct-2020 01:49:04 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 25
+[30-Oct-2020 01:53:51 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 25
+[30-Oct-2020 01:53:58 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 25
+[30-Oct-2020 01:55:05 UTC] PHP Warning:  include(..lib/php/functions.php): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 3
+[30-Oct-2020 01:55:05 UTC] PHP Warning:  include(): Failed opening '..lib/php/functions.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 3
+[30-Oct-2020 01:55:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_p() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 9
+[30-Oct-2020 01:55:07 UTC] PHP Warning:  include(..lib/php/functions.php): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 3
+[30-Oct-2020 01:55:07 UTC] PHP Warning:  include(): Failed opening '..lib/php/functions.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 3
+[30-Oct-2020 01:55:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_p() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 9
+[30-Oct-2020 01:55:08 UTC] PHP Warning:  include(..lib/php/functions.php): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 3
+[30-Oct-2020 01:55:08 UTC] PHP Warning:  include(): Failed opening '..lib/php/functions.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 3
+[30-Oct-2020 01:55:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_p() in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 9
+[30-Oct-2020 01:56:20 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 27
+[30-Oct-2020 01:56:49 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 27
+[30-Oct-2020 01:58:26 UTC] PHP Notice:  Undefined index: id in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 27
+[30-Oct-2020 02:15:04 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:15:06 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:15:07 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:15:07 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:15:07 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:15:07 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:15:08 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:16:26 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[30-Oct-2020 02:16:27 UTC] PHP Parse error:  syntax error, unexpected '<', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 31
+[01-Nov-2020 21:06:50 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 41
+[01-Nov-2020 21:07:32 UTC] PHP Warning:  file_get_contents(../main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 21:07:32 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 41
+[01-Nov-2020 21:07:33 UTC] PHP Warning:  file_get_contents(../main/data/users.json): failed to open stream: No such file or directory in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/lib/php/functions.php on line 11
+[01-Nov-2020 21:07:33 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/di3ifryigdgf/public_html/AAU/WNM608/wnm_202090_OL01/cao.yang/main/notes/reading_data.php on line 41
