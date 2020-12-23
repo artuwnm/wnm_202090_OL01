@@ -1,0 +1,335 @@
+
+:root{
+	--color-offwhite: #f4f4f4;
+
+	--color-main-light: #f2ae72;
+    --color-main-medium: #b4793a;
+    --color-main-dark: #735236;
+
+	--color-sub-light:#e0cac0;
+	--color-sub-medium:#a5543d;
+	--color-sub-dark:#78302c;
+
+}
+
+body{
+	background-color: var(--color-offwhite);
+	padding-bottom: 4em;
+}
+
+
+
+.favorite label {
+	transition: all 0.3s;
+	display: inline-block;
+	transform: scale(1,1);
+	color: var(--color-neutral-medium);
+}
+.favorite input:checked + label {
+	color: var(--color-sub-medium);
+	transform:scale(1.5,1.5);
+}
+
+
+
+@media (max-width: 800px){
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.navbar h1 {
+		padding-left: 0.5em;
+	}
+}
+
+.menu-button label { display: none; }
+@media (max-width: 400px) {
+	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+	.navbar .nav-flex ul {
+		display: block;
+	}
+	.navbar .nav li {
+		line-height: 2em;
+	}
+
+	.menu-button label {
+	    display: block;
+	    padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+.navbar{
+	background-color: var(--color-main-dark);
+}
+
+.ul-items{
+	margin-left: 1rem;
+}
+
+.hotdog.mainlight{
+	background-color: var(--color-main-light);
+	color: var(--color-neutral-dark);
+}
+.card.maindark {
+		background-color: var(--color-main-dark);
+		color: var(--color-neutral-light)
+	}
+
+
+
+
+
+.carousel{
+	height: 30vh;
+	min-height: 25em;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel .slide,
+.carousel .slides{
+	height: 100%;
+	width: 100%;
+}
+
+.carousel .slides{
+	position: relative;
+}
+
+.carousel .slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	z-index: 1;
+	opacity: 0;	
+}
+
+.carousel .slide.moving{
+	transition: all 0.3s;
+}
+
+.carousel .slide.left,
+.carousel .slide.right,
+.carousel .slide.center{
+	opacity: 1;
+}
+
+.carousel .slide.center{
+	transform: translateX(0);
+}
+
+.carousel .slide.left{
+	transform: translateX(-100%);
+}
+
+.carousel .slide.right{
+	transform: translateX(100%);
+}
+
+.carousel .controls{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	user-select: none;
+	z-index: 5;
+}
+
+.carousel [class*='control-']{
+	pointer-events: initial;
+}
+
+.carousel .control-left,
+.carousel .control-right{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 1rem;
+	font-size: 2em;
+	color: white;
+}
+
+.carousel .control-left{
+	left: 1rem;
+}
+
+.carousel .control-right{
+	right: 1rem;
+}
+
+.carousel .control-pagination{
+	display: flex;
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	transform: translateX(-50%);
+	color: black;
+}
+
+.carousel .control-dot{
+	padding: 1rem;
+	font-size: 2em;
+	line-height: 1rem;
+	transition: all 0.3s;
+	position: relative;
+	transform: scale(1, 1);
+}
+
+.carousel .control-dot.active{
+	transform: scale(1.5, 1.5);
+	color: white;
+}
+
+.carousel .control-dot,
+.carousel .control-left,
+.carousel .control-right{
+	cursor: pointer;
+}
+
+
+
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: var(--color-main-dark);
+
+	color: var(--color-offwhite);
+	padding: 1em;
+	margin-top: 1em;
+}
+
+
+/* M4新增 */
+.figure.product {
+	border-radius: 0.5em;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	overflow: hidden;
+	height: 100%;
+	transition: all 0.3s;
+}
+
+/* .product.figure img {
+	height: 100%;
+    object-fit: contain;
+} */
+
+.productlist a {
+	text-decoration: none;
+	font-weight: initial;
+}
+.product.figure:hover{
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+
+.product-overlay {
+	position: relative;
+	overflow: hidden;
+}
+.product-overlay figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.product-overlay:hover figcaption {
+	opacity: 1;
+}
+.product-overlay .caption-body {
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 1em;
+	transform: translateY(2em);
+	transition: all 0.3s;
+}
+.product-overlay:hover .caption-body {
+	transform: translateY(0);
+}
+.product-overlay img {
+	transform: scale(1,1);
+	transition: all 0.3s;
+}
+.product-overlay:hover img {
+	transform: scale(1.4,1.4);
+}
+
+@media (max-width: 600px) {
+	.product-overlay figcaption {
+		position: relative;
+		display: block;
+		top: initial;
+		left: initial;
+		width: 100%;
+		height: initial;
+		opacity: 1;
+		background-color: initial;
+	}
+	.product-overlay .caption-body {
+		transform: none; 
+		padding: 0;
+	}
+}
+
+
+
+
+.images-main img{
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
+}
+.images-thumbs img{
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
+}
+/*后面是自己加的*/
+.images-thumbs.display img{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: -60px;
+}
+
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
+span.badge:not(:empty)::before {
+	content: '(';
+}
+
+/*后面是自己加的*/
+.lowerspace {
+	margin-bottom: 5vh;
+}
